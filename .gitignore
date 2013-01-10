@@ -1,6 +1,23 @@
-INSTALL.txt
-LICENSE.txt
-README.txt
-demos/
-extras/documentation
+syntax: glob
+*~
+*.swp
+*.orig
+*.tmp.
+*.bak
+*.log
+
+*.toc
+*.aux
+*.nav
+*.out
+*.snm
+*.vrb
+*.synctex.gz
+
+.svn/
+.cache/
+.settings/
+.buildpath
+.gitignore
+.project
 
