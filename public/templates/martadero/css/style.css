@@ -178,6 +178,7 @@ a img {
     float: right;
     width: 562px;
     margin: 0px 20px;
+    overflow: hidden;
 }
 
 #left_bar {

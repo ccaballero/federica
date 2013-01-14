@@ -34,7 +34,6 @@
         <title>mARTadero | Arte y Cultura | Cochabamba Bolivia</title>
     </head>
     <body>
-        <?php echo $this->whatever; ?>
         <div id="wrapper1">
             <div id="header">
                 <img src="<?php echo $this->media_url ?>/images/martadero_arte_cultura_oxido.jpg"

@@ -7,58 +7,58 @@ class Yachay_Bootstrap extends Zend_Application_Bootstrap_Bootstrap
         Zend_Registry::set('config', $config);
     }
 
-//    protected function _initLocale() {
-//        $this->bootstrap('config');
-//
-//        $config = Zend_Registry::get('config');
-//        // Set for localization
-//        setlocale(LC_CTYPE, $config->system->locale);
-//        Zend_Locale::setDefault($config->system->locale);
-//    }
+    protected function _initAutoload() {
+        $this->bootstrap('config');
 
-//    protected function _initTimezone() {
-//        $this->bootstrap('config');
-//
-//        $config = Zend_Registry::get('config');
-//        date_default_timezone_set($config->system->timezone);
-//    }
+        $loader = Zend_Loader_Autoloader::getInstance();
+        $loader->pushAutoloader(new Yachay_Loader());
+    }
 
-//    protected function _initAutoload() {
-//        $loader = Zend_Loader_Autoloader::getInstance();
-//        $loader->pushAutoloader(new Yachay_Loader());
-//    }
+    protected function _initRouter() {
+        $this->bootstrap(array('config', 'autoload', 'frontController', 'db'));
 
-//    protected function _initRouter() {
-//        $this->bootstrap(array('config', 'autoload','frontController','db'));
-//
-//        $config = Zend_Registry::get('config');
-//
-//        $ctrl = Zend_Controller_Front::getInstance();
-//        $router = $ctrl->getRouter();
-//
-//        // Routes select by enabled package
-//        $db_routes = new Db_Routes();
-//        $routes = $db_routes->selectByEnabledPackages();
-//
-//        foreach ($routes as $route) {
-//            $path = $config->resources->frontController->moduleDirectory . '/' . $route->module;
-//            if (is_dir($path)) {
-//                $router->addRoute($route->route,
-//                    new Zend_Controller_Router_Route(
-//                        $route->mapping, array(
-//                            'module' => $route->module,
-//                            'controller' => $route->controller,
-//                            'action' => $route->action,
-//                )));
-//            }
-//        }
-//
-//        return $router;
-//    }
+        $config = Zend_Registry::get('config');
 
-//    protected function _initSession() {
-//        Zend_Session::start();
-//    }
+        $ctrl = Zend_Controller_Front::getInstance();
+        $router = $ctrl->getRouter();
+
+        // Routes select by enabled package
+        $db_routes = new Db_Routes();
+        $routes = $db_routes->selectByEnabledPackages();
+
+        foreach ($routes as $route) {
+            $path = $config->resources->frontController->moduleDirectory . '/' . $route->module;
+            if (is_dir($path)) {
+                $router->addRoute($route->route,
+                    new Zend_Controller_Router_Route(
+                        $route->mapping, array(
+                            'module' => $route->module,
+                            'controller' => $route->controller,
+                            'action' => $route->action,
+                )));
+            }
+        }
+
+        return $router;
+    }
+
+    protected function _initSession() {
+        Zend_Session::start();
+    }
+
+    protected function _initHistory() {
+        $this->bootstrap(array('config', 'session'));
+
+        $session = new Zend_Session_Namespace('pueblo');
+        $config = Zend_Registry::get('config');
+
+        if (!isset($session->current_url)) {
+            $session->current_url = $config->resources->frontController->baseUrl;
+        }
+        if (!isset($session->previous_url)) {
+            $session->previous_url = $config->resources->frontController->baseUrl;
+        }
+    }
 
 //    protected function _initUser() {
 //        $this->bootstrap(array('autoload','session','db'));
@@ -92,20 +92,6 @@ class Yachay_Bootstrap extends Zend_Application_Bootstrap_Bootstrap
 //        }
 //        if (!isset($session->context_id)) {
 //            $session->context_id = 0;
-//        }
-//    }
-
-//    protected function _initHistory() {
-//        $this->bootstrap(array('config','session'));
-//
-//        $session = new Zend_Session_Namespace('yachay');
-//        $config = Zend_Registry::get('config');
-//
-//        if (!isset($session->currentPage)) {
-//            $session->currentPage = $config->resources->frontController->baseUrl;
-//        }
-//        if (!isset($session->lastPage)) {
-//            $session->lastPage = $config->resources->frontController->baseUrl;
 //        }
 //    }
 
@@ -158,7 +144,7 @@ class Yachay_Bootstrap extends Zend_Application_Bootstrap_Bootstrap
 //    }
 
     protected function _initView() {
-        $this->bootstrap('frontController');
+        $this->bootstrap(array('config', 'frontController'));
 
         $view = new Zend_View();
 
@@ -166,6 +152,10 @@ class Yachay_Bootstrap extends Zend_Application_Bootstrap_Bootstrap
         $renderer = new Zend_Controller_Action_Helper_ViewRenderer();
         $renderer->setView($view)
                  ->setViewSuffix('php');
+
+        $config = Zend_Registry::get('config');
+        $view->setScriptPath(APPLICATION_PATH . '/templates/' . $config->resources->layout->layout . '/');
+        $view->setHelperPath(APPLICATION_PATH . '/library/Yachay/View/Helper', 'Yachay_View_Helper');
 
         Zend_Controller_Action_HelperBroker::addHelper($renderer);
 
@@ -177,18 +167,20 @@ class Yachay_Bootstrap extends Zend_Application_Bootstrap_Bootstrap
 //        $this->bootstrap(array('config', 'template'));
 //
         $config = Zend_Registry::get('config');
+        $template = $config->resources->layout->layout;
+
 //        $template = Zend_Registry::get('template');
 
         Zend_Layout::startMVC(array(
             'layoutPath' => $config->resources->layout->layoutPath,
-            'layout'     => $config->resources->layout->layout,
+            'layout'     => $template,
             'viewSuffix' => 'php',
         ));
 
         $layout = Zend_Layout::getMvcInstance();
         $view = $layout->getView();
 
-        $view->media_url = '/templates/martadero';
+        $view->media_url = '/templates/' . $template;
 
         return $layout;
     }

@@ -6,7 +6,7 @@ class ErrorController extends Yachay_Controller_Action
         $errors = $this->_getParam('error_handler');
 
         if (!$errors) {
-            $this->view->message = 'You have reached the error page';
+            $this->view->message = 'Página de error';
             return;
         }
 
@@ -17,12 +17,12 @@ class ErrorController extends Yachay_Controller_Action
 
                 // 404 error -- controller or action not found
                 $this->getResponse()->setHttpResponseCode(404);
-                $this->view->message = 'Page not found';
+                $this->view->message = 'Página no encontrada';
                 break;
             default:
                 // application error
                 $this->getResponse()->setHttpResponseCode(500);
-                $this->view->message = 'Application error';
+                $this->view->message = 'Error en la aplicación';
                 break;
         }
 
