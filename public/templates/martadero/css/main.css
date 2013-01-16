@@ -51,6 +51,16 @@
     display: block;
 }
 
+#main .box_image {
+    float: left;
+    padding: 0px 10px;
+}
+
+#main blockquote,
+#main blockquote a {
+    font-size: 16px;
+}
+
 /* main content (tabbers) */
 /*#main ul {
     list-style-type: none;
