@@ -280,6 +280,7 @@ a img {
     padding: 0px 1px 0px 15px;
 }
 
+#footer ul.primary li strong,
 #footer ul.primary li a {
     color: #ffffff;
     font-size: 12px;

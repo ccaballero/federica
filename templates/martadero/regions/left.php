@@ -42,20 +42,20 @@
 <div class="post">
     <h1>Proyecto mARTadero</h1>
     <ul>
-        <li><a href="<?php echo $this->url(array('page' => 'quienes_somos.html'), 'base_static') ?>">Quiénes somos</a></li>
-        <li><a href="info-cultural/contactos.html#equipo">Equipo humano</a></li>
-        <li><a href="participa/ser_parte_del_equipo.html">Ser parte del equipo</a></li>
-        <li><a href="arte-cultura/conexiones.html">Conexiones</a></li>
-        <li><a href="arte-cultura/martadero_v20.html">Proyecciones</a></li>
-        <li><a href="arte-cultura/nos_interesa.html">Nos interesa</a></li>
-        <li><a href="arte-cultura/tarjeta_arcoiris.html">Hazte amig@ del mARTadero</a></li>
-        <li><a href="arte-cultura/fondart.html">Fondo para el Desarrollo<br/>de las Artes - FONDART</a></li>
-        <li><a href="arte-cultura/visita.html">Visita guiada</a></li>
-        <li><a href="arte-cultura/apoyos.html">Apoyos</a></li>
-        <li><a href="arte-cultura/colabora.html">Haz una donación</a></li>
-        <li><a href="galeria/descargas.html">Descargas</a></li>
-        <li><a href="info-cultural/contactos.html">Contacto</a></li>
-        <li><a href="info-cultural/contactos.html#mapa">Cómo llegar</a></li>
+        <li><a href="<?php echo $this->url(array('page' => 'quienes-somos.html'), 'base_static') ?>">Quiénes somos</a></li>
+        <li><a href="<?php echo $this->url(array('page' => 'contactos.html'), 'base_static') ?>#equipo">Equipo humano</a></li>
+        <li><a href="<?php echo $this->url(array('page' => 'ser-parte-del-equipo.html'), 'base_static') ?>">Ser parte del equipo</a></li>
+        <li><a href="<?php echo $this->url(array('page' => 'conexiones.html'), 'base_static') ?>">Conexiones</a></li>
+        <li><a href="<?php echo $this->url(array('page' => 'martadero-v20.html'), 'base_static') ?>">Proyecciones</a></li>
+        <li><a href="<?php echo $this->url(array('page' => 'nos-interesa.html'), 'base_static') ?>">Nos interesa</a></li>
+        <li><a href="<?php echo $this->url(array('page' => 'tarjerta-arcoiris.html'), 'base_static') ?>">Hazte amig@ del mARTadero</a></li>
+        <li><a href="<?php echo $this->url(array('page' => 'fondart.html'), 'base_static') ?>">Fondo para el Desarrollo<br/>de las Artes - FONDART</a></li>
+        <li><a href="<?php echo $this->url(array('page' => 'visita.html'), 'base_static') ?>">Visita guiada</a></li>
+        <li><a href="<?php echo $this->url(array('page' => 'apoyos.html'), 'base_static') ?>">Apoyos</a></li>
+        <li><a href="<?php echo $this->url(array('page' => 'colabora.html'), 'base_static') ?>">Haz una donación</a></li>
+        <li><a href="<?php echo $this->url(array('page' => 'descargas.html'), 'base_static') ?>">Descargas</a></li>
+        <li><a href="<?php echo $this->url(array('page' => 'contactos.html'), 'base_static') ?>">Contacto</a></li>
+        <li><a href="<?php echo $this->url(array('page' => 'contactos.html'), 'base_static') ?>#mapa">Cómo llegar</a></li>
     </ul>
 </div>
 <!--<div class="post">
