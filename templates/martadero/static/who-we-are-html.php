@@ -1,10 +1,10 @@
 <h1>mARTadero project</h1>
 
-<div class="index">
-    <a href="#areas">+ 7 AREAS OF ARTISTIC CREATION</a>
-    <a href="#programas">+ 7 SOCIAL DEVELOPMENT PROGRAMS</a>
-    <a href="#principios">+ 7 PRINCIPLES</a>
-</div>
+<ul class="index">
+    <li><a href="#areas">7 Areas of artistic creation</a></li>
+    <li><a href="#programas">7 Social development programs</a></li>
+    <li><a href="#principios">7 Principles</a></li>
+</ul>
 
 <p><strong>Leer</strong> toda la información <strong>en Español</strong>
 <a href="<?php echo $this->url(array('page' => 'quienes_somos.html'), 'base_static') ?>">pinchando aquí</a>.</p>
@@ -13,7 +13,7 @@
 <a href="/media/pdf/About_proyecto_mARTadero.pdf" target="_blank">about proyecto mARTadero</a> on PDF
 (también en <a href="/media/pdf/Sobre_proyecto_mARTadero.pdf" target="_blank">Español</a>).</p>
 
-<p><img src="<?php echo $this->static_url . '/quienes-somos/martadero.jpg' ?>" alt="mARTadero" title="mARTadero" /></p>
+<p><img src="<?php echo $this->baseUrl('/media/static/quienes-somos/martadero.jpg') ?>" alt="mARTadero" title="mARTadero" /></p>
 
 <p>mARTadero is a comprehensive, social development project operating through
 art and culture.</p>
@@ -63,10 +63,10 @@ their capacity for management. An important part of this achievement is the
 activity in the city of Cochabamba not only through exhibitions but also by
 activating training and development mechanisms with a special penchant for
 emerging arts. Please find below the specific objectives of each area:</p>
-<p><img src="<?php echo $this->static_url . '/quienes-somos/estrella-areas.jpg' ?>" title="Artistic creation areas" /></p>
+<p><img src="<?php echo $this->baseUrl('/media/static/quienes-somos/estrella-areas.jpg') ?>" title="Artistic creation areas" /></p>
 
 <h3>VISUAL ARTS AND PHOTOGRAPHY</h3>
-<p><img src="<?php echo $this->static_url . '/quienes-somos/artes_visuales.jpg' ?>" title="mARTadero visual arts" /></p>
+<p><img src="<?php echo $this->baseUrl('/media/static/quienes-somos/artes_visuales.jpg') ?>" title="mARTadero visual arts" /></p>
 <p>The aim of this area is to position contemporary visual creations in the
 Bolivian and international scenes through exhibits, events, exchanges,
 participation in international networks, training workshops, support of Bolivian
@@ -75,7 +75,7 @@ through a multidimensional deployment of creativity in the context is a core
 theme.</p>
 
 <h3>LITERATURE</h3>
-<p><img src="<?php echo $this->static_url . '/quienes-somos/letras.jpg' ?>" title="mARTadero literature" /></p>
+<p><img src="<?php echo $this->baseUrl('/media/static/quienes-somos/letras.jpg') ?>" title="mARTadero literature" /></p>
 <p>In the Literature area we try to promote the creation, circulation and
 exchange of literary proposals through workshops, production and participation
 in writing-related activities, both at national and international level. Also, a
@@ -85,7 +85,7 @@ aware, critical and proactive regarding themselves and the context they live
 in.</p>
 
 <h3>PERFORMING ARTS</h3>
-<p><img src="<?php echo $this->static_url . '/quienes-somos/artes-escenicas.jpg' ?>" title="mARTadero performing arts" /></p>
+<p><img src="<?php echo $this->baseUrl('/media/static/quienes-somos/artes-escenicas.jpg') ?>" title="mARTadero performing arts" /></p>
 <p>This area seeks to enhance the training of Bolivian creators thanks to the
 production of activities linked to the different trends and genres that make up
 performing arts (Theater, Dance, Puppetry etc.) We also look after the
@@ -94,7 +94,7 @@ construction. The activities are assessed and carried out in correspondence with
 the guiding principles for all projects developing in mARTadero.</p>
 
 <h3>GRAPHIC DESING AND ARCHITECTURE</h3>
-<p><img src="<?php echo $this->static_url . '/quienes-somos/arquitectura.jpg' ?>" title="mARTadero architecture" /></p>
+<p><img src="<?php echo $this->baseUrl('/media/static/quienes-somos/arquitectura.jpg') ?>" title="mARTadero architecture" /></p>
 <p>In this area we try to contribute to the development of graphic design and
 architecture in Cochabamba and Bolivia thanks to an interdisciplinary approach
 at different levels through training, projects, meetings, networking and
@@ -105,7 +105,7 @@ been done to other historical buildings, always taking into account the
 environmental and bioclimatic dimensions of architecture.</p>
 
 <h3>MEDIA</h3>
-<p><img src="<?php echo $this->static_url . '/quienes-somos/audiovisual.jpg' ?>" title="mARTadero media" /></p>
+<p><img src="<?php echo $this->baseUrl('/media/static/quienes-somos/audiovisual.jpg') ?>" title="mARTadero media" /></p>
 <p>This area aims at encouraging experimental and professional media production
 in our environment; promoting and producing creative, educative activities and
 exhibitions of diverse genres and trends. We pledge our commitment to an
@@ -114,7 +114,7 @@ designing an alternative production rationale in line with our economic and
 cultural context.</p>
 
 <h3>MUSIC</h3>
-<p><img src="<?php echo $this->static_url . '/quienes-somos/musica.jpg' ?>" title="mARTadero music" /></p>
+<p><img src="<?php echo $this->baseUrl('/media/static/quienes-somos/musica.jpg') ?>" title="mARTadero music" /></p>
 <p>In this area we want to facilitate, promote and disseminate the production of
 music events (concerts, workshops etc) without discrimination against any
 musical genre and with an interdisciplinary approach. We prioritize and focus
@@ -123,7 +123,7 @@ composition and who, for diverse reasons, do not have access to spaces where
 they can develop and express their art and talent.</p>
 
 <h3>SOCIAL INTERACTION</h3>
-<p><img src="<?php echo $this->static_url . '/quienes-somos/interaccion-social.jpg' ?>" title="mARTadero social interaction" /></p>
+<p><img src="<?php echo $this->baseUrl('/media/static/quienes-somos/interaccion-social.jpg') ?>" title="mARTadero social interaction" /></p>
 <p>This area tries to enhance social development processes through art and
 culture strategies, generating a progressive future-orientated movement based on
 creativity and in the crucial role of culture as a facilitator for inclusion,
@@ -132,10 +132,10 @@ for interaction between artists and the general public, paying special attention
 to the new generations that are the true builders of a culture of future.</p>
 
 <h2><a name="programas" id="programas"></a>7 SOCIAL DEVELOPMENT PROGRAMS</h2>
-<p><img src="<?php echo $this->static_url . '/quienes-somos/programas-desarrollo.jpg' ?>" title="Social development programs" /></p>
+<p><img src="<?php echo $this->baseUrl('/media/static/quienes-somos/programas-desarrollo.jpg') ?>" title="Social development programs" /></p>
 
 <h3>FREE EXPRESSION AND ENVIRONMENTAL EDUCATION CHILDREN’S WORKSHOP</h3>
-<p><img src="<?php echo $this->static_url . '/quienes-somos/taller-infantil.jpg' ?>" title="mARTadero children's workshop" /></p>
+<p><img src="<?php echo $this->baseUrl('/media/static/quienes-somos/taller-infantil.jpg') ?>" title="mARTadero children's workshop" /></p>
 <p>The Workshop is an open space where proposals can be made and whose objective
 is for children to be able to freely explore their creativity through games,
 handicrafts of all types, drawings and building blocks. We want them to find a
@@ -147,7 +147,7 @@ them.</p>
 <p><a href="http://www.martadero.org/programas/tallerninos.html">http://www.martadero.org/programas/tallerninos.html</a></p>
 
 <h3>FORMARTE</h3>
-<p><img src="<?php echo $this->static_url . '/quienes-somos/formarte.jpg' ?>" title="mARTadero formARTe" /></p>
+<p><img src="<?php echo $this->baseUrl('/media/static/quienes-somos/formarte.jpg') ?>" title="mARTadero formARTe" /></p>
 <p>This is a program and a space for complementary, high quality and intensive
 artistic training at an affordable cost aimed mostly at young people. Its main
 objective is to serve as a knowledge exchange forum where social, personal and
@@ -157,7 +157,7 @@ grants for the economically disadvantaged.</p>
 <p><a href="http://www.martadero.org/programas/formarte.html%20">http://www.martadero.org/programas/formarte.html</a></p>
 
 <h3>URBAN ACTION (ART SQUARE AND ART WALK)</h3>
-<p><img src="<?php echo $this->static_url . '/quienes-somos/accion-urbana.jpg' ?>" title="mARTadero urban action" /></p>
+<p><img src="<?php echo $this->baseUrl('/media/static/quienes-somos/accion-urbana.jpg') ?>" title="mARTadero urban action" /></p>
 <p>The Project, supported by Eje Centr4l, is based on the sparking off of a
 process of citizen participation that promotes renovation, refurbishing and the
 search for new meaning for the Arrieros de Cochabamba Square (Bolivia); to turn
@@ -191,7 +191,7 @@ of ideas among neighbors.</p>
 <p><a href="http://plazaartes.wordpress.com/">http://plazaartes.wordpress.com</a></p>
 
 <h3>ALIVE AND GREEN</h3>
-<p><img src="<?php echo $this->static_url . '/quienes-somos/vivoyverde.jpg' ?>" title="mARTadero alive and green" /></p>
+<p><img src="<?php echo $this->baseUrl('/media/static/quienes-somos/vivoyverde.jpg') ?>" title="mARTadero alive and green" /></p>
 <p>The main objective of this program is to transmit an environmental awareness
 to the people in the neighborhood and to those visiting us. The premise is to
 reuse waste (water and solids) and to reduce the amount of garbage. MARTadero
@@ -203,7 +203,7 @@ natural process.</p>
 <p><a href="http://www.martadero.org/programas/vivoyverde.html">http://www.martadero.org/programas/vivoyverde.html</a></p>
 
 <h3>PRANA ART RESIDENCIES</h3>
-<p><img src="<?php echo $this->static_url . '/quienes-somos/prana.jpg' ?>" title="Prana mARTadero" /></p>
+<p><img src="<?php echo $this->baseUrl('/media/static/quienes-somos/prana.jpg') ?>" title="Prana mARTadero" /></p>
 <p><strong>PRANA</strong> is a Sanskrit word that refers to "what is vital",
 <strong>to the strength of living things and to the generation of energy through
 the natural process of the Universe</strong>. It comes from the Upanishads and
@@ -235,7 +235,7 @@ funds for the material and the equipment necessary for producing the work.</p>
 <p><a href="http://www.martadero.org/programas/prana.html">http://www.martadero.org/programas/prana.html</a></p>
 
 <h3>CULTURAL POLICIES AND NETWORKS</h3>
-<p><img src="<?php echo $this->static_url . '/quienes-somos/politicas-culturales.jpg' ?>" title="mARTadero cultural policies" /></p>
+<p><img src="<?php echo $this->baseUrl('/media/static/quienes-somos/politicas-culturales.jpg') ?>" title="mARTadero cultural policies" /></p>
 <p>Cultural policies are understood as "the area of public policy-making that
 governs activities related to the arts and culture. Generally, this involves
 fostering processes, legal classifications and institutions which promote
@@ -254,7 +254,7 @@ Grant Funds.</p>
 <p><a href="http://politicasculturalesblog.wordpress.com/">http://politicasculturalesblog.wordpress.com/</a></p>
 
 <h3>ARTISTIC AND CULTURAL BUSINESS INCUBATOR</h3>
-<p><img src="<?php echo $this->static_url . '/quienes-somos/vivero.jpg' ?>" title="mARTadero incubator" /></p>
+<p><img src="<?php echo $this->baseUrl('/media/static/quienes-somos/vivero.jpg') ?>" title="mARTadero incubator" /></p>
 <p>One of the main problems of the culture and arts sector is that it does not
 rely on necessary expertise for advancing in the business world nor for
 establishing legal institutions. Likewise, it lacks an adequate organizational
@@ -290,43 +290,43 @@ principles enshrined in NADA&rsquo;s rules of association, which are the 3 main
 pillars of the project:</p>
 
 <h3>INNOVATION</h3>
-<p><img src="<?php echo $this->static_url . '/quienes-somos/innovacion.jpg' ?>" title="mARTadero innovation" /></p>
+<p><img src="<?php echo $this->baseUrl('/media/static/quienes-somos/innovacion.jpg') ?>" title="mARTadero innovation" /></p>
 <p>An innovative proposal is one in which conceptual contents go beyond what is
 given or established and which setting or formal aspects are coherent with the
 uniqueness of the content.</p>
 
 <h3>RESEARCH</h3>
-<p><img src="<?php echo $this->static_url . '/quienes-somos/investigacion.jpg' ?>" title="mARTadero research" /></p>
+<p><img src="<?php echo $this->baseUrl('/media/static/quienes-somos/investigacion.jpg') ?>" title="mARTadero research" /></p>
 <p>The proposal must be the result of research and consideration of the contents
 and their social and cultural implications.</p>
 
 <h3>EXPERIMENTING</h3>
-<p><img src="<?php echo $this->static_url . '/quienes-somos/experimentacion.jpg' ?>" title="mARTadero experimenting" /></p>
+<p><img src="<?php echo $this->baseUrl('/media/static/quienes-somos/experimentacion.jpg') ?>" title="mARTadero experimenting" /></p>
 <p>A proposal is experimental when the contents, and thus the implementation,
 question in a responsible way the limits of what is artistically or esthetically
 established.</p>
 
 <h3>CONCEPTUAL AND FORMAL STRINGENCY</h3>
-<p><img src="<?php echo $this->static_url . '/quienes-somos/rigor.jpg' ?>" title="mARTadero conceptual and formal stringency" /></p>
+<p><img src="<?php echo $this->baseUrl('/media/static/quienes-somos/rigor.jpg') ?>" title="mARTadero conceptual and formal stringency" /></p>
 <p>The conceptual and formal stringency of a proposal refers both to the logical
 coherence of its conceptual approach as well as to the accomplishment of its
 implementation.</p>
 
 <h3>INTEGRATION</h3>
-<p><img src="<?php echo $this->static_url . '/quienes-somos/integracion.jpg' ?>" title="mARTadero integration" /></p>
+<p><img src="<?php echo $this->baseUrl('/media/static/quienes-somos/integracion.jpg') ?>" title="mARTadero integration" /></p>
 <p>Integration is a broad concept  that involves the capacity of integrating
 artistic disciplines or languages, as well as the need for social and cultural
 integration from a plural perspective.</p>
 
 <h3>KNOWLEDGE AND EXPERIENCE EXCHANGE</h3>
-<p><img src="<?php echo $this->static_url . '/quienes-somos/intercambio.jpg' ?>" title="mARTadero exchange" /></p>
+<p><img src="<?php echo $this->baseUrl('/media/static/quienes-somos/intercambio.jpg') ?>" title="mARTadero exchange" /></p>
 <p>It refers to the need for a proposal to have a knowledge-based impact on
 society, in such a way that it can generate knowledge rather than the
 accumulation of information. It refers to the critical capacity arising from an
 integrating, communal, dialogic and dialectic knowledge.</p>
 
 <h3>INTERCULTURALITY</h3>
-<p><img src="<?php echo $this->static_url . '/quienes-somos/interculturalidad.jpg' ?>" title="mARTadero interculturality" /></p>
+<p><img src="<?php echo $this->baseUrl('/media/static/quienes-somos/interculturalidad.jpg') ?>" title="mARTadero interculturality" /></p>
 <p>Interculturality means not only to respect cultural diversity but to enhance,
 know and value its artistic and cultural manifestations.</p>
 <p>We are convinced that when art and culture are alive and shared, this has an

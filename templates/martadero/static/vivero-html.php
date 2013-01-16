@@ -1,7 +1,7 @@
 <h1>Vivero de Emprendimientos Artístico-Creativos</h1>
 
 <p><a href="http://arteyeconomiacreativa.wordpress.com/" target="_blank">
-<img src="<?php echo $this->static_url . '/logo_vivero.jpg' ?>" title="Visita el blog de ECONOMIA CREATIVA" />
+<img src="<?php echo $this->baseUrl('/media/static/logo_vivero.jpg') ?>" title="Visita el blog de ECONOMIA CREATIVA" />
 </a></p>
 
 <h2>¿Qué es el VEAC?</h2>
@@ -128,18 +128,18 @@ los equipos, los modelos de negocio, estas son quienes perduraron en el tiempo y
 están realizando sus actividades.</p>
 
 <p><a href="http://pi.martadero.org" target="_blank" class="box_image">
-<img src="<?php echo $this->static_url . '/vivero/pi.jpg' ?>" /></a>
+<img src="<?php echo $this->baseUrl('/media/static/vivero/pi.jpg') ?>" /></a>
 <a href="http://pi.martadero.org" target="_blank">&pi; Producciones</a> tiene el
 objetivo de <strong>fomentar el desarrollo del arte y la cultura por medio de la
 Producción Musical y Audiovisual.</strong></p>
 <div class="clear"></div>
 
-<p><img src="<?php echo $this->static_url . '/vivero/sandwich.jpg' ?>" alt="Sandwich Factory" class="box_image" />
+<p><img src="<?php echo $this->baseUrl('/media/static/vivero/sandwich.jpg') ?>" alt="Sandwich Factory" class="box_image" />
 Colectivo que desarrolla videojuegos. SF son una plataforma articuladora donde
 confluyen talentos creativos y tecnología</p>
 <div class="clear"></div>
 
-<p><img src="<?php echo $this->static_url . '/vivero/la_fabrica.jpg' ?>" alt="La Fábrica" class="box_image" />
+<p><img src="<?php echo $this->baseUrl('/media/static/vivero/la_fabrica.jpg') ?>" alt="La Fábrica" class="box_image" />
 El resultado es la incursión de la escuela de cine en el ámbito de postgrado,
 mediante un diplomado para el sector Audiovisual.</p>
 <div class="clear"></div>
@@ -147,7 +147,7 @@ mediante un diplomado para el sector Audiovisual.</p>
 <h2>¿Quiénes forman parte del VEAC 2012?</h2>
 
 <p><a href="http://www.martadero.org/viveros-artisticos/escuela_break_dance.html" target="_blank" class="box_image">
-<img src="<?php echo $this->static_url . '/vivero/break_dance.jpg' ?>" /></a>
+<img src="<?php echo $this->baseUrl('/media/static/vivero/break_dance.jpg') ?>" /></a>
 La primera <a href="http://www.martadero.org/viveros-artisticos/escuela_break_dance.html">Escuela de Baile Urbano en Cochabamba</a>
 que fomenta una disciplina de baile urbano muy saludable, entran al VEAC para
 ser <strong>potenciados</strong>.</p>
@@ -159,19 +159,19 @@ fotografía, infografía y próximamente cine.</p>
 
 <h2>Instituciones y Organizaciones que nos apoyan</h2>
 
-<p><img src="<?php echo $this->static_url . '/vivero/incuba.jpg' ?>" />
-<img src="<?php echo $this->static_url . '/vivero/ucatec.jpg' ?>" />
-<img src="<?php echo $this->static_url . '/vivero/cadexco.jpg' ?>" /></p>
+<p><img src="<?php echo $this->baseUrl('/media/static/vivero/incuba.jpg') ?>" />
+<img src="<?php echo $this->baseUrl('/media/static/vivero/ucatec.jpg') ?>" />
+<img src="<?php echo $this->baseUrl('/media/static/vivero/cadexco.jpg') ?>" /></p>
 
 <h2>Nos ayudaron</h2>
 
-<p><img src="<?php echo $this->static_url . '/vivero/jci.jpg' ?>" />
-<img src="<?php echo $this->static_url . '/vivero/aiesec.jpg' ?>" /></p>
+<p><img src="<?php echo $this->baseUrl('/media/static/vivero/jci.jpg') ?>" />
+<img src="<?php echo $this->baseUrl('/media/static/vivero/aiesec.jpg') ?>" /></p>
 
 <h2>¿Quieres saber más?</h2>
 
 <p><a href="http://economiacreativa.martadero.org/" target="_blank" class="box_image">
-<img src="<?php echo $this->static_url . '/vivero/economia_creativa.jpg' ?>" /></a>
+<img src="<?php echo $this->baseUrl('/media/static/vivero/economia_creativa.jpg') ?>" /></a>
 <a href="http://economiacreativa.martadero.org/" target="_blank">Visita nuestro
 blog</a> de <strong>Economía Creativa</strong>, un espacio creado por el VEAC
 para la <strong>difusión, educación, desarrollo y socialización</strong> acerca
@@ -189,4 +189,4 @@ arte y la cultura.</p>
 <br />
 <br />
 <h1>Vivero 2011</h1>
-<p><img src="<?php echo $this->static_url . '/vivero/seleccionados_veac.jpg' ?>" /></p>
+<p><img src="<?php echo $this->baseUrl('/media/static/vivero/seleccionados_veac.jpg') ?>" /></p>

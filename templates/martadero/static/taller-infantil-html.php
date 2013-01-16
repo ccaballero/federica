@@ -5,7 +5,7 @@
 <img src="<?php echo $this->media_url ?>/images/services/facebook.png"
      title="Facebook" alt="Facebook" /></a></p>
 
-<p><img src="<?php echo $this->static_url . '/taller-infantil/banner-tallerinfantil.jpg' ?>" class="box_image" />
+<p><img src="<?php echo $this->baseUrl('/media/static/taller-infantil/banner-tallerinfantil.jpg') ?>" class="box_image" />
 El <strong>Taller de Creatividad Infantil es un programa de desarrollo social
 del proyecto mARTadero</strong> cuya función es proveer a las niñas y niños del
 barrio y de la ciudad en general un espacio alternativo de sana recreación.
@@ -26,7 +26,7 @@ educación medioambiental</strong>.</p>
 </p>
 
 <h2>Medio Ambiente</h2>
-<p><img src="<?php echo $this->static_url . '/taller-infantil/cuidando-plantas.jpg' ?>" class="box_image" />
+<p><img src="<?php echo $this->baseUrl('/media/static/taller-infantil/cuidando-plantas.jpg') ?>" class="box_image" />
 Se busca aportar y mejorar las condiciones medio ambientales que se presentan en
 el barrio donde está enmarcado el mARTadero: Villa Coronilla. Esto genera en las
 niñas y niños una adquisición de habilidades y actitudes dentro de la
@@ -49,13 +49,13 @@ libertad en ellos y fortificarla, mediante juegos lúdicos, juegos grupales,
 trabajo en equipo y otras actividades en las que puedan relacionarse los
 niños con sus pares.</p>
 
-<p><a href="<?php echo $this->static_url . '/taller-infantil/alegria-big.jpg' ?>" class="highslide" onClick="return hs.expand(this);">
-<img src="<?php echo $this->static_url . '/taller-infantil/alegria.jpg' ?>" />
+<p><a href="<?php echo $this->baseUrl('/media/static/taller-infantil/alegria-big.jpg') ?>" class="highslide" onClick="return hs.expand(this);">
+<img src="<?php echo $this->baseUrl('/media/static/taller-infantil/alegria.jpg') ?>" />
 </a></p>
 
 <h2>Ciudadanía</h2>
-<p><a href="<?php echo $this->static_url . '/taller-infantil/sonrisa-big.jpg' ?>" class="highslide left" style="padding: 0px 10px;" onClick="return hs.expand(this);">
-<img src="<?php echo $this->static_url . '/taller-infantil/sonrisa.jpg' ?>" />
+<p><a href="<?php echo $this->baseUrl('/media/static/taller-infantil/sonrisa-big.jpg') ?>" class="highslide left" style="padding: 0px 10px;" onClick="return hs.expand(this);">
+<img src="<?php echo $this->baseUrl('/media/static/taller-infantil/sonrisa.jpg') ?>" />
 </a>Dar a conocer a los niños que son parte de la sociedad, que conozcan sus
 derechos y obligaciones frente a la sociedad, formando un respeto como
 individuos que forman parte de la ciudad para mejorar la calidad de vida del
@@ -69,8 +69,8 @@ repasos, lectura, escritura,&hellip; motivando y realizando un trabajo paralelo
 con los niños.</p>
 
 <h2>HORARIO</h2>
-<p><a href="<?php echo $this->static_url . '/taller-infantil/postal-big.jpg' ?>" class="highslide right" style="padding: 0px 10px;" onclick="return hs.expand(this);">
-<img src="<?php echo $this->static_url . '/taller-infantil/postal.jpg' ?>" /></a>
+<p><a href="<?php echo $this->baseUrl('/media/static/taller-infantil/postal-big.jpg') ?>" class="highslide right" style="padding: 0px 10px;" onclick="return hs.expand(this);">
+<img src="<?php echo $this->baseUrl('/media/static/taller-infantil/postal.jpg') ?>" /></a>
 El <strong>Taller de Creatividad Infantil tiene las puertas abiertas para todos
 los niños de 5 a 12 años de edad de lunes a viernes de 15:00 hrs. a 18:00hrs.
 </strong></p>

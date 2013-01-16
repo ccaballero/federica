@@ -13,7 +13,7 @@ body, ul, h1 {
 }
 
 body {
-    background: #ffffff url('/templates/martadero/images/tile.jpg') repeat;
+    background: #ffffff url('../images/tile.jpg') repeat;
 }
 
 a {
@@ -320,7 +320,7 @@ a img {
 }
 
 #right_bar .post h1 {
-    background: url('/templates/martadero/images/post_header.jpg') no-repeat;
+    background: url('../images/post_header.jpg') no-repeat;
     color: #ffffff;
     font-weight: bold;
     font-size: 17px;

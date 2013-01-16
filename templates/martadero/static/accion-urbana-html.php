@@ -38,6 +38,5 @@ ideas entre los vecinos.</p>
     entre los habitantes del barrio de Villa Coronilla.</li>
 </ol>
 
-<h2>HORIZONTES</h2>
-<p><img src="<?php echo $this->static_url . '/sobre-accion-urbana.jpg' ?>" />
-</p>
+<h2>Horizontes:</h2>
+<p><img src="<?php echo $this->baseUrl('/media/static/sobre-accion-urbana.jpg') ?>" /></p>

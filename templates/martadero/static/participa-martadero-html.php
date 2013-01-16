@@ -15,7 +15,9 @@ detonador.</p>
 modalidades complementarias</strong>, todas ellas articuladas por el
 <strong>eje temático anual</strong>.</p>
 
-<p>En 2012 el eje temático es <a href="http://www.martadero.org/info-cultural/eje_tematico.html">Reductos tecno-lógicos</a>.</p>
+<p>En 2012 el eje temático es
+<a href="http://www.martadero.org/info-cultural/eje_tematico.html">Reductos
+tecno-lógicos</a>.</p>
 
 <h2>MODOS DE PROGRAMACIÓN</h2>
 <p>Las modalidades de programación son formas complementarias de participación
@@ -33,8 +35,10 @@ propongan oportunidades y beneficios mutuos.</p>
 <p>Para + info sobre esta modalidad:</p>
 
 <ul>
-    <li><a href="http://www.martadero.org/info-cultural/eje_tematico.html">Eje temático</a>.</li>
-    <li><a href="http://www.martadero.org/info-cultural/contactos.html">Equipo humano</a>: por si deseas realizar un contacto con algún área.</li>
+    <li><a href="http://www.martadero.org/info-cultural/eje_tematico.html">Eje
+    temático</a>.</li>
+    <li><a href="http://www.martadero.org/info-cultural/contactos.html">Equipo
+    humano</a>: por si deseas realizar un contacto con algún área.</li>
 </ul>
 
 <h3>Intermediando</h3>
@@ -49,9 +53,12 @@ mARTadero.</p>
 
 <p>Para + info sobre esta modalidad:</p>
 <ul>
-    <li><a href="http://www.martadero.org/php/enrutador.php">Reserva de espacios.</a></li>
-    <li><a href="http://bit.ly/aporteusomartadero">Costo de aporte por uso.</a></li>
-    <li><a href="http://www.martadero.org/espacio-cultural/espacio.html">Conoce las distintas salas.</a></li>
+    <li><a href="http://www.martadero.org/php/enrutador.php">Reserva de
+    espacios</a>.</li>
+    <li><a href="http://bit.ly/aporteusomartadero">Costo de aporte por
+    uso</a>.</li>
+    <li><a href="http://www.martadero.org/espacio-cultural/espacio.html">Conoce
+    las distintas salas</a>.</li>
 </ul>
 
 <h3>Incentivando</h3>
@@ -66,8 +73,9 @@ cobrase entrada.</p>
 
 <p>Para + info sobre esta modalidad:</p>
 <ul>
-    <li><a href="http://www.martadero.org/info-cultural/eje_tematico.html">Eje temático</a>.</li>
-    <li><a href="http://www.martadero.org/arte-cultura/fondart.html">Fondart.</a></li>
+    <li><a href="http://www.martadero.org/info-cultural/eje_tematico.html">Eje
+    temático</a>.</li>
+    <li><a href="http://www.martadero.org/arte-cultura/fondart.html">Fondart</a>.</li>
 </ul>
 
 <h3>Inventando</h3>
@@ -80,5 +88,6 @@ forma.</p>
 <p>Para + info sobre esta modalidad:</p>
 
 <ul>
-    <li><a href="http://www.martadero.org/info-cultural/eje_tematico.html">Eje temático</a>.</li>
+    <li><a href="http://www.martadero.org/info-cultural/eje_tematico.html">Eje
+    temático</a>.</li>
 </ul>

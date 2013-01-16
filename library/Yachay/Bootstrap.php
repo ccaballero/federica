@@ -164,8 +164,9 @@ class Yachay_Bootstrap extends Zend_Application_Bootstrap_Bootstrap
 
         $options = $this->getOptions();
 
+        $baseUrl = $options['resources']['frontController']['baseUrl'];
         $template = $options['resources']['layout']['layout'];
-        $view->media_url = '/templates/' . $template;
+        $view->media_url = $baseUrl . '/templates/' . $template;
 
         $view->doctype($options['resources']['view']['doctype']);
         $view->headTitle($options['site']['title']);
@@ -183,13 +184,13 @@ class Yachay_Bootstrap extends Zend_Application_Bootstrap_Bootstrap
 
         $css_styles = $options['template']['css'];
         foreach ($css_styles as $css_style) {
-             $view->headLink()->appendStylesheet($view->baseUrl($view->media_url . $css_style));
+             $view->headLink()->appendStylesheet($view->media_url . $css_style);
         }
 
-        $view->headScript()->appendScript('var static_url=\'' . $view->baseUrl($view->media_url) . '\'');
+        $view->headScript()->appendScript('var static_url=\'' . $view->media_url . '\'');
         $js_scripts = $options['template']['js'];
         foreach ($js_scripts as $js_script) {
-            $view->headScript()->appendFile($view->baseUrl($view->media_url . $js_script, 'text/javascript'));
+            $view->headScript()->appendFile($view->media_url . $js_script, 'text/javascript');
         }
 
         return $view;

@@ -4,20 +4,20 @@
     #main .vivo {
         margin: 0px auto;
         width: 500px;
-        background: #7abafa url('<?php echo $this->static_url . '/programa_vivoyverde.jpg' ?>') no-repeat bottom;
+        background: #7abafa url('<?php echo $this->baseUrl('/media/static/programa_vivoyverde.jpg') ?>') no-repeat bottom;
         padding-bottom: 200px;
     }
-    
+
     #main .vivo h2 {
         padding: 20px 12px 0px 12px;
         color: #ffffff;
         font-size: 17px;
     }
-    
+
     #main .vivo p {
         padding: 0px 12px;
     }
-    
+
     #main .vivo a {
         color: #ffffff;
     }

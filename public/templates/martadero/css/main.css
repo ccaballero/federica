@@ -44,11 +44,22 @@
     color: #000000;
 }
 
-#main .index a {
-    margin: 20px;
-    font-size: 8pt;
-    font-weight: lighter;
-    display: block;
+#main ul.index {
+    padding: 0px;
+    margin-bottom: 25px;
+}
+
+#main ul.index {
+    list-style-type: none;
+}
+
+#main ul.index li {
+    display: inline-table;
+    padding: 0px 10px 5px 10px;
+}
+
+#main ul.index li a {
+    font-weight: bold;
 }
 
 #main .box_image {
