@@ -22,6 +22,9 @@ class Yachay_Bootstrap extends Zend_Application_Bootstrap_Bootstrap
         $ctrl = Zend_Controller_Front::getInstance();
         $router = $ctrl->getRouter();
 
+        // remove default routes
+        $router->removeDefaultRoutes();
+
         // Routes select by enabled package
         $db_routes = new Db_Routes();
         $routes = $db_routes->selectByEnabledPackages();
@@ -159,17 +162,44 @@ class Yachay_Bootstrap extends Zend_Application_Bootstrap_Bootstrap
 
         Zend_Controller_Action_HelperBroker::addHelper($renderer);
 
+        $options = $this->getOptions();
+
+        $template = $options['resources']['layout']['layout'];
+        $view->media_url = '/templates/' . $template;
+
+        $view->doctype($options['resources']['view']['doctype']);
+        $view->headTitle($options['site']['title']);
+
+        $equivs = $options['template']['http-equiv'];
+        foreach ($equivs as $key => $content) {
+            $view->headMeta()->appendHttpEquiv($key, $content);
+        }
+        $metas = $options['template']['meta'];
+        foreach ($metas as $key => $content) {
+            $view->headMeta()->appendName($key, $content);
+        }
+
+        $view->headLink(array('rel' => 'icon', 'type' => 'image/x-icon', 'href' => $view->baseUrl($view->media_url . '/favicon.ico')));
+
+        $css_styles = $options['template']['css'];
+        foreach ($css_styles as $css_style) {
+             $view->headLink()->appendStylesheet($view->baseUrl($view->media_url . $css_style));
+        }
+
+        $view->headScript()->appendScript('var static_url=\'' . $view->baseUrl($view->media_url) . '\'');
+        $js_scripts = $options['template']['js'];
+        foreach ($js_scripts as $js_script) {
+            $view->headScript()->appendFile($view->baseUrl($view->media_url . $js_script, 'text/javascript'));
+        }
+
         return $view;
     }
 
     protected function _initLayout() {
         $this->bootstrap('config');
-//        $this->bootstrap(array('config', 'template'));
-//
+
         $config = Zend_Registry::get('config');
         $template = $config->resources->layout->layout;
-
-//        $template = Zend_Registry::get('template');
 
         Zend_Layout::startMVC(array(
             'layoutPath' => $config->resources->layout->layoutPath,
@@ -177,11 +207,6 @@ class Yachay_Bootstrap extends Zend_Application_Bootstrap_Bootstrap
             'viewSuffix' => 'php',
         ));
 
-        $layout = Zend_Layout::getMvcInstance();
-        $view = $layout->getView();
-
-        $view->media_url = '/templates/' . $template;
-
-        return $layout;
+        return Zend_Layout::getMvcInstance();
     }
 }

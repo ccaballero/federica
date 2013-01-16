@@ -31,15 +31,18 @@ CREATE TABLE `package_dependency` (
 /*============================================================================*/
 DROP TABLE IF EXISTS `route`;
 CREATE TABLE `route` (
-    `ident`       int unsigned NOT NULL auto_increment,
-    `label`       varchar(64)  NOT NULL,
-    `description` text         NOT NULL DEFAULT '',
-    `route`       varchar(64)  NOT NULL,
-    `mapping`     varchar(256) NOT NULL,
-    `module`      varchar(64)  NOT NULL,
-    `controller`  varchar(64)  NOT NULL,
-    `action`      varchar(64)  NOT NULL,
-    `parent`      varchar(64)  NULL,
+    `ident`        int unsigned NOT NULL auto_increment,
+    `label`        varchar(64)  NOT NULL,
+    `description`  text         NOT NULL DEFAULT '',
+    `route`        varchar(64)  NOT NULL,
+    `mapping`      varchar(256) NOT NULL,
+    `module`       varchar(64)  NOT NULL,
+    `controller`   varchar(64)  NOT NULL,
+    `action`       varchar(64)  NOT NULL,
+    `defaults`     varchar(128) NOT NULL DEFAULT '',
+    `requirements` varchar(128) NOT NULL DEFAULT '',
+    `priority`     int unsigned NOT NULL DEFAULT 5,
+    `parent`       varchar(64)  NULL,
     PRIMARY KEY (`ident`),
     UNIQUE INDEX (`route`),
     UNIQUE INDEX (`mapping`),
@@ -61,8 +64,9 @@ VALUES
 /* routing register                                                           */
 /*============================================================================*/
 INSERT INTO `route`
-(`label`, `parent`, `route`, `mapping`, `module`, `controller`, `action`)
+(`label`, `priority`, `parent`, `route`, `mapping`, `module`, `controller`, `action`)
 VALUES
-('Inicio',       null,   'base',         '',        'base', 'index',   'index'),
-('Error',        'base', 'base_error',   'error',   'base', 'error',   'error'),
-('Confirmación', 'base', 'base_confirm', 'confirm', 'base', 'confirm', 'confirm');
+('Inicio',        1, null,   'base',         '',             'base', 'index',   'index'),
+('Error',         5, 'base', 'base_error',   'error',        'base', 'error',   'error'),
+('Confirmación',  5, 'base', 'base_confirm', 'confirm',      'base', 'confirm', 'confirm'),
+('',             10, 'base', 'base_static',  'static/:page', 'base', 'static',  'static');

@@ -25,6 +25,7 @@ class Db_Routes extends Yachay_Db_Table
                 ->from($this, array('ident', 'label', 'route', 'mapping', 'module', 'controller', 'action', 'parent'))
                 ->joinLeft('package', 'package.url = route.module', array())
                 ->where('package.status = ?', 'active')
+                ->order('route.priority DESC')
                 ->order('route.ident DESC'));
         return $this->_constructList($result);
     }
