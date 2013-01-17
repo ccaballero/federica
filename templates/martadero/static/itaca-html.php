@@ -1,6 +1,6 @@
 <h1>Café Cultural Ítaca</h1>
 
-<p><img src="<?php echo $this->baseUrl('/media/static/itaca/itaca.jpg') ?>" class="box_image" />
+<p><img src="<?php echo $this->staticUrl('/itaca.jpg') ?>" class="box_image" />
 Como todo espacio cultural importante, el mARTadero cuenta con un servicio de
 Café dedicado tanto al público asistente como a artistas y creadores que
 trabajan en el sitio ensayando y produciendo antes de sus presentaciones.</p>
@@ -14,13 +14,13 @@ construyendo ese ideal de sociedad desde el encuentro a través de diversas
 expresiones culturales, por ello abrimos este espacio para todas y todos
 aquellos que quieran seguir el camino con nosotros y que quieran compartir
 momentos agradables de diversión y reflexión.</p>
-<p><img src="<?php echo $this->baseUrl('/media/static/itaca/wifi.jpg') ?>" class="box_image" />
+<p><img src="<?php echo $this->staticUrl('/wifi.jpg') ?>" class="box_image" />
 Entre los servicios que ofrece el Ítaca existe en <strong>libre acceso</strong>
 una conexión Wi-Fi de alta velocidad.</p>
 
 <p style="margin-top: 40px; text-align: center;">
-<img src="<?php echo $this->baseUrl('/media/static/itaca/picture13.jpg') ?>" />
-<img src="<?php echo $this->baseUrl('/media/static/itaca/picture15.jpg') ?>" />
-<img src="<?php echo $this->baseUrl('/media/static/itaca/picture14.jpg') ?>" />
-<img src="<?php echo $this->baseUrl('/media/static/itaca/picture16.jpg') ?>" />
+<img src="<?php echo $this->staticUrl('/picture13.jpg') ?>" />
+<img src="<?php echo $this->staticUrl('/picture15.jpg') ?>" />
+<img src="<?php echo $this->staticUrl('/picture14.jpg') ?>" />
+<img src="<?php echo $this->staticUrl('/picture16.jpg') ?>" />
 </p>

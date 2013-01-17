@@ -11,9 +11,10 @@
 </ul>
 
 <p><strong>Read</strong> all this information <strong>in English</strong>
-<a href="<?php echo $this->url(array('page' => 'prana-en.html'), 'base_static') ?>">clicking here</a>.</p>
+<a href="<?php echo $this->url(array('page' => 'prana-en.html'), 'base_static') ?>">clicking
+here</a>.</p>
 
-<p><img src="<?php echo $this->baseUrl('/media/static/prAna.jpg') ?>" class="box_image" />
+<p><img src="<?php echo $this->staticUrl('/prAna.jpg') ?>" class="box_image" />
 PrAna es un <strong>sistema de residencias</strong> que es parte del mARTadero,
 un proyecto integral de desarrollo artístico cultural ubicado en, Villa
 Coronilla, zona fundacional de la ciudad de Cochabamba. El mARTadero cuenta con
@@ -28,15 +29,12 @@ creativas</strong> fundamentales en una <strong>búsqueda
 artística-vital</strong>.</p>
 
 <p>
-<a href="<?php echo $this->baseUrl('/media/static/prana/karla-kracht-big.jpg') ?>" class="highslide" onclick="return hs.expand(this);">
-    <img src="<?php echo $this->baseUrl('/media/static/prana/karla-kracht.jpg') ?>" alt="residencia prAna" />
-</a>
-<a href="<?php echo $this->baseUrl('/media/static/prana/sabina-simon-big.jpg') ?>" class="highslide" onclick="return hs.expand(this);">
-    <img src="<?php echo $this->baseUrl('/media/static/prana/sabina-simon.jpg') ?>" alt="residencia prAna" />
-</a>
-<a href="<?php echo $this->baseUrl('/media/static/prana/josefa-micaela-big.jpg') ?>" class="highslide" onclick="return hs.expand(this);">
-    <img src="<?php echo $this->baseUrl('/media/static/prana/josefa-micaela.jpg') ?>" alt="residencia prAna" />
-</a>
+<a href="<?php echo $this->staticUrl('/karla-kracht.jpg') ?>" class="highslide" onclick="return hs.expand(this);">
+<img src="<?php echo $this->staticUrl('/karla-kracht-small.jpg') ?>" alt="residencia prAna" /></a>
+<a href="<?php echo $this->staticUrl('/sabina-simon.jpg') ?>" class="highslide" onclick="return hs.expand(this);">
+<img src="<?php echo $this->staticUrl('/sabina-simon-small.jpg') ?>" alt="residencia prAna" /></a>
+<a href="<?php echo $this->staticUrl('/josefa-micaela.jpg') ?>" class="highslide" onclick="return hs.expand(this);">
+<img src="<?php echo $this->staticUrl('/josefa-micaela-small.jpg') ?>" alt="residencia prAna" /></a>
 </p>
 
 <p>Hoy por hoy, el proyecto mARTadero, es <strong>el proyecto cultural más
@@ -57,8 +55,8 @@ parte de la realidad física que es el soporte del cuerpo y la madre de la mente
 y el pensamiento.</p>
 
 <h2><a name="modalidades"></a>MODALIDADES</h2>
-<p><a href="<?php echo $this->baseUrl('/media/static/prana/zoomwooz-big.jpg') ?>" class="highslide" onclick="return hs.expand(this);" style="float: right; padding: 0px 10px;">
-<img src="<?php echo $this->baseUrl('/media/static/prana/zoomwooz.jpg') ?>" /></a>
+<p><a href="<?php echo $this->staticUrl('/zoomwooz.jpg') ?>" class="highslide box_image" onclick="return hs.expand(this);">
+<img src="<?php echo $this->staticUrl('/zoomwooz-small.jpg') ?>" /></a>
 El <strong>Programa de Residencias Artísticas</strong> prAna tiene <strong>4
 modalidades de funcionamiento</strong>: las Residencias Artísticas prAna, prAna
 Pascana, prAna Catapulta y prAna Redes.</p>
@@ -72,13 +70,13 @@ todo proyectos conscientes de la experiencia de vivir y trabajar en Villa
 Coronilla y el mARTadero, es decir que se incorporen al contexto y que se dejen
 interpelar por él.</p>
 
-<p><a href="<?php echo $this->baseUrl('/media/static/prana/Mayra-Montoya-big.jpg') ?>" class="highslide box_image" onclick="return hs.expand(this);">
-<img src="<?php echo $this->baseUrl('/media/static/prana/Mayra-Montoya.jpg') ?>" /></a>
+<p><a href="<?php echo $this->staticUrl('/mayra-montoya.jpg') ?>" class="highslide box_image" onclick="return hs.expand(this);">
+<img src="<?php echo $this->staticUrl('/mayra-montoya-small.jpg') ?>" /></a>
 Las residencias podrán tener una duración a partir de 2 a 8 semanas, las mismas
 pueden ser extendidas, de acuerdo a las necesidades del proyecto presentado y
 en relación a los requerimientos de producción de la obra.</p>
 
-<p><img src="<?php echo $this->media_url ?>/images/flecha_blog.jpg" alt="" title="" />
+<p><img src="<?php echo $this->templateUrl('/images/flecha_blog.jpg') ?>" alt="" title="" />
 Existen <strong>3 maneras de participar</strong> en el programa de
 residencias:</p>
 
@@ -95,7 +93,7 @@ residencias pincha aquí</a></p>
 con anticipación el siguiente formulario en cualquier momento del año a:</p>
 
 <blockquote>
-    <a href="https://docs.google.com/a/martadero.org/spreadsheet/viewform?formkey=dFZ5Q2dCRUVsaVlxNmNGTEZFbFZJQ2c6MQ#gid=0" target="_blank">Formulario de REGISTRO DE RESIDENTES prAna AUTOGESTIONADA</a>
+<a href="https://docs.google.com/a/martadero.org/spreadsheet/viewform?formkey=dFZ5Q2dCRUVsaVlxNmNGTEZFbFZJQ2c6MQ#gid=0" target="_blank">Formulario de REGISTRO DE RESIDENTES prAna AUTOGESTIONADA</a>
 </blockquote>
 
 <p>La <strong>selección tendrá en cuenta</strong>:</p>
@@ -119,7 +117,7 @@ realiza con convocatorias muy definidas que son publicadas en el transcurso de
 todo el año, en la sección convocatorias de la página web de mARTadero.</p>
 
 <h3>Beneficios</h3>
-<p><img src="<?php echo $this->media_url ?>/images/flecha_blog.jpg" alt="" title="" />
+<p><img src="<?php echo $this->templateUrl('/images/flecha_blog.jpg') ?>" alt="" title="" />
 <strong>VISIBILIDAD en la web del mARTadero</strong> y <strong>gestión de la
 comunicación</strong> de acuerdo a la estrategia diseñada por
 <a href="http://comunica.martadero.org/" target="_blank">COMUN&amp;CA</a>:</p>
@@ -139,37 +137,43 @@ PROGRAMA PRANA:</h4>
 <strong>cotizaciones[a]martadero.org</strong>:</p>
 
 <ul>
-    <li>Se hará una Newsletter con el anuncio de su llegada y presentación del proyecto a realizarse.</li>
+    <li>Se hará una Newsletter con el anuncio de su llegada y presentación del
+    proyecto a realizarse.</li>
     <li>Se hará una Entrevista mARTadero.</li>
-    <li>Publicación en el <a href="http://feeds.feedburner.com/martadero" target="_blank">canal de Podcast</a>.</li>
-    <li>Publicación como entrevista en la sección Noticias y libre descarga.</li>
-    <li>Realización de un conversatorio (con posibilidad de grabarlo y streaming).</li>
-    <li><a href="https://picasaweb.google.com/martadero.bolivia" target="_blank">Registro fotográfico</a> de su estadía aquí.</li>
+    <li>Publicación en el
+    <a href="http://feeds.feedburner.com/martadero" target="_blank">canal de
+    Podcast</a>.</li>
+    <li>Publicación como entrevista en la sección Noticias y libre
+    descarga.</li>
+    <li>Realización de un conversatorio (con posibilidad de grabarlo y
+    streaming).</li>
+    <li><a href="https://picasaweb.google.com/martadero.bolivia" target="_blank">Registro
+    fotográfico</a> de su estadía aquí.</li>
     <li>Envío de invitaciones impresas.</li>
     <li>Presentación de los resultados de la residencia.</li>
     <li>Newsletter de invitación.</li>
     <li>Difusión dedicada durante toda la estadía en redes sociales.</li>
 </ul>
 
-<p><img src="<?php echo $this->media_url ?>/images/flecha_blog.jpg" alt="" title="" />
+<p><img src="<?php echo $this->templateUrl('/images/flecha_blog.jpg') ?>" alt="" title="" />
 Un <strong>evento organizado</strong> por prAna al final de una residencia de
 más de un mes.</p>
-<p><img src="<?php echo $this->media_url ?>/images/flecha_blog.jpg" alt="" title="" />
+<p><img src="<?php echo $this->templateUrl('/images/flecha_blog.jpg') ?>" alt="" title="" />
 Una vez aprobado tu proyecto <strong>el mARTadero proporcionará una carta de
 invitación</strong> al futuro residente para sus gestiones personales o para
 trámites de VISA.</p>
-<p><img src="<?php echo $this->media_url ?>/images/flecha_blog.jpg" alt="" title="" />
+<p><img src="<?php echo $this->templateUrl('/images/flecha_blog.jpg') ?>" alt="" title="" />
 <strong>Prioridad en el uso de los espacios</strong> de mARTadero.
-<a href="http://www.martadero.org/espacio-cultural/espacio.html">Conoce los
-espacios</a>.</p>
+<a href="<?php // TODO ?>http://www.martadero.org/espacio-cultural/espacio.html">Conoce
+los espacios</a>.</p>
 
 <p><strong>Nota:</strong> Los gastos de materiales y equipos necesarios para la
 producción de la obra correrán a cargo del residente o de las instituciones que
 lo apoyan.</p>
 
 <h2><a name="pascana"></a>prAna Pascana</h2>
-<p><a href="<?php echo $this->baseUrl('/media/static/prana/cama-big.jpg') ?>" class="highslide box_image" onclick="return hs.expand(this);">
-<img src="<?php echo $this->baseUrl('/media/static/prana/cama.jpg') ?>" /></a>
+<p><a href="<?php echo $this->staticUrl('/cama.jpg') ?>" class="highslide box_image" onclick="return hs.expand(this);">
+<img src="<?php echo $this->staticUrl('/cama-small.jpg') ?>" /></a>
 Esta modalidad está pensada para <strong>acoger a artistas, talleristas, grupos
 de teatro o música, participantes de eventos</strong> quienes vienen a trabajar
 en cualquiera de las áreas del mARTadero, o a <strong>participar en sus diversas
@@ -183,29 +187,29 @@ en<strong> PRANA-Norte</strong>, y <strong>4 plazas</strong> en
 asegurar las condiciones mínimas de comodidad.</p>
 
 <p>Para coordinar su llegada y solicitud de prAna Pascana deben ponerse en
-<a href="<?php echo $this->url(array('page' => 'contactos.html'), 'base_static') . '#responsables-areas' ?>"  target="_blank">contacto con el coordinador del área del mARTadero</a>
-con la que estarían viniendo.</p>
+<a href="<?php echo $this->url(array('page' => 'contactos.html'), 'base_static') . '#responsables-areas' ?>"  target="_blank">contacto
+con el coordinador del área del mARTadero</a> con la que estarían viniendo.</p>
 
 <p>
-<a href="<?php echo $this->baseUrl('/media/static/prana/residencia-big.jpg') ?>" class="highslide" onclick="return hs.expand(this);">
-<img src="<?php echo $this->baseUrl('/media/static/prana/residencia.jpg') ?>" /></a>
-<a href="<?php echo $this->baseUrl('/media/static/prana/residencia-norte-camas-big.jpg') ?>" class="highslide" onclick="return hs.expand(this);">
-<img src="<?php echo $this->baseUrl('/media/static/prana/residencia-norte-camas.jpg') ?>" /></a>
-<a href="<?php echo $this->baseUrl('/media/static/prana/residencia-norte-big.jpg') ?>" class="highslide" onclick="return hs.expand(this);">
-<img src="<?php echo $this->baseUrl('/media/static/prana/residencia-norte.jpg') ?>" /></a>
+<a href="<?php echo $this->staticUrl('/residencia.jpg') ?>" class="highslide" onclick="return hs.expand(this);">
+<img src="<?php echo $this->staticUrl('/residencia-small.jpg') ?>" /></a>
+<a href="<?php echo $this->staticUrl('/residencia-norte-camas.jpg') ?>" class="highslide" onclick="return hs.expand(this);">
+<img src="<?php echo $this->staticUrl('/residencia-norte-camas-small.jpg') ?>" /></a>
+<a href="<?php echo $this->staticUrl('/residencia-norte.jpg') ?>" class="highslide" onclick="return hs.expand(this);">
+<img src="<?php echo $this->staticUrl('/residencia-norte-small.jpg') ?>" /></a>
 </p>
 
 <p>Los <strong>artistas y gestores que vengan con el Programa de Residencias
 tendrán prioridad</strong> en el momento de designar espacios sobre cualquier
 visitante.</p>
 
-<h3><p><img src="<?php echo $this->media_url ?>/images/flecha_blog.jpg" alt="" title="" />
+<h3><p><img src="<?php echo $this->templateUrl('/images/flecha_blog.jpg') ?>" alt="" title="" />
 Registro prAna Pascana</h3>
 <p>Es un <strong>requisito indispensable el llenado de este formulario</strong>
 antes de su llegada, para la aceptación de su estadía en la residencias.</p>
 
 <blockquote>
-    <a href="https://docs.google.com/a/martadero.org/spreadsheet/viewform?formkey=dE1ZQWZfTVNKY2R3QmpyX20ybS1faXc6MA#gid=0" target="_blank">Formulario de REGISTRO DE RESIDENTES prAna PASCANA</a>
+<a href="https://docs.google.com/a/martadero.org/spreadsheet/viewform?formkey=dE1ZQWZfTVNKY2R3QmpyX20ybS1faXc6MA#gid=0" target="_blank">Formulario de REGISTRO DE RESIDENTES prAna PASCANA</a>
 </blockquote>
 
 <p>Solamente cuando una residencia esté confirmada con el registro de los
@@ -224,7 +228,8 @@ por convocatoria pública en la página web del mARTadero y medios de
 comunicación.</p>
 
 <h3>2013</h3>
-<p><a href="http://www.martadero.org/redes/bicebugatti.html" target="_blank">Premio Bice Bugatti</a><br />
+<p><a href="<?php echo $this->url(array('page' => 'bice-bugatti.html'), 'base_static') ?>" target="_blank">Premio
+Bice Bugatti</a><br />
 Residencia de un mes para un artista de la cuidad de El Alto.</p>
 
 <h3>2012</h3>
@@ -235,7 +240,7 @@ Arterias Urbanas - Oscar Soza.</p>
 
 <h3>2011</h3>
 <p>AECI -
-<a href="http://www.martadero.org/redes/residenciasenred.html" target="_blank">Residencias
+<a href="<?php echo $this->url(array('page' => 'residencias-en-red.html'), 'base_static') ?>" target="_blank">Residencias
 en Red</a>: Intercambio de artistas Colombia - Bolivia<br />
 <a href="http://www.sandradeberduccy.com" target="_blank">Sandra De Berduccy</a> Medellín - Colombia<br />
 Mayra Montoya Cochabamba - Bolivia</p>
@@ -252,16 +257,16 @@ podemos <strong>en su consolidación</strong> y proyección a futuro.</p>
 <p>Algunas de estas redes de artistas, intercambio o residencias de las que
 formamos parte son:</p>
 
-<p><a href="http://www.martadero.org/redes/redeseartepaz.html" target="_blank">Resedearte Paz</a> //
-<a href="http://www.martadero.org/redes/residenciasenred.html" target="_blank">Residencias en Red</a></p>
+<p><a href="<?php echo $this->url(array('page' => 'redesearte-paz.html'), 'base_static') ?>" target="_blank">Resedearte Paz</a> //
+<a href="<?php echo $this->url(array('page' => 'residencias-en-red.html'), 'base_static') ?>" target="_blank">Residencias en Red</a></p>
 
 <p>Además de otras locales y regionales:</p>
 
-<p><a href="http://www.martadero.org/redes/rcm.html" target="_blank">Red Cultural Mercosur</a> //
+<p><a href="<?php echo $this->url(array('page' => 'rcm.html'), 'base_static') ?>" target="_blank">Red Cultural Mercosur</a> //
 <a href="http://www.artetransformador.net/sitio/" target="_blank">Red Arte y Transformación</a> //
 <a href="http://www.red4ces.org" target="_blank">4ces - Circuito de Centros Culturales de Cochabamba</a> //
-<a href="http://www.martadero.org/redes/ejecentr4l.html" target="_blank">Eje Cenrt4l</a> //
-<a href="http://www.martadero.org/redes/centrosdelsur.html" target="_blank">Territorio Cultural Centros del Sur</a>.</p>
+<a href="<?php echo $this->url(array('page' => '4c.html'), 'base_static') ?>" target="_blank">Eje Cenrt4l</a> //
+<a href="<?php echo $this->url(array('page' => 'centros-del-sur.html'), 'base_static') ?>" target="_blank">Territorio Cultural Centros del Sur</a>.</p>
 
 <h2><a name="espacio"></a>CARACTERÍSTICAS del ESPACIO</h2>
 <ul>
@@ -271,8 +276,9 @@ formamos parte son:</p>
     Un uso mayor de ello habrá de ser autorizado por Dirección del mARTadero
     para asegurar las condiciones mínimas de comodidad.</li>
     <li><strong>WIFI de banda ancha</strong> en todo el espacio las 24h.<br />
-    <a href="<?php echo $this->baseUrl('/media/static/prana/conectados-big.jpg') ?>" class="highslide" onclick="return hs.expand(this);">
-    <img src="<?php echo $this->baseUrl('/media/static/prana/conectados.jpg') ?>" /></a><br /></li>
+    <a href="<?php echo $this->staticUrl('/conectados.jpg') ?>" class="highslide" onclick="return hs.expand(this);">
+    <img src="<?php echo $this->staticUrl('/conectados-small.jpg') ?>" /></a>
+    <br /></li>
     <li>Los <strong>artistas y gestores que vengan con programas de
     residencias</strong> tendrán <strong>prioridad</strong> sobre cualquier otro
     hospedado.</li>
@@ -284,13 +290,13 @@ formamos parte son:</p>
     <strong>Equipamiento</strong>: Múltiple (espacios de  proyección, de artes
     escénicas, de salas de exposición, espacios para residencias, computadoras,
     etc.).<br />
-    <a href="<?php echo $this->baseUrl('/media/static/prana/cocina-residencias-big.jpg') ?>" class="highslide" onclick="return hs.expand(this);">
-    <img src="<?php echo $this->baseUrl('/media/static/prana/cocina-residencias.jpg') ?>" /></a></li>
+    <a href="<?php echo $this->staticUrl('/cocina-residencias.jpg') ?>" class="highslide" onclick="return hs.expand(this);">
+    <img src="<?php echo $this->staticUrl('/cocina-residencias-small.jpg') ?>" /></a></li>
 </ul>
 
 <h2><a name="aporte"></a>APORTE POR USO DE ESPACIO</h2>
 <p>Puedes descargarte el
-<a href="/media/pdf/Aporte_Uso_prAna.pdf" target="_blank">aporte por uso de
+<a href="<?php echo $this->baseUrl('/media/pdf/Aporte_Uso_prAna.pdf') ?>" target="_blank">aporte por uso de
 residencias en PDF</a></p>
 
 <p>Consulta la

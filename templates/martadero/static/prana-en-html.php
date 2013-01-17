@@ -1,3 +1,5 @@
+<?php Zend_Registry::set('static_tpl', 'prana-html') ?>
+
 <h1>prAna - Programa de Residencias Artísticas del Nodo Asociativo</h1>
 
 <ul class="index">
@@ -13,7 +15,7 @@
 <p><strong>Leer</strong> toda la información <strong>en Español</strong>
 <a href="<?php echo $this->url(array('page' => 'prana.html'), 'base_static') ?>">pinchando aqui</a>.</p>
 
-<p><img src="<?php echo $this->baseUrl('/media/static/prAna.jpg') ?>" class="box_image" />
+<p><img src="<?php echo $this->staticUrl('/prAna.jpg') ?>" class="box_image" />
 Today, the <strong>mARTadero is the most innovative and fastest growing cultural
 project in Bolivia</strong>.</p>
 <p>To further develop the project's principles and to connect Bolivia with the
@@ -29,15 +31,12 @@ physical reality that supports the body and is the mother of mind and
 thought.</p>
 
 <p>
-<a href="<?php echo $this->baseUrl('/media/static/prana/karla-kracht-big.jpg') ?>" class="highslide" onclick="return hs.expand(this);">
-    <img src="<?php echo $this->baseUrl('/media/static/prana/karla-kracht.jpg') ?>" alt="residencia prAna" />
-</a>
-<a href="<?php echo $this->baseUrl('/media/static/prana/sabina-simon-big.jpg') ?>" class="highslide" onclick="return hs.expand(this);">
-    <img src="<?php echo $this->baseUrl('/media/static/prana/sabina-simon.jpg') ?>" alt="residencia prAna" />
-</a>
-<a href="<?php echo $this->baseUrl('/media/static/prana/josefa-micaela-big.jpg') ?>" class="highslide" onclick="return hs.expand(this);">
-    <img src="<?php echo $this->baseUrl('/media/static/prana/josefa-micaela.jpg') ?>" alt="residencia prAna" />
-</a>
+<a href="<?php echo $this->staticUrl('/karla-kracht.jpg') ?>" class="highslide" onclick="return hs.expand(this);">
+<img src="<?php echo $this->staticUrl('/karla-kracht-small.jpg') ?>" alt="residencia prAna" /></a>
+<a href="<?php echo $this->staticUrl('/sabina-simon.jpg') ?>" class="highslide" onclick="return hs.expand(this);">
+<img src="<?php echo $this->staticUrl('/sabina-simon-small.jpg') ?>" alt="residencia prAna" /></a>
+<a href="<?php echo $this->staticUrl('/josefa-micaela.jpg') ?>" class="highslide" onclick="return hs.expand(this);">
+<img src="<?php echo $this->staticUrl('/josefa-micaela-small.jpg') ?>" alt="residencia prAna" /></a>
 </p>
 
 <h2>CONDITIONS</h2>
@@ -64,12 +63,12 @@ program PRANA</strong>. Priority will be given to artists from networks and
 movements in which the mARTadero project is immersed, to strengthen them.</p>
 
 <p>
-<a href="<?php echo $this->baseUrl('/media/static/prana/residencia-big.jpg') ?>" class="highslide" onclick="return hs.expand(this);">
-<img src="<?php echo $this->baseUrl('/media/static/prana/residencia.jpg') ?>" /></a>
-<a href="<?php echo $this->baseUrl('/media/static/prana/residencia-norte-camas-big.jpg') ?>" class="highslide" onclick="return hs.expand(this);">
-<img src="<?php echo $this->baseUrl('/media/static/prana/residencia-norte-camas.jpg') ?>" /></a>
-<a href="<?php echo $this->baseUrl('/media/static/prana/residencia-norte-big.jpg') ?>" class="highslide" onclick="return hs.expand(this);">
-<img src="<?php echo $this->baseUrl('/media/static/prana/residencia-norte.jpg') ?>" /></a>
+<a href="<?php echo $this->staticUrl('/residencia.jpg') ?>" class="highslide" onclick="return hs.expand(this);">
+<img src="<?php echo $this->staticUrl('/residencia-small.jpg') ?>" /></a>
+<a href="<?php echo $this->staticUrl('/residencia-norte-camas.jpg') ?>" class="highslide" onclick="return hs.expand(this);">
+<img src="<?php echo $this->staticUrl('/residencia-norte-camas-small.jpg') ?>" /></a>
+<a href="<?php echo $this->staticUrl('/residencia-norte.jpg') ?>" class="highslide" onclick="return hs.expand(this);">
+<img src="<?php echo $this->staticUrl('/residencia-norte-small.jpg') ?>" /></a>
 </p>
 
 <p>The artistic training of candidates will be essential, and their experience
@@ -135,8 +134,8 @@ integration, social change.</p>
 Transformation, Cultural Centers in the City of Cochabamba (4ces), Residencias
 en Red, Eje Cenrt4l; Cultural Territory: South Centre.</p>
 
-<p><a href="<?php echo $this->baseUrl('/media/static/prana/cocina-residencias-big.jpg') ?>" class="highslide" onclick="return hs.expand(this);">
-<img src="<?php echo $this->baseUrl('/media/static/prana/cocina-residencias.jpg') ?>" /></a></p>
+<p><a href="<?php echo $this->staticUrl('/cocina-residencias.jpg') ?>" class="highslide" onclick="return hs.expand(this);">
+<img src="<?php echo $this->staticUrl('/cocina-residencias-small.jpg') ?>" /></a></p>
 
 <h2><a name=""></a>MORE INFORMATION</h2>
 <p>mARTadero project - NADA (Prana) Artistic Residency Program</p>

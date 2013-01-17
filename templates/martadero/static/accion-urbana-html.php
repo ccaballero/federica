@@ -6,9 +6,9 @@ consiste en el desarrollo de proyectos y propuestas para la
 <strong>generación de un proceso de participación ciudadana que impulse la
 rehabilitación, resignificación y acondicionamiento de la Plaza de los Arrieros
 de Cochabamba (Bolivia), para convertirla en la</strong>
-<a href="http://www.martadero.org/propuestas-culturales/plazadelasartes.html">Plaza
+<a href="<?php // TODO ?>http://www.martadero.org/propuestas-culturales/plazadelasartes.html">Plaza
 de las Artes</a><strong> -y por extensión, en el</strong>
-<a href="http://www.martadero.org/propuestas-culturales/paseo-de-las-artes.html">Paseo
+<a href="<?php // TODO ?>http://www.martadero.org/propuestas-culturales/paseo-de-las-artes.html">Paseo
 de las Artes</a> en los ejes determinados-.</p>
 
 <p>Son <strong>espacios destinados a ser un punto de encuentro y de desarrollo
@@ -39,4 +39,4 @@ ideas entre los vecinos.</p>
 </ol>
 
 <h2>Horizontes:</h2>
-<p><img src="<?php echo $this->baseUrl('/media/static/sobre-accion-urbana.jpg') ?>" /></p>
+<p><img src="<?php echo $this->staticUrl('/sobre-accion-urbana.jpg') ?>" /></p>

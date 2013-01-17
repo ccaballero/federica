@@ -1,6 +1,6 @@
 <h1>Escuela de Break Dance "Breaking the Floor"</h1>
 
-<p><img src="<?php echo $this->baseUrl('/media/static/escuela-break-dance/logo-breaking-the-floor.jpg') ?>" /></p>
+<p><img src="<?php echo $this->staticUrl('/logo-breaking-the-floor.jpg') ?>" /></p>
 
 <p>El <strong>Break Dance (o también llamado B-Boying) es una danza urbana que
 forma parte integral de la cultura hip hop</strong> surgida en las comunidades
@@ -12,8 +12,8 @@ la envidia de muchos de los grupos a la hora de compartir sus conocimientos y
 experiencias</strong> al respecto. Esto conlleva a una práctica autodidacta, o
 en el peor de los casos, a la perdida de interés.</p>
 
-<p><a href="<?php echo $this->baseUrl('/media/static/escuela-break-dance/escuela-break-dance-1.jpg') ?>" class="highslide box_image" onclick="return hs.expand(this);">
-<img src="<?php echo $this->baseUrl('/media/static/escuela-break-dance/escuela-break-dance-1-small.jpg') ?>" /></a>
+<p><a href="<?php echo $this->staticUrl('/escuela-break-dance-1.jpg') ?>" class="highslide box_image" onclick="return hs.expand(this);">
+<img src="<?php echo $this->staticUrl('/escuela-break-dance-1-small.jpg') ?>" /></a>
 También es cierto que<strong> no muchos se sienten capaces de llevarlo a
 cabo</strong>, puesto que para ello son necesarias diversas cualidades que
 algunos ven imposibles de alcanzar. Este es el caso del equilibrio, la
@@ -29,8 +29,8 @@ saludable</strong>.</p>
 plazuelas de la ciudad. <strong>Muchas veces la falta de un lugar
 específico</strong> para desenvolverse, es el motivo para la búsqueda de nuevas
 opciones.</p>
-<p><a href="<?php echo $this->baseUrl('/media/static/escuela-break-dance/escuela-break-dance-2.jpg') ?>" class="highslide box_image" onclick="return hs.expand(this);">
-<img src="<?php echo $this->baseUrl('/media/static/escuela-break-dance/escuela-break-dance-2-small.jpg') ?>" /></a>
+<p><a href="<?php echo $this->staticUrl('/escuela-break-dance-2.jpg') ?>" class="highslide box_image" onclick="return hs.expand(this);">
+<img src="<?php echo $this->staticUrl('/escuela-break-dance-2-small.jpg') ?>" /></a>
 Como solución a este problema, es que <strong>inauguramos la primera Escuela
 de Baile Urbano en Cochabamba</strong>, teniendo como base el Break Dance con
 sus diferentes estilos y ramificaciones.</p>
@@ -58,8 +58,8 @@ adquirir los propios.</strong></p>
 <p>Los cursos tienen los módulos de: <strong>Foundations, Power Moves,
 Footworks, Toprocks y Freezes</strong>.</p>
 
-<p><a href="<?php echo $this->baseUrl('/media/static/escuela-break-dance/escuela-break-dance-3.jpg') ?>" class="highslide box_image" onclick="return hs.expand(this);">
-<img src="<?php echo $this->baseUrl('/media/static/escuela-break-dance/escuela-break-dance-3-small.jpg') ?>" /></a>
+<p><a href="<?php echo $this->staticUrl('/escuela-break-dance-3.jpg') ?>" class="highslide box_image" onclick="return hs.expand(this);">
+<img src="<?php echo $this->staticUrl('/escuela-break-dance-3-small.jpg') ?>" /></a>
 Entre los instructores tenemos a <strong>Irving Claro</strong> (B-boy Elastic) y
 <strong>Marcelo Mendez</strong> (B-boy Chelo) quienes participaron en eventos a
 nivel nacional quedando en los primeros puestos, además de eventos

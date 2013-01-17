@@ -4,7 +4,7 @@
     #main .vivo {
         margin: 0px auto;
         width: 500px;
-        background: #7abafa url('<?php echo $this->baseUrl('/media/static/programa_vivoyverde.jpg') ?>') no-repeat bottom;
+        background: #7abafa url('<?php echo $this->staticUrl('/programa_vivoyverde.jpg') ?>') no-repeat bottom;
         padding-bottom: 200px;
     }
 

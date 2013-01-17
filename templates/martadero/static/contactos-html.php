@@ -52,7 +52,7 @@ debería costarle 5 Bs. para 1 persona, aumentando 1 Bs. por persona extra.</p>
 <h2><a name="info"></a>Información sobre el proyecto mARTadero</h2>
 <p>Correo electrónico: <strong>info[a]martadero.org</strong></p>
 <p><strong>Descarga y comparte libremente</strong> el libro registro de 2009:
-<a href="http://www.martadero.org/arte-cultura/libro_martadero.html">Proyecto
+<a href="<?php // TODO ?>http://www.martadero.org/arte-cultura/libro_martadero.html">Proyecto
 mARTadero. Un Espacio Ejemplar de Gestión Cultural</a>.</p>
 
 <h2>Solicitudes y propuestas</h2>
@@ -62,8 +62,8 @@ detalladamente cuál es <strong>tu propuesta</strong> y el responsable del área
 te responderá en la mayor brevedad posible. Es tan simple como seguir los
 enlaces a continuación</p>
 
-<h2><a href="participa/participar.html#artistas">Participar como artista</a></h2>
-<h2><a href="php/enrutador.php">Solicitar un espacio</a></h2>
+<h2><a href="<?php // TODO ?>participa/participar.html#artistas">Participar como artista</a></h2>
+<h2><a href="<?php // TODO ?>php/enrutador.php">Solicitar un espacio</a></h2>
 
 <h2><a name="envio"></a>Para hacer un envío</h2>
 <p>Si vas a enviarnos un paquete debes tener en cuenta las siguientes
@@ -97,12 +97,12 @@ especificaciones:</p>
     <li><a href="#viveros">Viveros</a></li>
 </ul>
 
-<p><a href="<?php echo $this->baseUrl('/media/static/equipo-humano/equipo-2.0-big.jpg') ?>" class="highslide" onClick="return hs.expand(this);">
-<img src="<?php echo $this->baseUrl('/media/static/equipo-humano/equipo-2.0.jpg') ?>" />
+<p><a href="<?php echo $this->staticUrl('/equipo-2.0.jpg') ?>" class="highslide" onClick="return hs.expand(this);">
+<img src="<?php echo $this->staticUrl('/equipo-2.0-small.jpg') ?>" />
 </a></p>
 
 <h2><a name="presidente"></a>Presidente de NADA / Director proyecto mARTadero</h2>
-<p><img src="<?php echo $this->baseUrl('/media/static/equipo-humano/director_proyecto.jpg') ?>" width="100" height="100" class="box_image" />
+<p><img src="<?php echo $this->staticUrl('/director-proyecto.jpg') ?>" class="box_image" />
 <strong>Fernando Garcia</strong><br />
 direccion[a]martadero.org</p>
 <div class="clear"></div>
@@ -134,7 +134,7 @@ programacion[a]martadero.org</p>
 coordinadores para cada área artistica.</p>
 
 <h2>Artes visuales y fotografia</h2>
-<p><img src="<?php echo $this->baseUrl('/media/static/equipo-humano/artes_visuales.jpg') ?>" width="100" height="100" class="box_image" />
+<p><img src="<?php echo $this->staticUrl('/artes-visuales.jpg') ?>" class="box_image" />
 <strong>Dennis Salazar</strong><br />
 artesvisuales[a]martadero.org</p>
 <p>Los criterios de evaluación que determinan el uso de sus espacios son los
@@ -153,7 +153,7 @@ de conocimientos y experiencias; e Interculturalidad.</p>
 </ul>
 
 <h2>Letras</h2>
-<p><img src="<?php echo $this->baseUrl('/media/static/equipo-humano/letras.jpg') ?>" width="100" height="100" class="box_image" />
+<p><img src="<?php echo $this->staticUrl('/letras.jpg') ?>" class="box_image" />
 <strong>Juan Malebrán</strong><br />
 letras[a]martadero.org</p>
 <p>El área de letras de proyecto mARTadero tiene como principal objetivo
@@ -162,7 +162,7 @@ través de talleres, producción y participación en actividades ligadas a la
 escritura, tanto a nivel nacional como internacional.</p>
 
 <h2>Artes escénicas</h2>
-<p><img src="<?php echo $this->baseUrl('/media/static/equipo-humano/escenicas.jpg') ?>" width="100" height="100" class="box_image" />
+<p><img src="<?php echo $this->staticUrl('/escenicas.jpg') ?>" class="box_image" />
 <strong>Viola Vento</strong><br />
 artesescenicas[a]martadero.org</p>
 <p>El área de Artes Escénicas del Proyecto mARTadero tiene el objetivo de
@@ -177,7 +177,7 @@ llevan a cabo en correspondencia a los principios que rigen para la asociación
 NADA y su proyecto mARTadero.</p>
 
 <h2>Diseño gráfico y arquitectura</h2>
-<p><img src="<?php echo $this->baseUrl('/media/static/equipo-humano/arqui_diseno_graf.jpg') ?>" width="100" height="100" class="box_image" />
+<p><img src="<?php echo $this->staticUrl('/arqui-diseno-graf.jpg') ?>" class="box_image" />
 <strong>Eliana Ramírez</strong><br />
 arquitectura[a]martadero.org</p>
 <p>El área de arquitectura y diseño grafico busca contribuir al desarrollo
@@ -191,7 +191,7 @@ producción y difusión. Además el área agrupa a profesionales de la arquitect
 y del diseño grafico interesados en el trabajo artístico interdisciplinario.</p>
 
 <h2>Audiovisual</h2>
-<p><img src="<?php echo $this->baseUrl('/media/static/equipo-humano/audiovisual.jpg') ?>" width="100" height="100" class="box_image" />
+<p><img src="<?php echo $this->staticUrl('/audiovisual.jpg') ?>" class="box_image" />
 <strong>Bernard Marinovitch</strong><br />
 audiovisual[a]martadero.org</p>
 <p>Además de encargarse de la gestión de actividades audiovisuales en el sitio,
@@ -205,7 +205,7 @@ composición de lógicas de producción alternativas adecuadas para nuestro
 contexto ecónomo-cultural.</p>
 
 <h2>Música</h2>
-<p><img src="<?php echo $this->baseUrl('/media/static/equipo-humano/musica.jpg') ?>" width="100" height="100" class="box_image" />
+<p><img src="<?php echo $this->staticUrl('/musica.jpg') ?>" class="box_image" />
 <strong>Diego Arandia</strong><br />
 musica[a]martadero.org</p>
 <p>Promueve, difunde, facilita y asesora la producción de eventos musicales
@@ -217,7 +217,7 @@ musical en franca correspondencia con sus principios de libertad y democracia.
 </p>
 
 <h2>Interacción Social</h2>
-<p><img src="<?php echo $this->baseUrl('/media/static/equipo-humano/interaccion_social.jpg') ?>" width="100" height="100" class="box_image" />
+<p><img src="<?php echo $this->staticUrl('/interaccion-social.jpg') ?>" class="box_image" />
 <strong>Susana Obando</strong><br />
 interaccionsocial[a]martadero.org</p>
 <p>Desde este área se trabaja para impulsar procesos de desarrollo social a
@@ -231,7 +231,7 @@ de estrategias de futuro basadas en la creatividad.</p>
 coordinadores para cada programa de desarrollo.</p>
 
 <h3>Talleres de formARTe</h3>
-<p><img src="/media/static/programa_formarte.jpg" width="100" class="box_image" />
+<p><img src="<?php echo $this->staticUrl('/formarte.jpg') ?>" class="box_image" />
 <strong>Raisa Valda Ampuero</strong><br />
 formarte[a]martadero.org</p>
 <p>Formarte es un espacio de formación e intercambio de conocimientos muy
@@ -240,7 +240,7 @@ encuentro e inclusión donde la promoción del cambio social, personal y cultura
 pueda ser desde y a través del arte.</p>
 
 <h3><a name="taller"></a>Taller de libre expresión para niñ@s</h3>
-<p><img src="<?php echo $this->baseUrl('/media/static/equipo-humano/taller_ninos.jpg') ?>" width="100" height="100" class="box_image" />
+<p><img src="<?php echo $this->staticUrl('/taller-ninos.jpg') ?>" class="box_image" />
 <strong>Pamela Díaz</strong><br />
 tallerinfantil[a]martadero.org</p>
 <div class="clear"></div>
@@ -306,7 +306,7 @@ Servidor de: <a href="http://twitter.com/BeStMaker" target="_blank">BeStMaker</a
 <h1><a name="viveros"></a>Viveros del mARTadero</h1>
 
 <h2>Itaca - Cafe y Cultura</h2>
-<p><img src="<?php echo $this->baseUrl('/media/static/equipo-humano/itaca.jpg') ?>" width="100" height="100" class="box_image" />
+<p><img src="<?php echo $this->staticUrl('/itaca.jpg') ?>" class="box_image" />
 <strong>Beymar Trujillo</strong><br />
 itaca[a]martadero.org</p>
 <div class="clear"></div>

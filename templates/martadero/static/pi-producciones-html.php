@@ -10,7 +10,7 @@
 </ul>
 
 <p><a class="box_image" href="http://pi.martadero.org" target="_blank">
-<img src="<?php echo $this->baseUrl('/media/static/pi-producciones/pi-logo.jpg') ?>" /></a>
+<img src="<?php echo $this->staticUrl('/pi-logo.jpg') ?>" /></a>
 El <strong>Proyecto mARTadero</strong> es <strong>uno de los espacios culturales
 más prominentes de Bolivia</strong>. Esto se debe sobre todo a la labor
 voluntaria realizada por su personal.</p>
@@ -33,13 +33,13 @@ institucional</strong>.</p>
 info y además conoce <a href="www.martadero.org" target="_blank">la sala donde
 está Pi Producciones</a>.</p>
 
-<p><a href="<?php echo $this->baseUrl('/media/static/pi-producciones/pi-big.jpg') ?>" class="highslide" onclick="return hs.expand(this);">
-<img src="<?php echo $this->baseUrl('/media/static/pi-producciones/pi.jpg') ?>" /></a></p>
+<p><a href="<?php echo $this->staticUrl('/pi.jpg') ?>" class="highslide" onclick="return hs.expand(this);">
+<img src="<?php echo $this->staticUrl('/pi-small.jpg') ?>" /></a></p>
 
 <h2><a name="queremos"></a>QUÉ QUEREMOS </h2>
 
-<p><a href="<?php echo $this->baseUrl('/media/static/pi-producciones/pi-concierto-big.jpg') ?>" class="highslide box_image" onclick="return hs.expand(this);">
-<img src="<?php echo $this->baseUrl('/media/static/pi-producciones/pi-concierto.jpg') ?>" /></a>
+<p><a href="<?php echo $this->staticUrl('/pi-concierto.jpg') ?>" class="highslide box_image" onclick="return hs.expand(this);">
+<img src="<?php echo $this->staticUrl('/pi-concierto-small.jpg') ?>" /></a>
 <a href="http://pi.martadero.org" target="_blank">&pi; Producciones</a> tiene el
 objetivo de <strong>fomentar el desarrollo del arte y la cultura por medio de la
 Producción Musical y Audiovisual.</strong></p>
@@ -66,8 +66,8 @@ por su capacidad de propuesta en el ámbito artístico</strong>.</p>
 
 <h3>Audiovisual</h3>
 
-<p><a href="<?php echo $this->baseUrl('/media/static/pi-producciones/pi-at-work-big.jpg') ?>" class="highslide right" style="padding: 0px 0px 0px 15px;" onclick="return hs.expand(this);">
-<img src="<?php echo $this->baseUrl('/media/static/pi-producciones/pi-at-work.jpg') ?>" /></a></p>
+<p><a href="<?php echo $this->staticUrl('/pi-at-work.jpg') ?>" class="highslide right_image" onclick="return hs.expand(this);">
+<img src="<?php echo $this->staticUrl('/pi-at-work-small.jpg') ?>" /></a></p>
 
 <ul>
     <li>Se hacen documentales, videos institucionales, video-clips, registro de
@@ -79,8 +79,8 @@ por su capacidad de propuesta en el ámbito artístico</strong>.</p>
 
 <h3>Estudio de Grabación</h3>
 
-<p><a href="<?php echo $this->baseUrl('/media/static/pi-producciones/pi-estudio-big.jpg') ?>" class="highslide right" style="padding: 0px 0px 0px 15px;" onclick="return hs.expand(this);">
-<img src="<?php echo $this->baseUrl('/media/static/pi-producciones/pi-estudio.jpg') ?>" /></a></p>
+<p><a href="<?php echo $this->staticUrl('/pi-estudio.jpg') ?>" class="highslide right_image" onclick="return hs.expand(this);">
+<img src="<?php echo $this->staticUrl('/pi-estudio-small.jpg') ?>" /></a></p>
 
 <ul>
     <li>Se graban bandas, solistas, orquestas de cámara, grupos de cualquier
@@ -103,8 +103,8 @@ conceptual y formal, integración, intercambio e interculturalidad</strong>,
 siendo estos los criterios aplicados en nuestra propuesta de producción
 artística y nuestra labor a favor de la cultura.</p>
 
-<p><a href="<?php echo $this->baseUrl('/media/static/pi-producciones/pi-grabacion-big.jpg') ?>" class="highslide" onclick="return hs.expand(this);">
-<img src="<?php echo $this->baseUrl('/media/static/pi-producciones/pi-grabacion.jpg' ) ?>" /></a></p>
+<p><a href="<?php echo $this->staticUrl('/pi-grabacion.jpg') ?>" class="highslide" onclick="return hs.expand(this);">
+<img src="<?php echo $this->staticUrl('/pi-grabacion-small.jpg' ) ?>" /></a></p>
 
 <p><strong>Nuestra empresa se funda a partir de 3 pilares</strong>: la
 <strong>gestión cultural</strong>, la <strong>integralidad</strong> y
@@ -123,8 +123,8 @@ superficiales pero altamente redituables (enlatados).</p>
 de gestión</strong> de las áreas Música y Audiovisual, así como del mARTadero en
 su totalidad. A su vez <strong>se potencia con el Departamento de
 Comunicación</strong> y trabaja en conjunto con programas como
-<a href="{$path}programas/formarte.html" target="_blank">formARTe</a> y Vivero
-de las Artes, etc.</p>
+<a href="<?php // TODO ?>{$path}programas/formarte.html" target="_blank">formARTe</a>
+y Vivero de las Artes, etc.</p>
 <p>Nuestros <strong>ejes de trabajo</strong> son: <strong>el rescate del
 patrimonio</strong> proponiendo alternativas para el registro sonoro y
 audiovisual de las distintas manifestaciones que existen en las áreas rural y
@@ -151,7 +151,7 @@ inédita</strong>. Combina <strong>lo mejor de un estudio de grabación
 profesional con un envidiable soporte audiovisual</strong>. Sin embargo,
 <strong>nuestra principal oferta es la realización grabaciones de conciertos en
 vivo</strong>. El estudio de grabación está instalado al lado del
-<a href="{$path}archivos_php/detalle_sala.php?id_amb=13" target="_blank">Escenario al Aire Libre del mARTadero</a>,
+<a href="<?php // TODO ?>{$path}archivos_php/detalle_sala.php?id_amb=13" target="_blank">Escenario al Aire Libre del mARTadero</a>,
 el cual por cuenta propia ofrece grandes ventajas en cuanto a infraestructura y
 costos. Esto nos permite registrar el sonido de cualquier concierto, con
 completa independencia del sistema de refuerzo sonoro que se utilizare, es
