@@ -25,6 +25,11 @@
     text-align: justify;
 }
 
+#main p.quote {
+    font-style: italic;
+    text-align: right;
+}
+
 #main ul {
     list-style-position: outside;
     padding: 0px 40px 0px 40px;

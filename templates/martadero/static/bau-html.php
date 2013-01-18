@@ -1,7 +1,7 @@
 <h1>Bienal de Arte Urbano | BAU</h1>
 
-<p><a href="http://bau.martadero.org" target="_blank">
-<img src="http://bau.martadero.org/wp-content/uploads/2011/08/Marca_BAU.jpg" width="287" height="335" /></a>
+<p><a href="http://bau.martadero.org" target="_blank" class="box_image">
+<img src="<?php echo $this->staticUrl('/00.jpg') ?>" /></a>
 La Bienal de Arte Urbano de Cochabamba (<strong>BAU</strong>) ha sido concebida
 como <strong>fruto de una progresiva y colaborativa labor de resignificación de
 la ciudad y sus límites</strong> a través de distintas expresiones
@@ -20,8 +20,8 @@ incidido en la generalización de un imaginario social negativo que recae a
 diario sobre sus habitantes.</p>
 <p>Bajo este panorama, <strong>la BAU forma parte de una estrategia colaborativa
 de mejoramiento urbano</strong> junto a la
-<a href="http://www.martadero.org/propuestas-culturales/plazadelasartes.html">Plaza</a>
-y el <a href="http://www.martadero.org/propuestas-culturales/paseo-de-las-artes.html">Paseo
+<a href="<?php // TODO ?>http://www.martadero.org/propuestas-culturales/plazadelasartes.html">Plaza</a>
+y el <a href="<?php echo $this->url(array('page' => 'paseo-de-las-artes.html'), 'base_static') ?>">Paseo
 de las Artes</a>. Su aporte principal será la puesta en valor de espacios,
 objetos, muros y calles con una propuesta artística pensada siempre en pro del
 desarrollo social y bajo los siete principios del mARTadero (innovación,
@@ -34,7 +34,7 @@ social antes planteado.</p>
 
 <h2>Instituciones involucradas</h2>
 <p>Dado que la BAU es un proyecto de incidencia social, enmarcado en el
-<a href="http://www.martadero.org/propuestas-culturales/paseo-de-las-artes.html">Paseo
+<a href="<?php echo $this->url(array('page' => 'paseo-de-las-artes.html'), 'base_static') ?>">Paseo
 de las Artes</a>, <strong>proyecto impulsado desde el mARTadero</strong>, que
 busca la revalorización de la zona de "Villa Coronilla", las instituciones y
 personas aliadas a este evento, son aquellas adscritas a la <strong>Plataforma
@@ -82,426 +82,191 @@ del proyecto mARTadero</a>. En ellos se pueden ver las obras dejadas por los
 artistas asistentes a la BAU asi como las obras de los participantes en el
 <a href="http://bau.martadero.org/?page_id=130" title="Conart Process" target="_blank">Conart Process</a>.</p>
 
-<table width="150" align="left" cellpadding="0" cellspacing="0">
-<tbody>
-<tr>
-<td><div id="lhid_albums">
-<div>
-<div>
-<div>
-<div><a href="https://picasaweb.google.com/martadero.bolivia/BAUColectivoEnProceso"><img src="https://lh6.googleusercontent.com/-quKHm3g8GQM/TpOARsZ5HIE/AAAAAAAAIfw/IfMj-_i97gA/s144-c/BAUColectivoEnProceso.jpg" alt="" width="144" height="144" /></a></div>
-</div>
-<p><a href="https://picasaweb.google.com/martadero.bolivia/BAUColectivoEnProceso">Colectivo</a></p>
-</div>
-<div>
-<div>
-<div><a href="https://picasaweb.google.com/martadero.bolivia/BAUTeatroConLeche"><br />
-<img src="https://lh4.googleusercontent.com/-7P8s6OnS7kY/TpOH-oEXyAE/AAAAAAAAJQ4/5qQmwo3irAQ/s144-c/BAUTeatroConLeche.jpg" alt="" width="144" height="144" /></a></div>
-</div>
-<p><a href="https://picasaweb.google.com/martadero.bolivia/BAUTeatroConLeche">Teatro-con-Leche</a></p>
-</div>
-<div>
-<div>
-<div><a href="https://picasaweb.google.com/martadero.bolivia/BAUMundanoEnProceso"><br />
-<img src="https://lh6.googleusercontent.com/-BbCGtymA8mc/TpW3azTGzcE/AAAAAAAAJP0/1LYFNaKtezY/s144-c/BAUMundanoEnProceso.jpg" alt="" width="144" height="144" /></a></div>
-</div>
-<p><a href="https://picasaweb.google.com/martadero.bolivia/BAUMundanoEnProceso">Mundano</a></p>
-</div>
-<div>
-<div>
-<div><a href="https://picasaweb.google.com/martadero.bolivia/BAUEquipoQuipoEnProceso"><br />
-<img src="https://lh3.googleusercontent.com/-Oa43FN9QUKo/TpOFX1xFqbE/AAAAAAAAJSI/ZIkDLfMvew8/s144-c/BAUEquipoQuipoEnProceso.jpg" alt="" width="144" height="144" /></a></div>
-</div>
-<p><a href="https://picasaweb.google.com/martadero.bolivia/BAUEquipoQuipoEnProceso">Equipo
-Quipo</a></p>
-</div>
-<div>
-<div>
-<div><a href="https://picasaweb.google.com/martadero.bolivia/BAUSINMOTIVO"><br />
-<br />
-<img src="https://lh6.googleusercontent.com/-Q9FgRAycaiw/ToTDUeyRQeE/AAAAAAAAIjI/z8hjKtHYpKw/s144-c/BAUSINMOTIVO.jpg" alt="" width="144" height="144" /></a></div>
-</div>
-<p><a href="https://picasaweb.google.com/martadero.bolivia/BAUSINMOTIVO">SIN
-MOTIVO</a></p>
-</div>
-<div>
-<div>
-<div><a href="https://picasaweb.google.com/martadero.bolivia/INAUGURACIONBAUTARAPACA"><br />
-<br />
-<br />
-<img src="https://lh6.googleusercontent.com/-ECTkqsQ4YLo/TpWvyMhx38E/AAAAAAAAJA0/mckgg4GZKwk/s144-c/INAUGURACIONBAUTARAPACA.jpg" alt="" width="144" height="144" /></a></div>
-</div>
-<p><a href="https://picasaweb.google.com/martadero.bolivia/INAUGURACIONBAUTARAPACA">INAUGURACION
-BAU - TARAPACA</a></p>
-</div>
-<div>
-<div>
-<div><a href="https://picasaweb.google.com/martadero.bolivia/BAUGaloCocaInProcess"><img src="https://lh5.googleusercontent.com/-1RluP7sy2tg/TpN_n-pPDuE/AAAAAAAAIdo/_qEao06Z0ZA/s144-c/BAUGaloCocaInProcess.jpg" alt="" width="144" height="144" /></a></div>
-</div>
-<p><a href="https://picasaweb.google.com/martadero.bolivia/BAUGaloCocaInProcess">Galo
-Coca</a></p>
-</div>
-<div>
-<div>
-<div><a href="https://picasaweb.google.com/martadero.bolivia/FiestaBohemiaBAUPLAZAGRANADO"><br />
-<br />
-<img src="https://lh5.googleusercontent.com/-71GX2zeDStw/TpWz9RIrSiE/AAAAAAAAJJ8/QjT2j906N7U/s144-c/FiestaBohemiaBAUPLAZAGRANADO.jpg" alt="" width="144" height="144" /></a></div>
-</div>
-<p><a href="https://picasaweb.google.com/martadero.bolivia/FiestaBohemiaBAUPLAZAGRANADO">Fiesta
-Bohemia + BAU PLAZA GRANADO</a></p>
-</div>
-<div>
-<div>
-<div><a href="https://picasaweb.google.com/martadero.bolivia/INAUGURACIONBAUMARTadero"><br />
-<img src="https://lh4.googleusercontent.com/-jLJiWyi4vqc/TpOEn2uCxQE/AAAAAAAAIoI/FITEPARPJV8/s144-c/INAUGURACIONBAUMARTadero.jpg" alt="" width="144" height="144" /></a></div>
-</div>
-<p><a href="https://picasaweb.google.com/martadero.bolivia/INAUGURACIONBAUMARTadero">INAUGURACION
-BAU - mARTadero</a></p>
-</div>
-<div>
-<div>
-<div><a href="https://picasaweb.google.com/martadero.bolivia/CONARTSoniaCronenboldBAU"><br />
-<img src="https://lh6.googleusercontent.com/-elQIDLu3WQ8/TpOD3ihJraE/AAAAAAAAIm0/G4-77RKLr7c/s144-c/CONARTSoniaCronenboldBAU.jpg" alt="" width="144" height="144" /></a></div>
-</div>
-<p><a href="https://picasaweb.google.com/martadero.bolivia/CONARTSoniaCronenboldBAU">Sonia
-Cronenbold</a></p>
-</div>
-<div>
-<div>
-<div><a href="https://picasaweb.google.com/martadero.bolivia/BAUVassilAnastasov_EnProceso"><br />
-<img src="https://lh4.googleusercontent.com/-5JwXpJwkHkM/TnzaZZQnmtE/AAAAAAAAIjw/CwB28gfcp2w/s144-c/BAUVassilAnastasov_EnProceso.jpg" alt="" width="144" height="144" /></a></div>
-</div>
-<p><a href="https://picasaweb.google.com/martadero.bolivia/BAUVassilAnastasov_EnProceso">Vassil
-Anastasov</a></p>
-</div>
-<div>
-<div>
-<div><a href="https://picasaweb.google.com/martadero.bolivia/CONARTLiQMexist_EnProcesoBAU"><br />
-<br />
-<img src="https://lh6.googleusercontent.com/-d2XGAuVXMbY/TnzakdFl5WE/AAAAAAAAId8/qBYPb6t8Vr8/s144-c/CONARTLiQMexist_EnProcesoBAU.jpg" alt="" width="144" height="144" /></a></div>
-</div>
-<p><a href="https://picasaweb.google.com/martadero.bolivia/CONARTLiQMexist_EnProcesoBAU">CONART
-- LiQ + Mexist_</a></p>
-</div>
-<div>
-<div>
-<div><a href="https://picasaweb.google.com/martadero.bolivia/BAUAlejandraDelgado_EnProceso"><br />
-<img src="https://lh5.googleusercontent.com/-keRcg5JG1W4/TnzasgBPyAE/AAAAAAAAIiM/mstr_D9DN9g/s144-c/BAUAlejandraDelgado_EnProceso.jpg" alt="" width="144" height="144" /></a></div>
-</div>
-<p><a href="https://picasaweb.google.com/martadero.bolivia/BAUAlejandraDelgado_EnProceso">Alejandra
-Delgado</a></p>
-</div>
-<div>
-<div>
-<div><a href="https://picasaweb.google.com/martadero.bolivia/BAUArteriasUrbanas_EnProceso"><br />
-<br />
-<br />
-<img src="https://lh6.googleusercontent.com/-NiS2eNyXtLI/TnzbJSChpoE/AAAAAAAAJRs/Btt0PbrqHSw/s144-c/BAUArteriasUrbanas_EnProceso.jpg" alt="" width="144" height="144" /></a></div>
-</div>
-<p><a href="https://picasaweb.google.com/martadero.bolivia/BAUArteriasUrbanas_EnProceso">Arterias
-Urbanas</a></p>
-</div>
-<div>
-<div>
-<div><a href="https://picasaweb.google.com/martadero.bolivia/BAUAlejandraGarcia"><br />
-<br />
-<img src="https://lh5.googleusercontent.com/-DYPmE2J0IaM/ToTCEWKEkrE/AAAAAAAAIhM/JJogog7W4_U/s144-c/BAUAlejandraGarcia.jpg" alt="" width="144" height="144" /></a></div>
-</div>
-<p><a href="https://picasaweb.google.com/martadero.bolivia/BAUAlejandraGarcia">Alejandra
-García</a></p>
-</div>
-<div>
-<div>
-<div></div>
-</div>
-</div>
-<div> </div>
-</div>
-</div></td>
-</tr>
-</tbody>
-</table>
-<table width="150" align="left" cellpadding="0" cellspacing="0">
-<tbody>
-<tr>
-<td><div id="lhid_albums2">
-<div>
+<style type="text/css">
+    .gallery_image {
+        background-color: #e6e6e6;
+        width: 150px;
+        margin: 5px;
+        padding: 10px;
+        display: inline-block;
+        text-align: center;
+        font-weight: bold;
+    }
+</style>
 
-<div>
-<div>
-<div><a href="https://picasaweb.google.com/martadero.bolivia/BAUAlejandraGarcia"><img src="https://lh5.googleusercontent.com/-DYPmE2J0IaM/ToTCEWKEkrE/AAAAAAAAIhM/JJogog7W4_U/s144-c/BAUAlejandraGarcia.jpg" alt="" width="144" height="144" /></a></div>
-</div>
-<p><a href="https://picasaweb.google.com/martadero.bolivia/BAUAlejandraGarcia">Alejandra
-García</a></p>
-</div>
-<div>
-<div>
-<div><a href="https://picasaweb.google.com/martadero.bolivia/BAUSAAR"><br />
-<img src="https://lh5.googleusercontent.com/-k-nXxvArQoM/ToTCJZtIVKE/AAAAAAAAI58/oB_oZF7JBuQ/s144-c/BAUSAAR.jpg" alt="" width="144" height="144" /></a></div>
-</div>
-<p><a href="https://picasaweb.google.com/martadero.bolivia/BAUSAAR">SAAR</a></p>
-</div>
-<div>
-<div>
-<div><a href="https://picasaweb.google.com/martadero.bolivia/BAUJoseBallivian"><br />
-<img src="https://lh5.googleusercontent.com/-4b4Y5UCTWGY/ToTCOPIZfmE/AAAAAAAAISM/1dusoNWTW5E/s144-c/BAUJoseBallivian.jpg" alt="" width="144" height="144" /></a></div>
-<p><a href="https://picasaweb.google.com/martadero.bolivia/BAUJoseBallivian">José Ballivián</a><br />
-</p>
-</div>
-</div>
-<div>
-<div>
-<div><a href="https://picasaweb.google.com/martadero.bolivia/CONARTNonaBAU"><br />
-<img src="https://lh5.googleusercontent.com/-xPGcU9RVLxE/ToTCWl7XpcE/AAAAAAAAIdw/Oqa-dgiydZk/s144-c/CONARTNonaBAU.jpg" alt="" width="144" height="144" /></a></div>
-</div>
-<p><a href="https://picasaweb.google.com/martadero.bolivia/CONARTNonaBAU">CONART
-- Nona BAU</a></p>
-</div>
-<div>
-<div>
-<div><a href="https://picasaweb.google.com/martadero.bolivia/BAUGreenGraffiti"><br />
-<br />
-<img src="https://lh3.googleusercontent.com/-HDIh5yFHsNU/ToTCekH5NCE/AAAAAAAAIXU/gSVQv50gkok/s144-c/BAUGreenGraffiti.jpg" alt="" width="144" height="144" /></a></div>
-</div>
-<p><a href="https://picasaweb.google.com/martadero.bolivia/BAUGreenGraffiti">Green
-Graffiti</a></p>
-</div>
-<div>
-<div>
-<div><a href="https://picasaweb.google.com/martadero.bolivia/CONARTDiegoVilarBAU"><br />
-<br />
-<br />
-<img src="https://lh5.googleusercontent.com/-v3hAMeKae4g/ToTCqhpLPSE/AAAAAAAAIf4/4LbuMqOShww/s144-c/CONARTDiegoVilarBAU.jpg" alt="" width="144" height="144" /></a></div>
-</div>
-<p><a href="https://picasaweb.google.com/martadero.bolivia/CONARTDiegoVilarBAU">Diego
-Vilar</a></p>
-</div>
-<div>
-<div>
-<div><a href="https://picasaweb.google.com/martadero.bolivia/CONARTKechiFloresBAU"><br />
-<img src="https://lh3.googleusercontent.com/-eTBbmSvZhaw/ToTDAo91yuE/AAAAAAAAIjU/MA7kdSKHL38/s144-c/CONARTKechiFloresBAU.jpg" alt="" width="144" height="144" /></a></div>
-</div>
-<p><a href="https://picasaweb.google.com/martadero.bolivia/CONARTKechiFloresBAU">Kechi
-Flores</a></p>
-</div>
-<div>
-<div>
-<div><a href="https://picasaweb.google.com/martadero.bolivia/BAULilianaZapata_EnProceso"><br />
-<br />
-<img src="https://lh6.googleusercontent.com/-zJKaID0GS0Y/TnzaVUvZQiE/AAAAAAAAIlk/0KTp_aoLJbs/s144-c/BAULilianaZapata_EnProceso.jpg" alt="" width="144" height="144" /></a></div>
-</div>
-<p><a href="https://picasaweb.google.com/martadero.bolivia/BAULilianaZapata_EnProceso"> Liliana
-Zapata</a></p>
-</div>
-<div>
-<div>
-<div><a href="https://picasaweb.google.com/martadero.bolivia/BAUJosefaMicaela_EnProceso"><br />
-<br />
-<img src="https://lh5.googleusercontent.com/-qGp4LoGSV2Q/TnzacUx4SEE/AAAAAAAAIqI/O2CaYr7d5VY/s144-c/BAUJosefaMicaela_EnProceso.jpg" alt="" width="144" height="144" /></a></div>
-</div>
-<p><a href="https://picasaweb.google.com/martadero.bolivia/BAUJosefaMicaela_EnProceso">Josefa
-Micaela</a></p>
-</div>
-<div>
-<div>
-<div><a href="https://picasaweb.google.com/martadero.bolivia/BAUFacultadDeArquitectura_EnProceso"><br />
-<br />
-<img src="https://lh5.googleusercontent.com/-0PQHRoG2Bjc/Tnza6CtN9qE/AAAAAAAAIVw/XO1IOrFG7_U/s144-c/BAUFacultadDeArquitectura_EnProceso.jpg" alt="" width="144" height="144" /></a></div>
-</div>
-<p><a href="https://picasaweb.google.com/martadero.bolivia/BAUFacultadDeArquitectura_EnProceso">Facultad
-de Arquitectura</a></p>
-</div>
-<div>
-<div>
-<div><a href="https://picasaweb.google.com/martadero.bolivia/BAUAurelioDeLaGuerra_EnProceso"><br />
-<img src="https://lh5.googleusercontent.com/-fCdHYlWzW2w/Tnzbb2OW5qE/AAAAAAAAJR4/QuXY3-ON0L0/s144-c/BAUAurelioDeLaGuerra_EnProceso.jpg" alt="" width="144" height="144" /></a></div>
-</div>
-<p><a href="https://picasaweb.google.com/martadero.bolivia/BAUAurelioDeLaGuerra_EnProceso">Aurelio
-de la Guerra</a></p>
-</div>
-<div>
-<div>
-<div><a href="https://picasaweb.google.com/martadero.bolivia/CONARTPana_EnProcesoBAU"><br />
-<br />
-<img src="https://lh5.googleusercontent.com/-llTCirh5M5M/TnzcCZkYHSE/AAAAAAAAIqw/tLz6eccjZvU/s144-c/CONARTPana_EnProcesoBAU.jpg" alt="" width="144" height="144" /></a></div>
-</div>
-<p><a href="https://picasaweb.google.com/martadero.bolivia/CONARTPana_EnProcesoBAU">CONART
-- Pana</a></p>
-</div>
-<div>
-<div>
-<div><a href="https://picasaweb.google.com/martadero.bolivia/BAUJuanPabloCalero_EnProceso"><br />
-<img src="https://lh5.googleusercontent.com/-0aIb0c2yu08/Tnzch_z-4YE/AAAAAAAAI0Y/ipLLafu_I8c/s144-c/BAUJuanPabloCalero_EnProceso.jpg" alt="" width="144" height="144" /></a></div>
-</div>
-<p><a href="https://picasaweb.google.com/martadero.bolivia/BAUJuanPabloCalero_EnProceso"> Juan
-Pablo Calero</a></p>
-</div>
-<div>
-<div>
-<div><a href="https://picasaweb.google.com/martadero.bolivia/BAUIvanCaceres_EnProceso"><br />
-<br />
-<br />
-<img src="https://lh3.googleusercontent.com/-fej4C2hIGDM/TnzaAN_T4RE/AAAAAAAAIf0/z6oRedwFV3Q/s144-c/BAUIvanCaceres_EnProceso.jpg" alt="" width="144" height="144" /></a></div>
-</div>
-<p><a href="https://picasaweb.google.com/martadero.bolivia/BAUIvanCaceres_EnProceso">Iván Cáceres</a></p>
-</div>
-<div>
-<div>
-<div><a href="https://picasaweb.google.com/martadero.bolivia/BAUJoaquinCuevas_EnProceso"><br />
-<br />
-<img src="https://lh6.googleusercontent.com/-3PhL5Riadq4/TnzbuUEJEzE/AAAAAAAAIqg/1S6jiiiUrjo/s144-c/BAUJoaquinCuevas_EnProceso.jpg" alt="" width="144" height="144" /></a></div>
-</div>
-<p><a href="https://picasaweb.google.com/martadero.bolivia/BAUJoaquinCuevas_EnProceso">Joaquín
-Cuevas</a></p>
-</div>
-<div>
-<div>
-<div></div>
-</div>
-</div>
-<div> </div>
-<div>
-<div>
-<div></div>
-</div>
-</div>
-<div> </div>
-</div>
-</div></td>
-</tr>
-</tbody>
-</table>
-<table width="150" cellpadding="0" cellspacing="0">
-<tbody>
-<tr>
-<td><div id="lhid_albums3">
-<div>
-<div>
-<div>
-<div><a href="https://picasaweb.google.com/martadero.bolivia/BAUFabioAddis"><img src="https://lh6.googleusercontent.com/-WJlg9WIFRS4/TpN_bdtW4wE/AAAAAAAAIdE/EU_psdyQJ0s/s144-c/BAUFabioAddis.jpg" alt="" width="144" height="144" /></a></div>
-</div>
-<p><a href="https://picasaweb.google.com/martadero.bolivia/BAUFabioAddis">Fabio
-Addis</a></p>
-</div>
-<div>
-<div>
-<div><a href="https://picasaweb.google.com/martadero.bolivia/BAUDobleLlajwaConHielo"><br />
-<img src="https://lh6.googleusercontent.com/-C_jHX75clTg/TpN_70WoQdE/AAAAAAAAIek/fAra7Fla-jI/s144-c/BAUDobleLlajwaConHielo.jpg" alt="" width="144" height="144" /></a></div>
-</div>
-<p><a href="https://picasaweb.google.com/martadero.bolivia/BAUDobleLlajwaConHielo">Doble
-Llajwa con Hielo</a></p>
-</div>
-<div>
-<div>
-<div><a href="https://picasaweb.google.com/martadero.bolivia/BAUConartProcess_PresentacionDeProyectos"><br />
-<img src="https://lh4.googleusercontent.com/-qzI5vodGe1A/Tm6CnHKmjTE/AAAAAAAAIAQ/gX9NKtmPx38/s144-c/BAUConartProcess_PresentacionDeProyectos.jpg" alt="" width="144" height="144" /></a></div>
-</div>
-<p><a href="https://picasaweb.google.com/martadero.bolivia/BAUConartProcess_PresentacionDeProyectos">Proyectos
-Conart</a></p>
-</div>
-<div>
-<div>
-<div><a href="https://picasaweb.google.com/martadero.bolivia/BAUCharquipunkYLaBrigadaNegotropicaEnProceso"><br />
-<img src="https://lh6.googleusercontent.com/-9l-PRdrJ3iE/Tm5zvvSSX5E/AAAAAAAAI4A/FqwvUN9x9zk/s144-c/BAUCharquipunkYLaBrigadaNegotropicaEnProceso.jpg" alt="" width="144" height="144" /></a></div>
-</div>
-<p><a href="https://picasaweb.google.com/martadero.bolivia/BAUCharquipunkYLaBrigadaNegotropicaEnProceso">Charquipunk
-y la Brigada Negotrópica</a></p>
-</div>
-<div>
-<div>
-<div><a href="https://picasaweb.google.com/martadero.bolivia/CONARTVideoconferenciaPaulinaVarasCONART"><br />
-<img src="https://lh4.googleusercontent.com/-fpUWIbZ_GH8/TpN_UyyC_rE/AAAAAAAAIck/rRsV7AYx8-I/s144-c/CONARTVideoconferenciaPaulinaVarasCONART.jpg" alt="" width="144" height="144" /></a></div>
-</div>
-<p><a href="https://picasaweb.google.com/martadero.bolivia/CONARTVideoconferenciaPaulinaVarasCONART">CONART
-- Videoconferencia Paulina Varas</a></p>
-</div>
-<div>
-<div>
-<div><a href="https://picasaweb.google.com/martadero.bolivia/BAUMarcoToxicoEnProceso"><br />
-<br />
-<img src="https://lh6.googleusercontent.com/-GLplDfofvSk/Tm_KxjE9raE/AAAAAAAAIQE/aIOx-xuuoo8/s144-c/BAUMarcoToxicoEnProceso.jpg" alt="" width="144" height="144" /></a></div>
-</div>
-<p><a href="https://picasaweb.google.com/martadero.bolivia/BAUMarcoToxicoEnProceso">Marco
-Tóxico</a></p>
-</div>
-<div>
-<div>
-<div><a href="https://picasaweb.google.com/martadero.bolivia/CONARTClinicaVeronicaWeiss"><br />
-<img src="https://lh3.googleusercontent.com/-HVweePgfYmk/TpOAyI74B_E/AAAAAAAAIgs/kyByV8Ktsa4/s144-c/CONARTClinicaVeronicaWeiss.jpg" alt="" width="144" height="144" /></a></div>
-</div>
-<p><a href="https://picasaweb.google.com/martadero.bolivia/CONARTClinicaVeronicaWeiss">CONART
-- Clinica Veronica Weiss</a></p>
-</div>
-<div>
-<div>
-<div><a href="https://picasaweb.google.com/martadero.bolivia/CONARTConversatorio6EMEIA"><br />
-<img src="https://lh4.googleusercontent.com/-_4g98oOVbqI/TpOG_8IOzXE/AAAAAAAAIsc/AdWaTJTRZCc/s144-c/CONARTConversatorio6EMEIA.jpg" alt="" width="144" height="144" /></a></div>
-</div>
-<p><a href="https://picasaweb.google.com/martadero.bolivia/CONARTConversatorio6EMEIA">CONART
-- Conversatorio 6EMEIA</a></p>
-</div>
-<div>
-<div>
-<div><a href="https://picasaweb.google.com/martadero.bolivia/CONARTTaller6EMEIA"><br />
-<img src="https://lh5.googleusercontent.com/-pUatk7ov6cM/TpOCyQWpJoE/AAAAAAAAIlA/pPk8FuRtuAA/s144-c/CONARTTaller6EMEIA.jpg" alt="" width="144" height="144" /></a></div>
-</div>
-<p><a href="https://picasaweb.google.com/martadero.bolivia/CONARTTaller6EMEIA">CONART
-- Taller 6EMEIA</a></p>
-</div>
-<div>
-<div>
-<div><a href="https://picasaweb.google.com/martadero.bolivia/CONARTConversatorioBasurama02"><br />
-<br />
-<img src="https://lh6.googleusercontent.com/-ikEYAQQOqyU/TpWqrGsxsYE/AAAAAAAAI3A/6jWLneflQSM/s144-c/CONARTConversatorioBasurama02.jpg" alt="" width="144" height="144" /></a></div>
-</div>
-<p><a href="https://picasaweb.google.com/martadero.bolivia/CONARTConversatorioBasurama02">CONART
-- Conversatorio Basurama</a></p>
-</div>
-<div>
-<div>
-<div>
-<p><a href="https://picasaweb.google.com/martadero.bolivia/CONARTNosVemosEnElKullKuVidaMia"><img src="https://lh5.googleusercontent.com/-ZaweaO9H7VE/TpOLmWYRnOE/AAAAAAAAIzY/4hmUh4OZj_s/s144-c/CONARTNosVemosEnElKullKuVidaMia.jpg" alt="" width="144" height="144" /></a></p>
-</div>
-</div>
-<p><a href="https://picasaweb.google.com/martadero.bolivia/CONARTNosVemosEnElKullKuVidaMia">CONART
-- Nos vemos en el Kull'ku Vida Mia</a></p>
-</div>
-<div>
-<div>
-<div><a href="https://picasaweb.google.com/martadero.bolivia/CONARTProyectoDogville"><br />
-<img src="https://lh5.googleusercontent.com/-6hmo3BpXxQU/TpON4O_ODhE/AAAAAAAAI7w/oKV94iyLX-o/s144-c/CONARTProyectoDogville.jpg" alt="" width="144" height="144" /></a></div>
-</div>
-<p><a href="https://picasaweb.google.com/martadero.bolivia/CONARTProyectoDogville">CONART
-- Proyecto Dogville</a></p>
-</div>
-<div>
-<div>
-<div><a href="https://picasaweb.google.com/martadero.bolivia/CONARTMuralDientesDeOroYCholita"><img src="https://lh5.googleusercontent.com/-d9Z35FO3O98/TpOB1S3BZPE/AAAAAAAAIjE/QSqAI9ptdHk/s144-c/CONARTMuralDientesDeOroYCholita.jpg" alt="" width="144" height="144" /></a></div>
-</div>
-<p><a href="https://picasaweb.google.com/martadero.bolivia/CONARTMuralDientesDeOroYCholita">CONART
-- Mural Dientes de Oro y Cholita</a></p>
-</div>
-<div>
-<div>
-<div><a href="https://picasaweb.google.com/martadero.bolivia/CONARTIntervencionEnLaPlazaDeLosArrieros"><br />
-<br />
-<img src="https://lh6.googleusercontent.com/-_erHCdmnpTw/TpOJ2JTLAAE/AAAAAAAAIw4/aYd7MyRRrzw/s144-c/CONARTIntervencionEnLaPlazaDeLosArrieros.jpg" alt="" width="144" height="144" /></a></div>
-</div>
-<p><a href="https://picasaweb.google.com/martadero.bolivia/CONARTIntervencionEnLaPlazaDeLosArrieros">CONART
-- Intervención en la Plaza de los Arrieros</a></p>
-</div>
-<div>
-<div>
-<div><a href="https://picasaweb.google.com/martadero.bolivia/CONARTTallerBasurama"><br />
-<img src="https://lh4.googleusercontent.com/-ogteUUzZeJQ/TpWxiXVaXuE/AAAAAAAAJFI/UnEU4SV9geg/s144-c/CONARTTallerBasurama.jpg" alt="" width="144" height="144" /></a></div>
-</div>
-<p><a href="https://picasaweb.google.com/martadero.bolivia/CONARTTallerBasurama">CONART
-- Taller Basurama</a></p>
-</div>
-</div>
-</div></td>
-</tr>
-</tbody>
-</table>
-<br />
+<div class="gallery_image">
+<a href="https://picasaweb.google.com/martadero.bolivia/BAUColectivoEnProceso"><img src="<?php echo $this->staticUrl('/01.jpg') ?>" /></a>
+<a href="https://picasaweb.google.com/martadero.bolivia/BAUColectivoEnProceso">Colectivo</a>
+</div>
+<div class="gallery_image">
+<a href="https://picasaweb.google.com/martadero.bolivia/BAUTeatroConLeche"><img src="<?php echo $this->staticUrl('/02.jpg') ?>" /></a>
+<a href="https://picasaweb.google.com/martadero.bolivia/BAUTeatroConLeche">Teatro-con-Leche</a>
+</div>
+<div class="gallery_image">
+<a href="https://picasaweb.google.com/martadero.bolivia/BAUMundanoEnProceso"><img src="<?php echo $this->staticUrl('/03.jpg') ?>" /></a>
+<a href="https://picasaweb.google.com/martadero.bolivia/BAUMundanoEnProceso">Mundano</a>
+</div>
+<div class="gallery_image">
+<a href="https://picasaweb.google.com/martadero.bolivia/BAUEquipoQuipoEnProceso"><img src="<?php echo $this->staticUrl('/04.jpg') ?>" /></a>
+<a href="https://picasaweb.google.com/martadero.bolivia/BAUEquipoQuipoEnProceso">Equipo Quipo</a>
+</div>
+<div class="gallery_image">
+<a href="https://picasaweb.google.com/martadero.bolivia/BAUSINMOTIVO"><img src="<?php echo $this->staticUrl('/05.jpg') ?>" /></a>
+<a href="https://picasaweb.google.com/martadero.bolivia/BAUSINMOTIVO">SIN MOTIVO</a>
+</div>
+<div class="gallery_image">
+<a href="https://picasaweb.google.com/martadero.bolivia/INAUGURACIONBAUTARAPACA"><img src="<?php echo $this->staticUrl('/06.jpg') ?>" /></a>
+<a href="https://picasaweb.google.com/martadero.bolivia/INAUGURACIONBAUTARAPACA">INAUGURACION BAU - TARAPACA</a>
+</div>
+<div class="gallery_image">
+<a href="https://picasaweb.google.com/martadero.bolivia/BAUGaloCocaInProcess"><img src="<?php echo $this->staticUrl('/07.jpg') ?>" /></a>
+<a href="https://picasaweb.google.com/martadero.bolivia/BAUGaloCocaInProcess">Galo Coca</a>
+</div>
+<div class="gallery_image">
+<a href="https://picasaweb.google.com/martadero.bolivia/FiestaBohemiaBAUPLAZAGRANADO"><img src="<?php echo $this->staticUrl('/08.jpg') ?>" /></a>
+<a href="https://picasaweb.google.com/martadero.bolivia/FiestaBohemiaBAUPLAZAGRANADO">Fiesta Bohemia + BAU PLAZA GRANADO</a>
+</div>
+<div class="gallery_image">
+<a href="https://picasaweb.google.com/martadero.bolivia/INAUGURACIONBAUMARTadero"><img src="<?php echo $this->staticUrl('/09.jpg') ?>" /></a>
+<a href="https://picasaweb.google.com/martadero.bolivia/INAUGURACIONBAUMARTadero">INAUGURACION BAU - mARTadero</a>
+</div>
+<div class="gallery_image">
+<a href="https://picasaweb.google.com/martadero.bolivia/CONARTSoniaCronenboldBAU"><img src="<?php echo $this->staticUrl('/10.jpg') ?>" /></a>
+<a href="https://picasaweb.google.com/martadero.bolivia/CONARTSoniaCronenboldBAU">Sonia Cronenbold</a>
+</div>
+<div class="gallery_image">
+<a href="https://picasaweb.google.com/martadero.bolivia/BAUVassilAnastasov_EnProceso"><img src="<?php echo $this->staticUrl('/11.jpg') ?>" /></a>
+<a href="https://picasaweb.google.com/martadero.bolivia/BAUVassilAnastasov_EnProceso">Vassil Anastasov</a>
+</div>
+<div class="gallery_image">
+<a href="https://picasaweb.google.com/martadero.bolivia/CONARTLiQMexist_EnProcesoBAU"><img src="<?php echo $this->staticUrl('/12.jpg') ?>" /></a>
+<a href="https://picasaweb.google.com/martadero.bolivia/CONARTLiQMexist_EnProcesoBAU">CONART - LiQ + Mexist_</a>
+</div>
+<div class="gallery_image">
+<a href="https://picasaweb.google.com/martadero.bolivia/BAUAlejandraDelgado_EnProceso"><img src="<?php echo $this->staticUrl('/13.jpg') ?>" /></a>
+<a href="https://picasaweb.google.com/martadero.bolivia/BAUAlejandraDelgado_EnProceso">Alejandra Delgado</a>
+</div>
+<div class="gallery_image">
+<a href="https://picasaweb.google.com/martadero.bolivia/BAUArteriasUrbanas_EnProceso"><img src="<?php echo $this->staticUrl('/14.jpg') ?>" /></a>
+<a href="https://picasaweb.google.com/martadero.bolivia/BAUArteriasUrbanas_EnProceso">Arterias Urbanas</a>
+</div>
+<div class="gallery_image">
+<a href="https://picasaweb.google.com/martadero.bolivia/BAUAlejandraGarcia"><img src="<?php echo $this->staticUrl('/15.jpg') ?>" /></a>
+<a href="https://picasaweb.google.com/martadero.bolivia/BAUAlejandraGarcia">Alejandra García</a>
+</div>
+<div class="gallery_image">
+<a href="https://picasaweb.google.com/martadero.bolivia/BAUSAAR"><img src="<?php echo $this->staticUrl('/17.jpg') ?>" /></a>
+<a href="https://picasaweb.google.com/martadero.bolivia/BAUSAAR">SAAR</a>
+</div>
+<div class="gallery_image">
+<a href="https://picasaweb.google.com/martadero.bolivia/BAUJoseBallivian"><img src="<?php echo $this->staticUrl('/18.jpg') ?>" /></a>
+<a href="https://picasaweb.google.com/martadero.bolivia/BAUJoseBallivian">José Ballivián</a>
+</div>
+<div class="gallery_image">
+<a href="https://picasaweb.google.com/martadero.bolivia/CONARTNonaBAU"><img src="<?php echo $this->staticUrl('/19.jpg') ?>" /></a>
+<a href="https://picasaweb.google.com/martadero.bolivia/CONARTNonaBAU">CONART - Nona BAU</a>
+</div>
+<div class="gallery_image">
+<a href="https://picasaweb.google.com/martadero.bolivia/BAUGreenGraffiti"><img src="<?php echo $this->staticUrl('/20.jpg') ?>" /></a>
+<a href="https://picasaweb.google.com/martadero.bolivia/BAUGreenGraffiti">Green Graffiti</a>
+</div>
+<div class="gallery_image">
+<a href="https://picasaweb.google.com/martadero.bolivia/CONARTDiegoVilarBAU"><img src="<?php echo $this->staticUrl('/21.jpg') ?>" /></a>
+<a href="https://picasaweb.google.com/martadero.bolivia/CONARTDiegoVilarBAU">Diego Vilar</a>
+</div>
+<div class="gallery_image">
+<a href="https://picasaweb.google.com/martadero.bolivia/CONARTKechiFloresBAU"><img src="<?php echo $this->staticUrl('/22.jpg') ?>" /></a>
+<a href="https://picasaweb.google.com/martadero.bolivia/CONARTKechiFloresBAU">Kechi Flores</a>
+</div>
+<div class="gallery_image">
+<a href="https://picasaweb.google.com/martadero.bolivia/BAULilianaZapata_EnProceso"><img src="<?php echo $this->staticUrl('/23.jpg') ?>" /></a>
+<a href="https://picasaweb.google.com/martadero.bolivia/BAULilianaZapata_EnProceso">Liliana Zapata</a>
+</div>
+<div class="gallery_image">
+<a href="https://picasaweb.google.com/martadero.bolivia/BAUJosefaMicaela_EnProceso"><img src="<?php echo $this->staticUrl('/24.jpg') ?>" /></a>
+<a href="https://picasaweb.google.com/martadero.bolivia/BAUJosefaMicaela_EnProceso">Josefa Micaela</a>
+</div>
+<div class="gallery_image">
+<a href="https://picasaweb.google.com/martadero.bolivia/BAUFacultadDeArquitectura_EnProceso"><img src="<?php echo $this->staticUrl('/25.jpg') ?>" /></a>
+<a href="https://picasaweb.google.com/martadero.bolivia/BAUFacultadDeArquitectura_EnProceso">Facultad de Arquitectura</a>
+</div>
+<div class="gallery_image">
+<a href="https://picasaweb.google.com/martadero.bolivia/BAUAurelioDeLaGuerra_EnProceso"><img src="<?php echo $this->staticUrl('/26.jpg') ?>" /></a>
+<a href="https://picasaweb.google.com/martadero.bolivia/BAUAurelioDeLaGuerra_EnProceso">Aurelio de la Guerra</a>
+</div>
+<div class="gallery_image">
+<a href="https://picasaweb.google.com/martadero.bolivia/CONARTPana_EnProcesoBAU"><img src="<?php echo $this->staticUrl('/27.jpg') ?>" /></a>
+<a href="https://picasaweb.google.com/martadero.bolivia/CONARTPana_EnProcesoBAU">CONART - Pana</a>
+</div>
+<div class="gallery_image">
+<a href="https://picasaweb.google.com/martadero.bolivia/BAUJuanPabloCalero_EnProceso"><img src="<?php echo $this->staticUrl('/28.jpg') ?>" /></a>
+<a href="https://picasaweb.google.com/martadero.bolivia/BAUJuanPabloCalero_EnProceso">Juan Pablo Calero</a>
+</div>
+<div class="gallery_image">
+<a href="https://picasaweb.google.com/martadero.bolivia/BAUIvanCaceres_EnProceso"><img src="<?php echo $this->staticUrl('/29.jpg') ?>" /></a>
+<a href="https://picasaweb.google.com/martadero.bolivia/BAUIvanCaceres_EnProceso">Iván Cáceres</a>
+</div>
+<div class="gallery_image">
+<a href="https://picasaweb.google.com/martadero.bolivia/BAUJoaquinCuevas_EnProceso"><img src="<?php echo $this->staticUrl('/30.jpg') ?>" /></a>
+<a href="https://picasaweb.google.com/martadero.bolivia/BAUJoaquinCuevas_EnProceso">Joaquín Cuevas</a>
+</div>
+<div class="gallery_image">
+<a href="https://picasaweb.google.com/martadero.bolivia/BAUFabioAddis"><img src="<?php echo $this->staticUrl('/31.jpg') ?>" /></a>
+<a href="https://picasaweb.google.com/martadero.bolivia/BAUFabioAddis">Fabio Addis</a>
+</div>
+<div class="gallery_image">
+<a href="https://picasaweb.google.com/martadero.bolivia/BAUDobleLlajwaConHielo"><img src="<?php echo $this->staticUrl('/32.jpg') ?>" /></a>
+<a href="https://picasaweb.google.com/martadero.bolivia/BAUDobleLlajwaConHielo">Doble Llajwa con Hielo</a>
+</div>
+<div class="gallery_image">
+<a href="https://picasaweb.google.com/martadero.bolivia/BAUConartProcess_PresentacionDeProyectos"><img src="<?php echo $this->staticUrl('/33.jpg') ?>" /></a>
+<a href="https://picasaweb.google.com/martadero.bolivia/BAUConartProcess_PresentacionDeProyectos">Proyectos Conart</a>
+</div>
+<div class="gallery_image">
+<a href="https://picasaweb.google.com/martadero.bolivia/BAUCharquipunkYLaBrigadaNegotropicaEnProceso"><img src="<?php echo $this->staticUrl('/34.jpg') ?>" /></a>
+<a href="https://picasaweb.google.com/martadero.bolivia/BAUCharquipunkYLaBrigadaNegotropicaEnProceso">Charquipunk y la Brigada Negotrópica</a>
+</div>
+<div class="gallery_image">
+<a href="https://picasaweb.google.com/martadero.bolivia/CONARTVideoconferenciaPaulinaVarasCONART"><img src="<?php echo $this->staticUrl('/35.jpg') ?>" /></a>
+<a href="https://picasaweb.google.com/martadero.bolivia/CONARTVideoconferenciaPaulinaVarasCONART">CONART - Videoconferencia Paulina Varas</a>
+</div>
+<div class="gallery_image">
+<a href="https://picasaweb.google.com/martadero.bolivia/BAUMarcoToxicoEnProceso"><img src="<?php echo $this->staticUrl('/36.jpg') ?>" /></a>
+<a href="https://picasaweb.google.com/martadero.bolivia/BAUMarcoToxicoEnProceso">Marco Tóxico</a>
+</div>
+<div class="gallery_image">
+<a href="https://picasaweb.google.com/martadero.bolivia/CONARTClinicaVeronicaWeiss"><img src="<?php echo $this->staticUrl('/37.jpg') ?>" /></a>
+<a href="https://picasaweb.google.com/martadero.bolivia/CONARTClinicaVeronicaWeiss">CONART - Clinica Veronica Weiss</a>
+</div>
+<div class="gallery_image">
+<a href="https://picasaweb.google.com/martadero.bolivia/CONARTConversatorio6EMEIA"><img src="<?php echo $this->staticUrl('/38.jpg') ?>" /></a>
+<a href="https://picasaweb.google.com/martadero.bolivia/CONARTConversatorio6EMEIA">CONART - Conversatorio 6EMEIA</a>
+</div>
+<div class="gallery_image">
+<a href="https://picasaweb.google.com/martadero.bolivia/CONARTTaller6EMEIA"><img src="<?php echo $this->staticUrl('/39.jpg') ?>" /></a>
+<a href="https://picasaweb.google.com/martadero.bolivia/CONARTTaller6EMEIA">CONART - Taller 6EMEIA</a>
+</div>
+<div class="gallery_image">
+<a href="https://picasaweb.google.com/martadero.bolivia/CONARTConversatorioBasurama02"><img src="<?php echo $this->staticUrl('/40.jpg') ?>" /></a>
+<a href="https://picasaweb.google.com/martadero.bolivia/CONARTConversatorioBasurama02">CONART - Conversatorio Basurama</a>
+</div>
+<div class="gallery_image">
+<a href="https://picasaweb.google.com/martadero.bolivia/CONARTNosVemosEnElKullKuVidaMia"><img src="<?php echo $this->staticUrl('/41.jpg') ?>" /></a>
+<a href="https://picasaweb.google.com/martadero.bolivia/CONARTNosVemosEnElKullKuVidaMia">CONART - Nos vemos en el Kull'ku Vida Mia</a>
+</div>
+<div class="gallery_image">
+<a href="https://picasaweb.google.com/martadero.bolivia/CONARTProyectoDogville"><img src="<?php echo $this->staticUrl('/42.jpg') ?>" /></a>
+<a href="https://picasaweb.google.com/martadero.bolivia/CONARTProyectoDogville">CONART - Proyecto Dogville</a>
+</div>
+<div class="gallery_image">
+<a href="https://picasaweb.google.com/martadero.bolivia/CONARTMuralDientesDeOroYCholita"><img src="<?php echo $this->staticUrl('/43.jpg') ?>" /></a>
+<a href="https://picasaweb.google.com/martadero.bolivia/CONARTMuralDientesDeOroYCholita">CONART - Mural Dientes de Oro y Cholita</a>
+</div>
+<div class="gallery_image">
+<a href="https://picasaweb.google.com/martadero.bolivia/CONARTIntervencionEnLaPlazaDeLosArrieros"><img src="<?php echo $this->staticUrl('/44.jpg') ?>" /></a>
+<a href="https://picasaweb.google.com/martadero.bolivia/CONARTIntervencionEnLaPlazaDeLosArrieros">CONART - Intervención en la Plaza de los Arrieros</a>
+</div>
+<div class="gallery_image">
+<a href="https://picasaweb.google.com/martadero.bolivia/CONARTTallerBasurama"><img src="<?php echo $this->staticUrl('/45.jpg') ?>" /></a>
+<a href="https://picasaweb.google.com/martadero.bolivia/CONARTTallerBasurama">CONART - Taller Basurama</a>
 </div>

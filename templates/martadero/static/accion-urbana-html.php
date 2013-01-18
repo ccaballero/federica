@@ -8,7 +8,7 @@ rehabilitación, resignificación y acondicionamiento de la Plaza de los Arriero
 de Cochabamba (Bolivia), para convertirla en la</strong>
 <a href="<?php // TODO ?>http://www.martadero.org/propuestas-culturales/plazadelasartes.html">Plaza
 de las Artes</a><strong> -y por extensión, en el</strong>
-<a href="<?php // TODO ?>http://www.martadero.org/propuestas-culturales/paseo-de-las-artes.html">Paseo
+<a href="<?php echo $this->url(array('page' => 'paseo-de-las-artes.html'), 'base_static') ?>">Paseo
 de las Artes</a> en los ejes determinados-.</p>
 
 <p>Son <strong>espacios destinados a ser un punto de encuentro y de desarrollo
