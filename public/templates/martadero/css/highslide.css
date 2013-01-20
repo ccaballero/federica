@@ -2,3 +2,12 @@
     width: 600px;
     height: auto;
 }
+
+.highslide-body p {
+    text-align: justify;
+}
+
+.highslide-body .box_image {
+    float: left;
+    padding: 0px 10px;
+}

@@ -3,31 +3,31 @@
                      title="Proyecto mARTadero 2.0 | inter-media-acción" />
 <map name="map" id="map">
     <area href="" alt="bienvenidos" class="highslide"
-            onclick="return hs.htmlExpand(this, { headingText: 'BIENVENIDOS AL mARTadero 2.0', 'contentId': 'header1' });"
+            onclick="return hs.htmlExpand(this, {headingText: 'BIENVENIDOS AL mARTadero 2.0', 'contentId': 'header1' });"
             coords="508,57,510,90,750,58,748,17" shape="poly" />
     <area href="" alt="desarrollo barrial" class="highslide"
-            onclick="return hs.htmlExpand(this, { headingText: 'DESARROLLO BARRIAL', 'contentId': 'header2' });"
+            onclick="return hs.htmlExpand(this, {headingText: 'DESARROLLO BARRIAL', 'contentId': 'header2' });"
             coords="85,135,86,149,198,145,199,132" shape="poly" />
     <area href="" alt="redes" class="highslide"
-            onclick="return hs.htmlExpand(this, { headingText: 'REDES', 'contentId': 'header3' });"
+            onclick="return hs.htmlExpand(this, {headingText: 'REDES', 'contentId': 'header3' });"
             coords="202,140,202,151,319,152,320,140" shape="poly" />
     <area href="" alt="incidencia" class="highslide"
-            onclick="return hs.htmlExpand(this, { headingText: 'INCIDENCIA', 'contentId': 'header4' });"
+            onclick="return hs.htmlExpand(this, {headingText: 'INCIDENCIA', 'contentId': 'header4' });"
             coords="401,136,400,148,462,146,462,136" shape="poly" />
     <area href="" alt="cultura libre" class="highslide"
-            onclick="return hs.htmlExpand(this, { headingText: 'CULTURA LIBRE', 'contentId': 'header5' });"
+            onclick="return hs.htmlExpand(this, {headingText: 'CULTURA LIBRE', 'contentId': 'header5' });"
             coords="481,133,481,146,563,149,565,130" shape="poly" />
     <area href="" alt="inter" class="highslide"
-            onclick="return hs.htmlExpand(this, { headingText: 'INTER', 'contentId': 'header6' });"
+            onclick="return hs.htmlExpand(this, {headingText: 'INTER', 'contentId': 'header6' });"
             coords="601,126,603,142,644,142,647,128" shape="poly" />
     <area href="" alt="media" class="highslide"
-            onclick="return hs.htmlExpand(this, { headingText: 'MEDIA', 'contentId': 'header7' });"
+            onclick="return hs.htmlExpand(this, {headingText: 'MEDIA', 'contentId': 'header7' });"
             coords="650,129,650,144,688,144,689,129" shape="poly" />
     <area href="" alt="accion" class="highslide"
-            onclick="return hs.htmlExpand(this, { headingText: 'ACCIÓN', 'contentId': 'header8' });"
+            onclick="return hs.htmlExpand(this, {headingText: 'ACCIÓN', 'contentId': 'header8' });"
             coords="695,140,696,153,742,152,742,138" shape="poly" />
     <area href="" alt="autogestion" class="highslide"
-            onclick="return hs.htmlExpand(this, { headingText: 'AUTOGESTIÓN', 'contentId': 'header9' });"
+            onclick="return hs.htmlExpand(this, {headingText: 'AUTOGESTIÓN', 'contentId': 'header9' });"
             coords="846,133,848,146,932,145,933,131" shape="poly" />
 </map>
 <div class="popup">

@@ -33,6 +33,7 @@
 #main ul {
     list-style-position: outside;
     padding: 0px 40px 0px 40px;
+    margin-top: 4px;
 }
 
 #main ul li {

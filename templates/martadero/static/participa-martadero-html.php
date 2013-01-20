@@ -16,7 +16,7 @@ modalidades complementarias</strong>, todas ellas articuladas por el
 <strong>eje temático anual</strong>.</p>
 
 <p>En 2012 el eje temático es
-<a href="http://www.martadero.org/info-cultural/eje_tematico.html">Reductos
+<a href="<?php // TODO ?>http://www.martadero.org/info-cultural/eje_tematico.html">Reductos
 tecno-lógicos</a>.</p>
 
 <h2>MODOS DE PROGRAMACIÓN</h2>
@@ -35,9 +35,9 @@ propongan oportunidades y beneficios mutuos.</p>
 <p>Para + info sobre esta modalidad:</p>
 
 <ul>
-    <li><a href="http://www.martadero.org/info-cultural/eje_tematico.html">Eje
+    <li><a href="<?php // TODO ?>http://www.martadero.org/info-cultural/eje_tematico.html">Eje
     temático</a>.</li>
-    <li><a href="http://www.martadero.org/info-cultural/contactos.html">Equipo
+    <li><a href="<?php echo $this->url(array('page' => 'contactos.html'), 'base_static') ?>#equipo">Equipo
     humano</a>: por si deseas realizar un contacto con algún área.</li>
 </ul>
 
@@ -53,11 +53,11 @@ mARTadero.</p>
 
 <p>Para + info sobre esta modalidad:</p>
 <ul>
-    <li><a href="http://www.martadero.org/php/enrutador.php">Reserva de
+    <li><a href="<?php // TODO ?>http://www.martadero.org/php/enrutador.php">Reserva de
     espacios</a>.</li>
     <li><a href="http://bit.ly/aporteusomartadero">Costo de aporte por
     uso</a>.</li>
-    <li><a href="http://www.martadero.org/espacio-cultural/espacio.html">Conoce
+    <li><a href="<?php // TODO ?>http://www.martadero.org/espacio-cultural/espacio.html">Conoce
     las distintas salas</a>.</li>
 </ul>
 
@@ -73,9 +73,9 @@ cobrase entrada.</p>
 
 <p>Para + info sobre esta modalidad:</p>
 <ul>
-    <li><a href="http://www.martadero.org/info-cultural/eje_tematico.html">Eje
+    <li><a href="<?php // TODO ?>http://www.martadero.org/info-cultural/eje_tematico.html">Eje
     temático</a>.</li>
-    <li><a href="http://www.martadero.org/arte-cultura/fondart.html">Fondart</a>.</li>
+    <li><a href="<?php // TODO ?>http://www.martadero.org/arte-cultura/fondart.html">Fondart</a>.</li>
 </ul>
 
 <h3>Inventando</h3>
@@ -88,6 +88,6 @@ forma.</p>
 <p>Para + info sobre esta modalidad:</p>
 
 <ul>
-    <li><a href="http://www.martadero.org/info-cultural/eje_tematico.html">Eje
+    <li><a href="<?php // TODO ?>http://www.martadero.org/info-cultural/eje_tematico.html">Eje
     temático</a>.</li>
 </ul>

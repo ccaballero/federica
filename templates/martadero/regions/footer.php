@@ -71,7 +71,7 @@
         <ul class="secondary">
             <li><a href="<?php echo $this->url(array('page' => 'participar.html'), 'base_static') ?>#publico" title="Participa como público">Como público</a></li>
             <li><a href="<?php echo $this->url(array('page' => 'participa-martadero.html'), 'base_static') ?>" title="Participa como artista">Como artista</a></li>
-            <li><a href="<?php echo $this->url(array('page' => 'participar.html'), 'base_static') ?>" title="Participa como organización">Como organización</a></li>
+            <li><a href="<?php echo $this->url(array('page' => 'participa-martadero.html'), 'base_static') ?>" title="Participa como organización">Como organización</a></li>
             <li><a href="<?php echo $this->url(array('page' => 'participar.html'), 'base_static') ?>#auspiciador" title="Auspicia el mARTadero">Como empresa</a></li>
             <li><a href="<?php echo $this->url(array('page' => 'ser-parte-del-equipo.html'), 'base_static') ?>#voluntario" title="Participa como voluntario/a">Como voluntario/a</a></li>
             <li><a href="<?php echo $this->url(array('page' => 'ser-parte-del-equipo.html'), 'base_static') ?>#contratado" title="Participa como contratado/a">Como contratado/a</a></li>
