@@ -36,7 +36,7 @@ vital.</p>
 Centr4l</a>.</p>
 
 <p><a href="http://www.emprendeduriacultural.net/ejecentral/" target="_blank">
-<img src="<?php echo $this->staticUrl('/eje-centr4l.jpg') ?>" /></a></p>
+<img src="<?php echo $this->staticUrl('/../eje-centr4l-html/eje-centr4l.jpg') ?>" /></a></p>
 
 <h3>Objetivos generales</h3>
 <p>El objetivo más amplio del proyecto es, dentro de este marco, la generación
