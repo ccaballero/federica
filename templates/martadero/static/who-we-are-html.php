@@ -12,9 +12,9 @@
 <a href="<?php echo $this->url(array('page' => 'quienes_somos.html'), 'base_static') ?>">pinchando aquí</a>.</p>
 
 <p>Download the DOSSIER
-<a href="<?php echo $this->baseUrl('/media/pdf/About_proyecto_mARTadero.pdf') ?>">about
+<a href="<?php echo $this->baseUrl('/media/pdf/about-proyecto-martadero.pdf') ?>">about
 proyecto mARTadero</a> on PDF (también en
-<a href="<?php echo $this->baseUrl('/media/pdf/Sobre_proyecto_mARTadero.pdf') ?>">Español</a>).</p>
+<a href="<?php echo $this->baseUrl('/media/pdf/sobre-proyecto-martadero.pdf') ?>">Español</a>).</p>
 
 <p><img src="<?php echo $this->staticUrl('/martadero.jpg') ?>" alt="mARTadero" title="mARTadero" /></p>
 
@@ -147,7 +147,7 @@ in charge of managing the group according to its needs. Socializing while having
 fun, meeting others, recycling, reusing and other dimensions of this workshop
 allow children to live art as a means to assimilate the world that surrounds
 them.</p>
-<p><a href="<?php // TODO ?>http://www.martadero.org/programas/tallerninos.html">http://www.martadero.org/programas/tallerninos.html</a></p>
+<p><a href="<?php echo $this->url(array('page' => 'taller-infantil.html'), 'base_static') ?>">http://www.martadero.org/programas/tallerninos.html</a></p>
 
 <h3>FORMARTE</h3>
 <p><img src="<?php echo $this->staticUrl('/formarte.jpg') ?>" title="mARTadero formARTe" /></p>
@@ -190,7 +190,7 @@ of ideas among neighbors.</p>
     inhabitants of the neighborhood of Villa Coronilla.</li>
 </ul>
 
-<p><a href="<?php // TODO ?>http://www.martadero.org/programas/plazadelasartes.html">http://www.martadero.org/programas/plazadelasartes.html</a></p>
+<p><a href="<?php echo $this->url(array('page' => 'paseo-de-las-artes.html'), 'base_static') ?>#plaza"><?php echo $this->url(array('page' => 'paseo-de-las-artes.html'), 'base_static') ?>#plaza</a></p>
 <p><a href="http://plazaartes.wordpress.com/">http://plazaartes.wordpress.com</a></p>
 
 <h3>ALIVE AND GREEN</h3>

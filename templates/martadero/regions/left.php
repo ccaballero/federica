@@ -28,17 +28,16 @@
         <tr><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td><td>&nbsp;</td><td>&nbsp;</td></tr>
     </table>
 </div>-->
-<!--<div class="post">
+
+<div class="post">
     <h1>Eje temático 2012</h1>
     <ul>
         <li>
-            <a href="info-cultural/eje_tematico.html">Reductos tecno-lógicos</a>
-        </li>
-        <li>
-            <a href="" title="Akelarre Cyborg" target="_blank"><img src="<?php echo $this->media_url ?>/images/aklr.jpg" title="Akelarre Cyborg" alt="Akelarre Cyborg" /></a>
+            <a href="<?php echo $this->url(array('page' => 'eje-tematico.html'), 'base_static') ?>">Reductos tecno-lógicos</a>
         </li>
     </ul>
-</div>-->
+</div>
+
 <div class="post">
     <h1>Proyecto mARTadero</h1>
     <ul>
@@ -48,7 +47,7 @@
         <li><a href="<?php echo $this->url(array('page' => 'conexiones.html'), 'base_static') ?>">Conexiones</a></li>
         <li><a href="<?php echo $this->url(array('page' => 'martadero-v20.html'), 'base_static') ?>">Proyecciones</a></li>
         <li><a href="<?php echo $this->url(array('page' => 'nos-interesa.html'), 'base_static') ?>">Nos interesa</a></li>
-        <li><a href="<?php echo $this->url(array('page' => 'tarjerta-arcoiris.html'), 'base_static') ?>">Hazte amig@ del mARTadero</a></li>
+        <li><a href="<?php echo $this->url(array('page' => 'tarjeta-arcoiris.html'), 'base_static') ?>">Hazte amig@ del mARTadero</a></li>
         <li><a href="<?php echo $this->url(array('page' => 'fondart.html'), 'base_static') ?>">Fondo para el Desarrollo<br/>de las Artes - FONDART</a></li>
         <li><a href="<?php echo $this->url(array('page' => 'visita.html'), 'base_static') ?>">Visita guiada</a></li>
         <li><a href="<?php echo $this->url(array('page' => 'apoyos.html'), 'base_static') ?>">Apoyos</a></li>
@@ -58,6 +57,7 @@
         <li><a href="<?php echo $this->url(array('page' => 'contactos.html'), 'base_static') ?>#mapa">Cómo llegar</a></li>
     </ul>
 </div>
+
 <!--<div class="post">
     <h1>Usuario del mARTadero</h1>
     <form method="post" action="">

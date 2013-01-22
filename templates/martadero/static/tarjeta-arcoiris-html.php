@@ -25,7 +25,8 @@ en :</p>
 <p>Si te encuentras lejos de Cochabamba pero compartes nuestra visión puedes
 colaborar con el proyecto con una donación que irá dirigida a mejorar nuestras
 instalaciones y a seguir haciendo lo que mejor sabemos&hellip;construir un
-futuro a través del arte y la cultura. <a href="<?php // TODO ?>http://www.martadero.org/arte-cultura/colabora.html">¡Dona
+futuro a través del arte y la cultura.
+<a href="<?php echo $this->url(array('page' => 'colabora.html'), 'base_static') ?>">¡Dona
 ahora!</a></p>
 
 <p>

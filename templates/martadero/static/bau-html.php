@@ -20,7 +20,7 @@ incidido en la generalización de un imaginario social negativo que recae a
 diario sobre sus habitantes.</p>
 <p>Bajo este panorama, <strong>la BAU forma parte de una estrategia colaborativa
 de mejoramiento urbano</strong> junto a la
-<a href="<?php // TODO ?>http://www.martadero.org/propuestas-culturales/plazadelasartes.html">Plaza</a>
+<a href="<?php echo $this->url(array('page' => 'paseo-de-las-artes.html'), 'base_static') ?>#plaza">Plaza</a>
 y el <a href="<?php echo $this->url(array('page' => 'paseo-de-las-artes.html'), 'base_static') ?>">Paseo
 de las Artes</a>. Su aporte principal será la puesta en valor de espacios,
 objetos, muros y calles con una propuesta artística pensada siempre en pro del

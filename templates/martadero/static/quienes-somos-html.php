@@ -10,9 +10,9 @@
 <a href="<?php echo $this->url(array('page' => 'who_we_are.html'), 'base_static') ?>">clicking here</a>.</p>
 
 <p>Descárgate el DOSSIER de información
-<a href="<?php echo $this->baseUrl('/media/pdf/Sobre_proyecto_mARTadero.pdf') ?>">sobre
+<a href="<?php echo $this->baseUrl('/media/pdf/sobre-proyecto-martadero.pdf') ?>">sobre
 el proyecto mARTadero</a> en PDF (also in
-<a href="<?php echo $this->baseUrl('/media/pdf/About_proyecto_mARTadero.pdf') ?>">English</a>).</p>
+<a href="<?php echo $this->baseUrl('/media/pdf/about-proyecto-martadero.pdf') ?>">English</a>).</p>
 
 <p><img src="<?php echo $this->staticUrl('/martadero.jpg') ?>" alt="mARTadero" title="mARTadero" /></p>
 
@@ -149,7 +149,7 @@ que realizan un seguimiento de acuerdo al requerimiento del grupo. La
 socialización divertida, el encuentro con el otro, el reciclaje y re-uso, y
 otras dimensiones del taller permiten en ellos vivir lo artístico como forma de
 conocimiento del mundo que les rodea.</p>
-<p><a href="<?php // TODO ?>http://www.martadero.org/programas/tallerninos.html">http://www.martadero.org/programas/tallerninos.html</a></p>
+<p><a href="<?php echo $this->url(array('page' => 'taller-infantil.html'), 'base_static') ?>">http://www.martadero.org/programas/tallerninos.html</a></p>
 
 <h3>FORMARTE</h3>
 <p><img src="<?php echo $this->staticUrl('/formarte.jpg') ?>" title="formARTe mARTadero" /></p>
@@ -196,7 +196,7 @@ ideas entre los vecinos.</p>
     entre los habitantes del barrio de Villa Coronilla.</li>
 </ul>
 
-<p><a href="<?php // TODO ?>http://www.martadero.org/programas/plazadelasartes.html">http://www.martadero.org/programas/plazadelasartes.html</a></p>
+<p><a href="<?php echo $this->url(array('page' => 'paseo-de-las-artes.html'), 'base_static') ?>#plaza"><?php echo $this->url(array('page' => 'paseo-de-las-artes.html'), 'base_static') ?>#plaza</a></p>
 <p><a href="http://plazaartes.wordpress.com/">http://plazaartes.wordpress.com</a></p>
 
 <h3>VIVO Y VERDE</h3>

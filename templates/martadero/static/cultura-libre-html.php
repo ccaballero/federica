@@ -8,7 +8,7 @@
 <p><a href="http://creativecommons.org/licenses/by-sa/3.0/" target="_blank" class="right_image">
 <img src="<?php echo $this->staticUrl('/seal.png') ?>" title="mARTadero: Aprobado para trabajos de Cultura Libre" /></a>
 Desde el proyecto mARTadero apoyamos e impulsamos la
-<a href="http://es.wikipedia.org/wiki/Cultura_libre">Cultura Libre</a>,
+<a href="http://es.wikipedia.org/wiki/Cultura_libre" target="_blank">Cultura Libre</a>,
 convencidos del bien común que <strong>genera accesibilizar</strong> abierta y
 libremente los contenidos culturales.</p>
 <p>Porque es <strong>básico para el desarrollo justo y sostenible</strong> de
@@ -41,7 +41,7 @@ reflejados en:</p>
 </ul>
 
 <h3>Por una Comunicación Libre</h3>
-<p><a href="<?php // TODO ?>http://www.martadero.org/arte-cultura/martadero_v20.html">Consulta la proyección del mARTadero 2.0 y las lógicas de Comunicación</a></p>
+<p><a href="<?php echo $this->url(array('page' => 'martadero-v20.html'), 'base_static') ?>">Consulta la proyección del mARTadero 2.0 y las lógicas de Comunicación</a></p>
 <p>Desde el proyecto mARTadero entendemos la <strong>necesidad de difundir
 libremente contenidos culturales al tiempo que se defienden y fomentan los
 derechos morales de los creadores.</strong></p>

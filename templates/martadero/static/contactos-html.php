@@ -52,7 +52,7 @@ debería costarle 5 Bs. para 1 persona, aumentando 1 Bs. por persona extra.</p>
 <h2><a name="info"></a>Información sobre el proyecto mARTadero</h2>
 <p>Correo electrónico: <strong>info[a]martadero.org</strong></p>
 <p><strong>Descarga y comparte libremente</strong> el libro registro de 2009:
-<a href="<?php // TODO ?>http://www.martadero.org/arte-cultura/libro_martadero.html">Proyecto
+<a href="<?php echo $this->url(array('page' => 'libro-martadero.html'), 'base_static') ?>">Proyecto
 mARTadero. Un Espacio Ejemplar de Gestión Cultural</a>.</p>
 
 <h2>Solicitudes y propuestas</h2>
@@ -60,10 +60,12 @@ mARTadero. Un Espacio Ejemplar de Gestión Cultural</a>.</p>
 espacio</strong> sin necesidad de desplazarte hasta el mARTadero. Redacta
 detalladamente cuál es <strong>tu propuesta</strong> y el responsable del área
 te responderá en la mayor brevedad posible. Es tan simple como seguir los
-enlaces a continuación</p>
+enlaces a continuación:</p>
 
-<h2><a href="<?php // TODO ?>participa/participar.html#artistas">Participar como artista</a></h2>
-<h2><a href="<?php // TODO ?>php/enrutador.php">Solicitar un espacio</a></h2>
+<ul>
+    <li><a href="<?php echo $this->url(array('page' => 'participa-martadero.html'), 'base_static') ?>">Participar como artista</a></li>
+    <li><a href="<?php // TODO ?>php/enrutador.php">Solicitar un espacio</a></li>
+</ul>
 
 <h2><a name="envio"></a>Para hacer un envío</h2>
 <p>Si vas a enviarnos un paquete debes tener en cuenta las siguientes

@@ -75,7 +75,7 @@ cobrase entrada.</p>
 <ul>
     <li><a href="<?php // TODO ?>http://www.martadero.org/info-cultural/eje_tematico.html">Eje
     temático</a>.</li>
-    <li><a href="<?php // TODO ?>http://www.martadero.org/arte-cultura/fondart.html">Fondart</a>.</li>
+    <li><a href="<?php echo $this->url(array('page' => 'fondart.html'), 'base_static') ?>">Fondart</a>.</li>
 </ul>
 
 <h3>Inventando</h3>

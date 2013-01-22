@@ -2,7 +2,7 @@
 REDesearte Paz</h1>
 
 <p><a href="http://redeseartepaz.org/" target="_blank">
-<img src="<?php echo $this->staticUrl('/banner_grande1.png') ?>" alt="REDesearte Paz" title="REDesearte Paz" /></a></p>
+<img src="<?php echo $this->staticUrl('/banner-grande.png') ?>" alt="REDesearte Paz" title="REDesearte Paz" /></a></p>
 
 <p>Es una <strong>RED</strong> de <a href="http://redeseartepaz.org/somos">Agentes
 Culturales</a> <strong>dedicada a fortalecer el desarrollo comunitario y los

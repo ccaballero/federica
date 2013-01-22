@@ -1,5 +1,10 @@
 <h1>Paseo de las Artes</h1>
 
+<ul class="index">
+    <li><a href="#plaza">Plaza de las artes</a></li>
+    <li><a href="#propuestas">Propuestas</a></li>
+</ul>
+
 <p>El Paseo de las Artes consiste en establecer un circuito enlazando los
 espacios públicos que tenemos en nuestro barrio, en este recorrido crear
 representaciones artísticas urbanas; estas ilustrarán la historia, las
@@ -21,7 +26,7 @@ y compartir con sus vecinos.</p>
 <p>Ver <a href="http://maps.google.es/maps?ll=-17.39778,-66.1625&amp;spn=0.014006,0.022724&amp;z=16&amp;vpsrc=6&amp;lci=com.panoramio.all">Paseo
 de las Artes con imágenes de las calles</a> en un mapa más grande</p>
 
-<h2>Plaza de las Artes &gt; <a href="http://plazaartes.wordpress.com" target="_blank">http://plazaartes.wordpress.com</a></h2>
+<h2><a name="plaza"></a>Plaza de las Artes &gt; <a href="http://plazaartes.wordpress.com" target="_blank">http://plazaartes.wordpress.com</a></h2>
 <p>El proyecto consiste en la generación de un proceso de participación
 ciudadana que impulse la rehabilitación, resignificación y acondicionamiento de
 la Plaza de los Arrieros de Cochabamba (Bolivia), para convertirla en la Plaza
@@ -71,7 +76,7 @@ ideas entre los vecinos.</p>
 <a href="http://plazaartes.wordpress.com" target="_blank">http://plazaartes.wordpress.com</a>
 &gt; Deja tus opiniones para ayudarnos en el crecimieto de esta propuesta.</p>
 
-<h2>Algunas de nuestras propuestas</h2>
+<h2><a name="propuestas"></a>Algunas de nuestras propuestas</h2>
 
 <h3>&gt;&gt; PECHA COCHA &gt; <a href="http://plazaartes.wordpress.com/noches-de-pecha-cocha/" target="_blank">http://plazaartes.wordpress.com/noches-de-pecha-cocha/</a></h3>
 

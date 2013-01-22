@@ -4,12 +4,12 @@
 <p>PROPUESTA DE RECONSTRUCCIÓN HISTÓRICA  PARTICIPATIVA<br />
 <strong><a href="http://www.martadero.org/imagenando" target="_blank">www.martadero.org/imagenando</a></strong></p>
 
-<p class="quote">"¡Es  Muss sein! ¡Tiene que ser! Nuestra vida cotidiana es
+<p class="quote">&ldquo;¡Es  Muss sein! ¡Tiene que ser! Nuestra vida cotidiana es
 bombardeada por casualidades, más exactamente por encuentros casuales de
 personas y acontecimientos a los que se llama coincidencias. Co-incidencia
 significa que dos o más acontecimientos inesperados ocurren al mismo
 tiempo&hellip; Todo lo que ocurra en ese momento a su alrededor estará iluminado
-por aquella música y se hará hermoso."</p>
+por aquella música y se hará hermoso.&rdquo;</p>
 <p class="quote"><strong>Milán Kundera. La Insoportable Levedad del
 Ser</strong></p>
 

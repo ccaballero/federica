@@ -1,7 +1,6 @@
 <h1>REDES CULTURALES<br />
 4C - Circuito de Centros Culturales de Cochabamba</h1>
 
-
 <p><img src="<?php echo $this->staticUrl('/marca-4c.jpg') ?>" class="box_image" />
 <strong>Trabajar en red se presenta como una necesidad </strong>en el momento en
 que vivimos. Se ha de dejar atrás la idea de "centro" estrella y ser conscientes

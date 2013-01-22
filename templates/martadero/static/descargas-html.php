@@ -283,7 +283,7 @@ Commons 3.0 Unported.</p>
 este fondo editorial</strong>.</p>
 
 <p><strong>Pincha</strong></p>
-<?php // TODO PAYPAL ?>
+<?php echo $this->service('paypal1') ?>
 <p><strong>para hacer una donación voluntaria al Fondo Editorial del proyecto
 mARTadero</strong> (sistema <em><strong>Paypal</strong></em>)</p>
 

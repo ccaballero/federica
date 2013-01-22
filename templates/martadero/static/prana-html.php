@@ -296,7 +296,7 @@ formamos parte son:</p>
 
 <h2><a name="aporte"></a>APORTE POR USO DE ESPACIO</h2>
 <p>Puedes descargarte el
-<a href="<?php echo $this->baseUrl('/media/pdf/Aporte_Uso_prAna.pdf') ?>" target="_blank">aporte por uso de
+<a href="<?php echo $this->baseUrl('/media/pdf/aporte-uso-prana.pdf') ?>" target="_blank">aporte por uso de
 residencias en PDF</a></p>
 
 <p>Consulta la
