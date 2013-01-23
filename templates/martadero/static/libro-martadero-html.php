@@ -1,11 +1,10 @@
 <h1>Proyecto mARTadero: Un Espacio Ejemplar de Gestión Cultural</h1>
 
-<p><a href="<?php echo $this->staticUrl('/../descargas-html/libro-martadero.jpg') ?>" class="highslide box_image" onclick="return hs.expand(this);">
-<img src="<?php echo $this->staticUrl('/../descargas-html/libro-martadero-small.jpg') ?>" /></a>
+<p><a href="<?php echo $this->staticUrl('/libro-martadero.jpg') ?>" class="highslide box_image" onclick="return hs.expand(this);">
+<img src="<?php echo $this->staticUrl('/libro-martadero-small.jpg') ?>" /></a>
 <strong>Descárgate</strong> el libro de
 <a href="" class="highslide"
-   onclick="return hs.htmlExpand(this, {headingText: 'Fernando José García Barros', 'contentId': 'fernando-garcia' });"
-<a href="javascript:refresh()" onclick="javascript:window.open('../libro/fernando_garcia.html',null,'height=400,width=850,status=yes,toolbar=no ,menubar=no,location=no');">Fernando García</a>
+   onclick="return hs.htmlExpand(this, {headingText: 'Fernando José García Barros', 'contentId': 'fernando-garcia' });">Fernando García</a>
 (director del proyecto mARTadero).</p>
 
 <p><a href="<?php echo $this->baseUrl('/media/zip/proyecto-martadero-2009.zip') ?>" target="_blank">Comprimido en ZIP (8.5 MiB)</a><br />

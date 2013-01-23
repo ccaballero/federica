@@ -186,18 +186,17 @@ libremente</a> - Por <a href="http://www.tepidmonkey.net/" target="_blank">Tepid
 libremente</a> - Por <a href="http://www.dafont.com/yann-le-coroller.d1559" target="_blank">Yann le Coroller</a></p>
 
 <h2>Proyecto mARTadero: Un Espacio Ejemplar de Gestión Cultural</h2>
-<p><a href="<?php echo $this->staticUrl('/libro-martadero.jpg') ?>" class="highslide box_image" onclick="return hs.expand(this);">
-<img src="<?php echo $this->staticUrl('/libro-martadero-small.jpg') ?>" /></a>
+<p><a href="<?php echo $this->staticUrl('/../libro-martadero-html/libro-martadero.jpg') ?>" class="highslide box_image" onclick="return hs.expand(this);">
+<img src="<?php echo $this->staticUrl('/../libro-martadero-html/libro-martadero-small.jpg') ?>" /></a>
 <strong>Descárgate</strong> el libro de
 <a href="" class="highslide"
-   onclick="return hs.htmlExpand(this, {headingText: 'Fernando José García Barros', 'contentId': 'fernando-garcia' });"
-<a href="javascript:refresh()" onclick="javascript:window.open('../libro/fernando_garcia.html',null,'height=400,width=850,status=yes,toolbar=no ,menubar=no,location=no');">Fernando García</a>
+   onclick="return hs.htmlExpand(this, {headingText: 'Fernando José García Barros', 'contentId': 'fernando-garcia' });">Fernando García</a>
 (director del proyecto mARTadero).</p>
 
 <div id="fernando-garcia" class="highslide-html-content">
     <div class="highslide-header"><div class="highslide-close"><a href="#" onclick="hs.close(this);">&nbsp;</a></div></div>
     <div class="highslide-body">
-        <p><img src="<?php echo $this->staticUrl('/fernando-garcia.jpg') ?>" class="box_image" />
+        <p><img src="<?php echo $this->staticUrl('/../libro-martadero-html/fernando-garcia.jpg') ?>" class="box_image" />
         Es <strong>arquitecto, profesor universitario, gestor cultural y artista
         visual</strong>. Estudió Artes Aplicadas, y posteriormente Arquitectura
         en la ETSAS de Sevilla y en el Politécnico de Milán, Magíster por la

@@ -66,7 +66,8 @@
         <p><input type="submit" value="Acceder" /></p>
     </form>
 </div>-->
-<!--<div class="post">
+
+<div class="post">
     <h1>Contacto</h1>
     <p>Calle 27 de agosto y Ollantay<br />Cochabamba, Bolivia</p>
     <table>
@@ -84,12 +85,17 @@
         </tr>
     </table>
     <p>Telf. (591-4) 4588778</p>
-    <p><a href="">+ detalles</a></p>
-    <p class="text-center"><a href=""><img src="<?php echo $this->media_url ?>/images/ubicacion.jpg" title="Ubicación del mARTadero" alt="Ubicación el mARTadero" /></a></p>
+    <p><a href="<?php echo $this->url(array('page' => 'contactos.html'), 'base_static') ?>">+ detalles</a></p>
+    <p class="text-center">
+        <a href="<?php echo $this->url(array('page' => 'contactos.html'), 'base_static') ?>#mapa">
+            <img src="<?php echo $this->media_url ?>/images/ubicacion.jpg" title="Ubicación del mARTadero" alt="Ubicación el mARTadero" />
+        </a>
+    </p>
     <p class="text-center">Pincha sobre el mapa<br />para conocer cómo llegar</p>
-</div>-->
-<!--<div class="post" id="sharing">
-    <p><a href="" title="Cultura Libre"><strong>Comparte libremente</strong></a> los contenidos de esta web</p>
+</div>
+
+<div class="post" id="sharing">
+    <p><a href="<?php echo $this->url(array('page' => 'cultura-libre.html'), 'base_static') ?>" title="Cultura Libre"><strong>Comparte libremente</strong></a> los contenidos de esta web.</p>
     <p class="text-center"><a target="_blank" href="http://creativecommons.org/licenses/by-sa/3.0/" rel="license"><img src="<?php echo $this->media_url ?>/images/creative-commons.png" title="Licencia de Creative Commons" alt="Licencia de Creative Commons" /></a></p>
     <p class="text-center"><a target="_blank" href="http://movecommons.org/es/np-rp-rc.to-gr/0.1/"><img src="<?php echo $this->media_url ?>/images/move-commons.png" title="mARTadero es Move Commons es Bien Común" alt="Move Commons Sin ánimo de lucro, Reproducible, Reinforcing the Town/community/society Commons, Horizontal" /></a></p>
-</div>-->
+</div>

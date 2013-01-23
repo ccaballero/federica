@@ -157,7 +157,7 @@ class Yachay_Bootstrap extends Zend_Application_Bootstrap_Bootstrap
                  ->setViewSuffix('php');
 
         $config = Zend_Registry::get('config');
-        $view->setScriptPath(APPLICATION_PATH . '/templates/' . $config->resources->layout->layout . '/');
+        $view->setScriptPath($config->resources->layout->layoutPath . $config->resources->layout->layout . '/');
         $view->setHelperPath(APPLICATION_PATH . '/library/Yachay/View/Helper', 'Yachay_View_Helper');
 
         Zend_Controller_Action_HelperBroker::addHelper($renderer);
@@ -200,11 +200,10 @@ class Yachay_Bootstrap extends Zend_Application_Bootstrap_Bootstrap
         $this->bootstrap('config');
 
         $config = Zend_Registry::get('config');
-        $template = $config->resources->layout->layout;
 
         Zend_Layout::startMVC(array(
             'layoutPath' => $config->resources->layout->layoutPath,
-            'layout'     => $template,
+            'layout'     => $config->resources->layout->layout,
             'viewSuffix' => 'php',
         ));
 

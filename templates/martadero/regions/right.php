@@ -1,9 +1,11 @@
-<!--<div class="post">
-    <a target="_blank" href=""><img src="<?php echo $this->media_url ?>/images/banner_exposicion.jpg" title="EX_POSICION" alt="EX_POSICION" /></a>
-</div>-->
-<!--<div class="post">
-    <a target="_blank" href=""><img src="<?php echo $this->media_url ?>/images/podcast_libre.jpg" title="Descarga y comparte las entrevistas del proyecto mARTadero" alt="Descarga y comparte las entrevistas del proyecto mARTadero" /></a>
-</div>-->
+<div class="post">
+    <a target="_blank" href="http://feeds.feedburner.com/martadero">
+        <img src="<?php echo $this->media_url ?>/images/podcast_libre.jpg"
+             title="Descarga y comparte las entrevistas del proyecto mARTadero"
+             alt="Descarga y comparte las entrevistas del proyecto mARTadero" />
+    </a>
+</div>
+
 <!--<div class="post">
     <h1>BLOG</h1>
     <div class="email">
@@ -41,9 +43,10 @@
     <div class="all">
         <a title="Lee y comenta las noticias y artículos del mARTadero" href="http://www.martadero.org/noticias/noticias.html">...consulta + posts del Blog.</a>
     </div>
-</div>
+</div>-->
+
 <div class="post">
     <h1>DESCARGA LIBRE</h1>
-    <p><a href=""><img src="<?php echo $this->media_url ?>/images/libreria_martadero.jpg" alt="" title="" /></a></p>
-    <p><a href=""><img src="<?php echo $this->media_url ?>/images/libreria_f22.jpg" alt="" title="" /></a></p>
-</div>-->
+    <p><a href="<?php echo $this->url(array('page' => 'libro-martadero.html'), 'base_static') ?>"><img src="<?php echo $this->media_url ?>/images/libreria_martadero.jpg" alt="" title="" /></a></p>
+    <p><a href="<?php echo $this->url(array('page' => 'f22.html'), 'base_static') ?>"><img src="<?php echo $this->media_url ?>/images/libreria_f22.jpg" alt="" title="" /></a></p>
+</div>

@@ -1,0 +1,11 @@
+#main .item-1 {
+    float: left;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    margin: 5px 10px;
+}
+
+#main .item-1 h2 {
+    margin: 3px;
+}
