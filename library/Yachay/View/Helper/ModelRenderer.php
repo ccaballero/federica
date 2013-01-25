@@ -2,10 +2,12 @@
 
 class Yachay_View_Helper_ModelRenderer
 {
-    public function modelRenderer($model) {
+    public function modelRenderer($model, $type = 'list', $extra_params = array()) {
         $config = Zend_Registry::get('config');
 
         $view = new Zend_View();
+        
+        $view->assign($extra_params);
         $view->assign(get_object_vars($model));
 
         $view->setScriptPath($config->resources->layout->layoutPath . $config->resources->layout->layout . '/components/');
@@ -16,7 +18,7 @@ class Yachay_View_Helper_ModelRenderer
             $_class = explode('_', $class);
             $object = strtolower(end($_class));
 
-            return $view->render($object . '.php');
+            return $view->render($object . '-' . $type . '.php');
         } catch (Exception $e) {
             return $model->__toString();
         }

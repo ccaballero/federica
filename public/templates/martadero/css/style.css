@@ -55,6 +55,10 @@ a img {
     text-align: center;
 }
 
+.text-right {
+    text-align: right;
+}
+
 /* the rest of the things */
 #wrapper1, #header {
     margin: 0 auto;

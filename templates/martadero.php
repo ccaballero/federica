@@ -17,7 +17,10 @@
                     <div id="head_bar"><?php echo $this->partial('regions/sub-header.php', array('media_url' => $this->media_url)) ?></div>
                     <div class="clear"></div>
                     <div id="content">
-                        <div id="main"><?php echo $this->layout()->content ?></div>
+                        <div id="main">
+                            <?php echo $this->partial('regions/messages.php', array('messages' => $this->messages)) ?>
+                            <?php echo $this->layout()->content ?>
+                        </div>
                         <div id="left_bar"><?php echo $this->partial('regions/left.php', array('media_url' => $this->media_url)) ?></div>
                         <div id="right_bar"><?php echo $this->partial('regions/right.php', array('media_url' => $this->media_url)) ?></div>
                     </div>
