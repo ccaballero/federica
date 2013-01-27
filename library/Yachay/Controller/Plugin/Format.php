@@ -9,9 +9,8 @@ class Yachay_Controller_Plugin_Format extends Zend_Controller_Plugin_Abstract
 //        $this->request = $request;
     }
 
-    public function dispatchLoopShutdown() {
+    public function routeShutdown(Zend_Controller_Request_Abstract $request) {
 //        $view = Zend_Controller_Action_HelperBroker::getExistingHelper('ViewRenderer')->view;
-//
 //        $format = $this->request->getParam('_format', 'html');
 //        $xml = new Yachay_View_Helper_Xml();
 //
@@ -24,6 +23,5 @@ class Yachay_Controller_Plugin_Format extends Zend_Controller_Plugin_Abstract
 //                $this->_response->setHeader('Content-Type', 'application/json; charset=utf-8');
 //                $this->_response->setBody(@Zend_Json::fromXml($xml->xml($view), true));
 //                break;
-//        }
     }
 }

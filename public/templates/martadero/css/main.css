@@ -83,30 +83,6 @@
     font-size: 16px;
 }
 
-#main #messages {
-    background-color: #E6E6E6;
-    border: 1px solid #FF9A00;
-    margin-bottom: 10px;
-}
-
-#main #messages div.closeable {
-    margin-right: 5px;
-}
-
-#main #messages div.closeable a {
-    font-weight: bold;
-}
-
-#main #messages p.message {
-    margin: 5px 15px 5px 5px;
-}
-
-#main .tasks input[type="submit"] {
-    background-color: #E6E6E6;
-    border: none;
-    padding: 1px 6px;
-}
-
 /* main content (tabbers) */
 /*#main ul {
     list-style-type: none;

@@ -1,3 +1,5 @@
+<?php $this->placeholder('foot-bar')->captureStart() ?>
+
 <ul>
     <li>Proyecto generado por
         <a href="<?php echo $this->url(
@@ -16,3 +18,5 @@
                  alt="Fundación Imagen" title="Fundación Imagen" /></a>
     </li>
 </ul>
+
+<?php $this->placeholder('foot-bar')->captureEnd() ?>

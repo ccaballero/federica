@@ -222,6 +222,7 @@ a img {
     width: 200px;
     padding: 0px 4px 0px 10px;
     margin-right: -220px;
+    display: block;
 }
 
 /* head of page */
@@ -324,12 +325,12 @@ a img {
 }
 
 #right_bar .post h1 {
-    background: url('../images/post_header.jpg') no-repeat;
+    background: #ffffff url('../images/post_header.jpg') no-repeat 0% 0%;
     color: #ffffff;
     font-weight: bold;
     font-size: 17px;
     padding: 9px 0px 15px 10px;
-    margin: 0px 0px 0px -10px;
+    margin: 0px 0px 0px 0px;
 }
 
 #right_bar .post .post-element {

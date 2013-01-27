@@ -1,3 +1,5 @@
+<?php $this->placeholder('toolbar')->captureStart() ?>
+
 <ul>
     <li>
         <a href="<?php echo $this->url(
@@ -10,3 +12,5 @@
         <img class="image-align" src="<?php echo $this->media_url ?>/images/arrow.gif" /></a>
     </li>
 </ul>
+
+<?php $this->placeholder('toolbar')->captureEnd() ?>

@@ -3,24 +3,35 @@
 /* install the base distribution                                              */
 /*============================================================================*/
 
-SELECT 'base';
+SELECT 'base' AS '';
 \. apps/base.sql
 
-SELECT 'packages';
+SELECT 'packages' AS '';
 \. apps/packages.sql
 
-SELECT 'routes';
+SELECT 'routes' AS '';
 \. apps/routes.sql
 
 /*============================================================================*/
 
-SELECT 'privileges';
-\. apps/privileges.sql
+SELECT 'regions' AS '';
+\. apps/regions.sql
 
-SELECT 'roles';
-\. apps/roles.sql
-
-SELECT 'users';
-\. apps/users.sql
+SELECT 'widgets' AS '';
+\. apps/widgets.sql
 
 /*============================================================================*/
+
+-- SELECT 'privileges';
+-- \. apps/privileges.sql
+-- 
+-- SELECT 'roles';
+-- \. apps/roles.sql
+-- 
+-- SELECT 'users';
+-- \. apps/users.sql
+
+/*============================================================================*/
+
+SELECT 'martadero' AS '';
+\. _martadero.sql

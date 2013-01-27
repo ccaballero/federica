@@ -149,7 +149,7 @@ Perú</strong>.</p>
 <p><img src="<?php echo $this->staticUrl('/lima_renr.jpg') ?>" /></p>
 <p>Asistió: Daniel Cotillas (Coordinador de Comunicación del proyecto
 mARTadero)</p>
-<p>+ info REDES mARTadero <a href="http://www.martadero.org/redes/residenciasenred.html">martadero.org/redes/residenciasenred.html </a></p>
+<p>+ info REDES mARTadero <a href="<?php echo $this->url(array('page' => 'residencias-en-red.html'), 'base_static') ?>">residenciasenred</a></p>
 <p>+ info <a href="http://residenciasenred.org/">www.residenciasenred.org</a></p>
 
 <p>Enero, 24-27. <strong>Encuentro Internacional de Responsabilidad Social y
@@ -170,5 +170,5 @@ San José, Costa Rica</strong>.</p>
 <p><img src="<?php echo $this->staticUrl('/santiago_eje_central.jpg') ?>" /></p>
 <p>Asistió: Daniel Cotillas (Coordinador de Comunicación del proyecto
 mARTadero)</p>
-<p>+ info REDES mARTadero <a href="http://www.martadero.org/redes/ejecentr4l.html">martadero.org/redes/ejecentr4l.html</a></p>
+<p>+ info REDES mARTadero <a href="<?php echo $this->url(array('page' => 'eje-centr4l.html'), 'base_static') ?>">martadero.org/redes/ejecentr4l.html</a></p>
 <p>+ info <a href="http://www.emprendeduriacultural.net/ejecentral">emprendeduriacultural.net/ejecentral</a></p>

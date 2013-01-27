@@ -1,3 +1,5 @@
+<?php $this->placeholder('footer')->captureStart() ?>
+
 <ul class="primary">
     <li>
         <strong>Info</strong>
@@ -94,4 +96,5 @@
         </ul>
     </li>
 </ul>
-<div class="clear"></div>
+
+<?php $this->placeholder('footer')->captureEnd() ?>
