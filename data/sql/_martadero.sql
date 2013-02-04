@@ -1,59 +1,134 @@
 
 /*============================================================================*/
+/* template register                                                          */
+/*============================================================================*/
+INSERT INTO `template`
+(`label`)
+VALUES
+('martadero');
+
+/*============================================================================*/
+/* layout register                                                            */
+/*============================================================================*/
+INSERT INTO `template_layout`
+(`template`, `label`)
+VALUES
+('martadero', 'frontpage'),
+('martadero', 'static'),
+('martadero', 'user');
+
+/*============================================================================*/
 /* regions register                                                           */
 /*============================================================================*/
-INSERT INTO `region`
-(`label`, `package`, `type`)
-VALUES
-('header',     'base', ''),
-('menubar',    'base', ''),
-('toolbar',    'base', ''),
-('sub-header', 'base', ''),
-('messages',   'base', ''),
-('left',       'base', ''),
-('right',      'base', ''),
-('foot-bar',   'base', ''),
-('footer',     'base', '');
+-- INSERT INTO `template_region`
+-- (`template`, `label`, `type`)
+-- VALUES
+-- ('martadero', 'header',     'static'),
+-- ('martadero', 'menubar',    'container'),
+-- ('martadero', 'toolbar',    'list'),
+-- ('martadero', 'sub-header', 'container'),
+-- ('martadero', 'messages',   'messenger'),
+-- ('martadero', 'left',       'container'),
+-- ('martadero', 'right',      'container'),
+-- ('martadero', 'foot-bar',   'static'),
+-- ('martadero', 'footer',     'menu');
 
 /*============================================================================*/
-/* regions in routes register                                                 */
+/* regions in each layout register                                            */
 /*============================================================================*/
-INSERT INTO `region_route`
-(`route`, `package`, `region`)
-VALUES
-('base', 'base', 'header'),('base', 'base', 'menubar'),('base', 'base', 'toolbar'),('base', 'base', 'sub-header'),('base', 'base', 'messages'),('base', 'base', 'left'),('base', 'base', 'right'),('base', 'base', 'foot-bar'),('base', 'base', 'footer'),
-('base_confirm', 'base', 'header'),('base_confirm', 'base', 'menubar'),('base_confirm', 'base', 'toolbar'),('base_confirm', 'base', 'sub-header'),('base_confirm', 'base', 'messages'),('base_confirm', 'base', 'left'),('base_confirm', 'base', 'right'),('base_confirm', 'base', 'foot-bar'),('base_confirm', 'base', 'footer'),
-('base_error', 'base', 'header'),('base_error', 'base', 'menubar'),('base_error', 'base', 'toolbar'),('base_error', 'base', 'sub-header'),('base_error', 'base', 'messages'),('base_error', 'base', 'left'),('base_error', 'base', 'right'),('base_error', 'base', 'foot-bar'),('base_error', 'base', 'footer'),
-('base_static', 'base', 'header'),('base_static', 'base', 'menubar'),('base_static', 'base', 'toolbar'),('base_static', 'base', 'sub-header'),('base_static', 'base', 'messages'),('base_static', 'base', 'left'),('base_static', 'base', 'right'),('base_static', 'base', 'foot-bar'),('base_static', 'base', 'footer'),
+-- INSERT INTO `template_layout_region`
+-- (`template`, `layout`, `region`)
+-- VALUES
+-- ('martadero', 'frontpage', 'header'),
+-- ('martadero', 'frontpage', 'menubar'),
+-- ('martadero', 'frontpage', 'toolbar'),
+-- ('martadero', 'frontpage', 'sub-header'),
+-- ('martadero', 'frontpage', 'messages'),
+-- ('martadero', 'frontpage', 'left'),
+-- ('martadero', 'frontpage', 'right'),
+-- ('martadero', 'frontpage', 'foot-bar'),
+-- ('martadero', 'frontpage', 'footer'),
+-- 
+-- ('martadero', 'static', 'header'),
+-- ('martadero', 'static', 'menubar'),
+-- ('martadero', 'static', 'toolbar'),
+-- ('martadero', 'static', 'sub-header'),
+-- ('martadero', 'static', 'messages'),
+-- ('martadero', 'static', 'left'),
+-- ('martadero', 'static', 'foot-bar'),
+-- ('martadero', 'static', 'footer'),
+-- 
+-- ('martadero', 'user', 'header'),
+-- ('martadero', 'user', 'menubar'),
+-- ('martadero', 'user', 'toolbar'),
+-- ('martadero', 'user', 'messages'),
+-- ('martadero', 'user', 'left'),
+-- ('martadero', 'user', 'foot-bar');
 
-('packages_list', 'base', 'header'),('packages_list', 'base', 'menubar'),('packages_list', 'base', 'toolbar'),('packages_list', 'base', 'messages'),('packages_list', 'base', 'left'),('packages_list', 'base', 'foot-bar'),('packages_list', 'base', 'footer'),
-('packages_manager', 'base', 'header'),('packages_manager', 'base', 'menubar'),('packages_manager', 'base', 'toolbar'),('packages_manager', 'base', 'messages'),('packages_manager', 'base', 'left'),('packages_manager', 'base', 'foot-bar'),('packages_manager', 'base', 'footer'),
-('packages_package_view', 'base', 'header'),('packages_package_view', 'base', 'menubar'),('packages_package_view', 'base', 'toolbar'),('packages_package_view', 'base', 'messages'),('packages_package_view', 'base', 'left'),('packages_package_view', 'base', 'foot-bar'),('packages_package_view', 'base', 'footer'),
-
-('regions_list', 'base', 'header'),('regions_list', 'base', 'menubar'),('regions_list', 'base', 'toolbar'),('regions_list', 'base', 'messages'),('regions_list', 'base', 'left'),('regions_list', 'base', 'foot-bar'),('regions_list', 'base', 'footer'),
-('regions_manager', 'base', 'header'),('regions_manager', 'base', 'menubar'),('regions_manager', 'base', 'toolbar'),('regions_manager', 'base', 'messages'),('regions_manager', 'base', 'left'),('regions_manager', 'base', 'foot-bar'),('regions_manager', 'base', 'footer'),
-('routes_list', 'base', 'header'),('routes_list', 'base', 'menubar'),('routes_list', 'base', 'toolbar'),('routes_list', 'base', 'messages'),('routes_list', 'base', 'left'),('routes_list', 'base', 'foot-bar'),('routes_list', 'base', 'footer'),
-('routes_manager', 'base', 'header'),('routes_manager', 'base', 'menubar'),('routes_manager', 'base', 'toolbar'),('routes_manager', 'base', 'messages'),('routes_manager', 'base', 'left'),('routes_manager', 'base', 'foot-bar'),('routes_manager', 'base', 'footer');
+/*============================================================================*/
+/* layout in each route register                                              */
+/*============================================================================*/
+ INSERT INTO `template_layout_route`
+(`template`, `layout`, `route`)
+SELECT 'martadero' as template, 'user' as layout, route FROM route;
+UPDATE template_layout_route SET layout = 'frontpage' WHERE route = 'base';
+UPDATE template_layout_route SET layout = 'static' WHERE route = 'base_static';
 
 /*============================================================================*/
 /* widgets register                                                           */
 /*============================================================================*/
-INSERT INTO `widget`
-(`label`, `package`, `type`)
-VALUES
-('blog',                'base', ''),
-('calendario',          'base', ''),
-('comparte',            'base', ''),
-('contactos',           'base', ''),
-('convocatorias',       'base', ''),
-('descargas',           'base', ''),
-('eje-tematico',        'base', ''),
-('ingresar',            'base', ''),
-('logo',                'base', ''),
-('menu-administracion', 'base', ''),
-('menu-lateral',        'base', ''),
-('menu-principal',      'base', ''),
-('participar',          'base', ''),
-('podcast',             'base', ''),
-('servicios',           'base', ''),
-('social',              'base', '');
+-- INSERT INTO `template_widget`
+-- (`template`, `label`, `type`)
+-- VALUES
+-- ('martadero', 'blog',                ''),
+-- ('martadero', 'calendario',          ''),
+-- ('martadero', 'comparte',            ''),
+-- ('martadero', 'contactos',           ''),
+-- ('martadero', 'convocatorias',       ''),
+-- ('martadero', 'descargas',           ''),
+-- ('martadero', 'eje-tematico',        ''),
+-- ('martadero', 'ingresar',            ''),
+-- ('martadero', 'logo',                ''),
+-- ('martadero', 'menu-administracion', ''),
+-- ('martadero', 'menu-lateral',        ''),
+-- ('martadero', 'menu-principal',      ''),
+-- ('martadero', 'participar',          ''),
+-- ('martadero', 'podcast',             ''),
+-- ('martadero', 'servicios',           ''),
+-- ('martadero', 'social',              '');
+
+/*============================================================================*/
+/* widget in each region in each layout register                              */
+/*============================================================================*/
+-- INSERT INTO `template_layout_region_widget`
+-- (`template`, `layout`, `region`, `widget`)
+-- VALUES
+-- ('martadero', 'frontpage', 'menubar',    'menu-principal'),
+-- ('martadero', 'frontpage', 'menubar',    'social'),
+-- ('martadero', 'frontpage', 'sub-header', 'logo'),
+-- ('martadero', 'frontpage', 'sub-header', 'servicios'),
+-- ('martadero', 'frontpage', 'sub-header', 'participar'),
+-- ('martadero', 'frontpage', 'left',       'calendario'),
+-- ('martadero', 'frontpage', 'left',       'eje-tematico'),
+-- ('martadero', 'frontpage', 'left',       'menu-lateral'),
+-- ('martadero', 'frontpage', 'left',       'ingresar'),
+-- ('martadero', 'frontpage', 'left',       'contactos'),
+-- ('martadero', 'frontpage', 'left',       'comparte'),
+-- ('martadero', 'frontpage', 'right',      'podcast'),
+-- ('martadero', 'frontpage', 'right',      'blog'),
+-- ('martadero', 'frontpage', 'right',      'convocatorias'),
+-- ('martadero', 'frontpage', 'right',      'descargas'),
+-- 
+-- ('martadero', 'static', 'menubar',    'menu-principal'),
+-- ('martadero', 'static', 'menubar',    'social'),
+-- ('martadero', 'static', 'sub-header', 'logo'),
+-- ('martadero', 'static', 'sub-header', 'servicios'),
+-- ('martadero', 'static', 'sub-header', 'participar'),
+-- ('martadero', 'static', 'left',       'eje-tematico'),
+-- ('martadero', 'static', 'left',       'menu-lateral'),
+-- ('martadero', 'static', 'left',       'ingresar'),
+-- ('martadero', 'static', 'left',       'comparte'),
+-- 
+-- ('martadero', 'user', 'menubar',    'menu-principal'),
+-- ('martadero', 'user', 'menubar',    'social'),
+-- ('martadero', 'user', 'left',       'menu-administracion');

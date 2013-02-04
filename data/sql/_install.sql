@@ -14,11 +14,11 @@ SELECT 'routes' AS '';
 
 /*============================================================================*/
 
-SELECT 'regions' AS '';
-\. apps/regions.sql
+SELECT 'templates' AS '';
+\. apps/templates.sql
 
-SELECT 'widgets' AS '';
-\. apps/widgets.sql
+-- SELECT 'widgets' AS '';
+-- \. apps/widgets.sql
 
 /*============================================================================*/
 

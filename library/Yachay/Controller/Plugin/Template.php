@@ -8,14 +8,46 @@ class Yachay_Controller_Plugin_Template extends Zend_Controller_Plugin_Abstract
 
         $front_controller = Zend_Controller_Front::getInstance();
         $route = $front_controller->getRouter()->getCurrentRouteName();
-        
-        $db_regions = new Db_Regions();
-        $regions = $db_regions->selectByRoute($route);
 
-        $dir = '/regions/';
+        $db_templates_layouts = new Db_Templates_Layouts();
+        $layout = $db_templates_layouts->selectByRoute($route);
+//
+//        $db_templates_regions = new Db_Templates_Regions();
+//        $regions = $db_templates_regions->selectByLayout($layouts[0]->label);
 
-        foreach ($regions as $region) {
-            $view->render($dir . $region->label . '.php');
+        // TODO
+        $rules = array(
+            'frontpage' => array(
+                'header',
+                'menubar',
+                'toolbar',
+                'sub-header',
+                'left',
+                'right',
+                'foot-bar',
+                'footer',
+            ),
+            'static' => array(
+                'header',
+                'menubar',
+                'toolbar',
+                'sub-header',
+                'left',
+                'foot-bar',
+                'footer',
+            ),
+            'user' => array(
+                'header',
+                'menubar',
+                'toolbar',
+                'left',
+                'foot-bar',
+            ),
+        );
+
+        $directory = '/regions/';
+        foreach ($rules[$layout->label] as $region) {
+            $view->render($directory . $region . '.php');
         }
     }
 }

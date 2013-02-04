@@ -5,7 +5,7 @@
 <td class="text-center">
 <?php foreach ($this->operations as $operation) { ?>
     <a href="<?php echo $this->url(array('package' => $this->url), 'packages_package_' . $operation->name) ?>">
-        <img src="<?php echo $this->baseUrl('/icons/' . $operation->icon . '.png') ?>" alt="<?php echo $operation->label ?>" title="<?php echo $operation->label ?>" />
+        <img src="<?php echo $this->baseUrl('/media/icons/' . $operation->icon . '.png') ?>" alt="<?php echo $operation->label ?>" title="<?php echo $operation->label ?>" />
     </a>
 <?php } ?>
 </td>
