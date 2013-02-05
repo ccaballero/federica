@@ -9,9 +9,32 @@ class Yachay_Bootstrap extends Zend_Application_Bootstrap_Bootstrap
 
     protected function _initAutoload() {
         $this->bootstrap('config');
+        $this->bootstrap('db');
 
         $loader = Zend_Loader_Autoloader::getInstance();
         $loader->pushAutoloader(new Yachay_Loader());
+
+        $resourceTypes = array(
+            'form' => array(
+                'path' => 'forms/',
+                'namespace' => 'Form',
+            ),
+        );
+
+        $db_packages = new Db_Packages();
+        $modules = $db_packages->selectByStatus('active');
+
+        foreach ($modules as $module) {
+            $loader->pushAutoloader(new Zend_Application_Module_Autoloader(
+                array(
+                    'namespace' => ucfirst($module->url),
+                    'basePath' => APPLICATION_PATH . '/apps/' . $module->url,
+                    'resourceTypes' => $resourceTypes
+                )
+            ));
+        }
+
+        return $loader;
     }
 
     protected function _initRouter() {

@@ -5,6 +5,7 @@ class Yachay_Loader implements Zend_Loader_Autoloader_Interface
     private $default = 'models';
     private $namespaces = array(
         'Db' => 'adapters',
+        'Forms' => 'forms',
     );
 
     public function autoload($class) {

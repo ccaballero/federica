@@ -132,3 +132,11 @@ UPDATE template_layout_route SET layout = 'static' WHERE route = 'base_static';
 -- ('martadero', 'user', 'menubar',    'menu-principal'),
 -- ('martadero', 'user', 'menubar',    'social'),
 -- ('martadero', 'user', 'left',       'menu-administracion');
+
+/*============================================================================*/
+/* defaults users register                                                    */
+/*============================================================================*/
+INSERT INTO `user`
+(`email`, `password`, `lastname`, `firstname`, `phone`)
+VALUES
+('info@matadero.org', 'f5368172eb00fcf25ea79d0cf91288a9', 'mARTadero', 'Comunicación', '67402891');

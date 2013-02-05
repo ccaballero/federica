@@ -28,8 +28,8 @@ SELECT 'templates' AS '';
 -- SELECT 'roles';
 -- \. apps/roles.sql
 -- 
--- SELECT 'users';
--- \. apps/users.sql
+SELECT 'users' AS '';
+\. apps/users.sql
 
 /*============================================================================*/
 
