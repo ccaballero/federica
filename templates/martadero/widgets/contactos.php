@@ -1,3 +1,4 @@
+<?php if ($this->route == 'base') { ?>
 <div class="post">
     <h1>Contacto</h1>
     <p>Calle 27 de agosto y Ollantay<br />Cochabamba, Bolivia</p>
@@ -24,3 +25,4 @@
     </p>
     <p class="text-center">Pincha sobre el mapa<br />para conocer cómo llegar</p>
 </div>
+<?php } ?>

@@ -1,3 +1,4 @@
+<?php if (!$this->auth->hasIdentity()) { ?>
 <div class="post">
     <h1>Usuario del mARTadero</h1>
     <form method="post" action="<?php echo $this->url(array(), 'users_in') ?>">
@@ -6,3 +7,4 @@
         <p><input type="submit" value="Acceder" /></p>
     </form>
 </div>
+<?php } ?>

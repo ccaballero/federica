@@ -38,6 +38,6 @@ class Users_AuthController extends Yachay_Controller_Action
 
     public function outAction() {
         Zend_Auth::getInstance()->clearIdentity();
-        $this->_redirect($this->view->url(array(), 'users_in'));
+        $this->_redirect($this->view->url(array(), 'base'));
     }
 }

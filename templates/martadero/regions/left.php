@@ -1,11 +1,19 @@
 <?php $this->placeholder('left')->captureStart() ?>
+<?php
 
-<?php echo $this->partial('widgets/calendario.php', array('media_url' => $this->media_url)) ?>
-<?php echo $this->partial('widgets/eje-tematico.php', array('media_url' => $this->media_url)) ?>
-<?php echo $this->partial('widgets/menu-lateral.php', array('media_url' => $this->media_url)) ?>
-<?php echo $this->partial('widgets/menu-administracion.php', array('media_url' => $this->media_url)) ?>
-<?php echo $this->partial('widgets/ingresar.php', array('media_url' => $this->media_url)) ?>
-<?php echo $this->partial('widgets/contactos.php', array('media_url' => $this->media_url)) ?>
-<?php echo $this->partial('widgets/comparte.php', array('media_url' => $this->media_url)) ?>
+$params = array(
+    'media_url' => $this->media_url,
+    'auth' => $this->auth,
+    'route' => $this->route,
+);
 
+echo $this->partial('widgets/calendario.php', $params);
+echo $this->partial('widgets/ingresar.php', $params);
+echo $this->partial('widgets/eje-tematico.php', $params);
+echo $this->partial('widgets/menu-lateral.php', $params);
+echo $this->partial('widgets/menu-administracion.php', $params);
+echo $this->partial('widgets/contactos.php', $params);
+echo $this->partial('widgets/comparte.php', $params);
+
+?>
 <?php $this->placeholder('left')->captureEnd() ?>

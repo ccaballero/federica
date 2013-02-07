@@ -55,6 +55,8 @@ $translate = array(
 $date = print_array_month(time());
 
 ?>
+
+<?php if ($this->route == 'base') { ?>
 <div class="post">
     <h1>Este mes en el mARTadero</h1>
     <table class="calendar">
@@ -81,3 +83,4 @@ $date = print_array_month(time());
     <?php } ?>
     </table>
 </div>
+<?php } ?>
