@@ -1,3 +1,5 @@
+<?php $this->headTitle('Territorio Cultural - Centros del Sur - REDES CULTURALES', 'PREPEND') ?>
+
 <h1>REDES CULTURALES<br />
 Territorio Cultural - Centros del Sur</h1>
 

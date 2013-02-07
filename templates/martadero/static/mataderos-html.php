@@ -1,3 +1,5 @@
+<?php $this->headTitle('Mataderos del mundo - REDES CULTURALES', 'PREPEND') ?>
+
 <h1>REDES CULTURALES<br />
 Mataderos del Mundo</h1>
 

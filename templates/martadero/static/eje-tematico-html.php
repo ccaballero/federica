@@ -1,3 +1,5 @@
+<?php $this->headTitle('Eje temático', 'PREPEND') ?>
+
 <h1>Eje temático conceptual del mARTadero</h1>
 
 <h2>2012<br />REDUCTOS TECNO-LÓGICOS</h2>

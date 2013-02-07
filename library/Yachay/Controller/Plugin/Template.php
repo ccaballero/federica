@@ -11,7 +11,7 @@ class Yachay_Controller_Plugin_Template extends Zend_Controller_Plugin_Abstract
 
         $db_templates_layouts = new Db_Templates_Layouts();
         $layout = $db_templates_layouts->selectByRoute($route);
-//
+
 //        $db_templates_regions = new Db_Templates_Regions();
 //        $regions = $db_templates_regions->selectByLayout($layouts[0]->label);
 

@@ -1,3 +1,4 @@
+<?php $this->headTitle('prAna - Artistic Residence Program of NADA', 'PREPEND') ?>
 <?php Zend_Registry::set('static_tpl', 'prana-html') ?>
 
 <h1>prAna - Programa de Residencias Artísticas del Nodo Asociativo</h1>

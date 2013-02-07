@@ -1,3 +1,5 @@
+<?php $this->headTitle('REDesearte Paz - REDES CULTURALES', 'PREPEND') ?>
+
 <h1>REDES CULTURALES<br />
 REDesearte Paz</h1>
 

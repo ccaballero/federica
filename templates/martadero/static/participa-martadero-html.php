@@ -1,3 +1,5 @@
+<?php $this->headTitle('Participa en el mARTadero', 'PREPEND') ?>
+
 <h1>Participa en el mARTadero</h1>
 
 <p>La programación de actividades culturales del mARTadero 2.0, se

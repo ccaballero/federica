@@ -1,3 +1,5 @@
+<?php $this->headTitle('Artículos publicados', 'PREPEND') ?>
+
 <h1>Artículos Publicados</h1>
 
 <p>El proyecto <strong>mARTadero</strong> es <strong>referenciado en diversos

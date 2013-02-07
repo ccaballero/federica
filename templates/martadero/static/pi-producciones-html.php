@@ -1,3 +1,5 @@
+<?php $this->headTitle('&#8719; :: Pi Producciones', 'PREPEND') ?>
+
 <h1>&pi; :: Pi Producciones</h1>
 
 <ul class="index">

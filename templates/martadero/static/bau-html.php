@@ -1,3 +1,5 @@
+<?php $this->headTitle('Bienal de Arte Urbano - BAU', 'PREPEND') ?>
+
 <h1>Bienal de Arte Urbano | BAU</h1>
 
 <p><a href="http://bau.martadero.org" target="_blank" class="box_image">

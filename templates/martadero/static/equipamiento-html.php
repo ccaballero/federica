@@ -1,3 +1,5 @@
+<?php $this->headTitle('Equipamiento y herramientas', 'PREPEND') ?>
+
 <h1>Equipamiento y herramientas</h1>
 
 <p>+ <a href="http://bit.ly/aporteusomartadero" target="_blank">Conoce los costos de aporte por uso del espacio</a>.</p>

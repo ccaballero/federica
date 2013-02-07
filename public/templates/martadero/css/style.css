@@ -198,8 +198,9 @@ a img {
 }
 
 #content {
-    padding-left: 190px;
-    padding-right: 220px;
+    float: left;
+    padding-left: 200px;
+    padding-right: 230px;
 }
 
 #main {
@@ -211,7 +212,7 @@ a img {
 #left_bar {
     float: left;
     width: 170px;
-    right: 190px;
+    right: 200px;
     padding-right: 20px;
     padding-left: 5px;
     margin-left: -100%;
@@ -221,7 +222,7 @@ a img {
     float: right;
     width: 200px;
     padding: 0px 4px 0px 10px;
-    margin-right: -220px;
+    margin-right: -230px;
     display: block;
 }
 
@@ -246,7 +247,7 @@ a img {
 
 /* services div */
 #head_bar #services .service {
-    padding: 10px 0px 10px 0px;
+    padding: 0px 0px 5px 0px;
 }
 
 #head_bar #services .service p {

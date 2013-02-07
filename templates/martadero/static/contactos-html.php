@@ -1,3 +1,5 @@
+<?php $this->headTitle('Contactos', 'PREPEND') ?>
+
 <h1>Contactos</h1>
 
 <ul class="index">

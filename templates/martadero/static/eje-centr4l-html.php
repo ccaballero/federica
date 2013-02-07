@@ -1,3 +1,5 @@
+<?php $this->headTitle('Eje Centr4l - REDES CULTURALES', 'PREPEND') ?>
+
 <h1>EJE CENTR4L &gt;
 <a href="http://www.emprendeduriacultural.net/ejecentral" target="_blank">http://www.emprendeduriacultural.net/ejecentral</a></h1>
 

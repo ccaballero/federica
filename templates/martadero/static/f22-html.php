@@ -1,3 +1,5 @@
+<?php $this->headTitle('f/22 Antología Poética', 'PREPEND') ?>
+
 <h1>f/22 Antología Poética</h1>
 
 <p><strong>Descárgate</strong> el libro</p>

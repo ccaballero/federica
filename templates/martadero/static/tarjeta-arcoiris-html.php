@@ -1,3 +1,5 @@
+<?php $this->headTitle('Súmate al proyecto mARTadero con la tarjeta ARCOIRIS', 'PREPEND') ?>
+
 <h1>Súmate al Proyecto mARTadero<br />
 con la tarjeta ARCOIRIS</h1>
 

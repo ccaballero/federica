@@ -1,3 +1,5 @@
+<?php $this->headTitle('REDES SOCIALES mARTadero 2.0', 'PREPEND') ?>
+
 <h1>REDES SOCIALES<br />
 mARTadero 2.0</h1>
 

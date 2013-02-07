@@ -1,3 +1,5 @@
+<?php $this->headTitle('imag[e]nando', 'PREPEND') ?>
+
 <h1>imag[e]nando</h1>
 
 <h2>Imag[e]nando el mARTadero</h2>

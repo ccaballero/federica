@@ -1,3 +1,5 @@
+<?php $this->headTitle('Residencias en Red - REDES CULTURALES', 'PREPEND') ?>
+
 <h1>REDES CULTURALES<br />
 Residencias en Red [i]</h1>
 

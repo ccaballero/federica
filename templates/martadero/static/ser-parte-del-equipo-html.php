@@ -1,3 +1,5 @@
+<?php $this->headTitle('Ser parte del equipo', 'PREPEND') ?>
+
 <h1>Ser parte del equipo</h1>
 
 <ul class="index">

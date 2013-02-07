@@ -1,3 +1,5 @@
+<?php $this->headTitle('prAna - Programa de Residencias Artísticas del Nodo Asociativo', 'PREPEND') ?>
+
 <h1>prAna - Programa de Residencias Artísticas del Nodo Asociativo</h1>
 
 <ul class="index">

@@ -1,3 +1,5 @@
+<?php $this->headTitle('Memoteca', 'PREPEND') ?>
+
 <h1>Memoteca</h1>
 
 <p><img src="<?php echo $this->staticUrl('/fuera2.jpg') ?>" class="box_image" />

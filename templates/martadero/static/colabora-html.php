@@ -1,3 +1,5 @@
+<?php $this->headTitle('Colabora con el proyecto mARTadero', 'PREPEND') ?>
+
 <h1>Colabora con el proyecto mARTadero con una<br />
 DONACIÓN VOLUNTARIA</h1>
 

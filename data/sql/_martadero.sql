@@ -139,4 +139,10 @@ UPDATE template_layout_route SET layout = 'static' WHERE route = 'base_static';
 INSERT INTO `user`
 (`email`, `password`, `lastname`, `firstname`, `phone`)
 VALUES
-('info@matadero.org', 'f5368172eb00fcf25ea79d0cf91288a9', 'mARTadero', 'Comunicación', '67402891');
+('info@martadero.org', '63ca26f56c5730ede6b21c7b681b917e2fb37765', 'mARTadero', 'Comunicación', '67402891');
+
+/*============================================================================*/
+/* change to customized routes for martadero                                  */
+/*============================================================================*/
+UPDATE route SET mapping = 'arte-cultura/:page' WHERE route = 'base_static';
+UPDATE route SET mapping = 'confirmacion' WHERE route = 'base_confirm';

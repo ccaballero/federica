@@ -1,3 +1,5 @@
+<?php $this->headTitle('Bice Bugatti - REDES CULTURALES', 'PREPEND') ?>
+
 <h1>REDES CULTURALES<br />
 Bice Bugatti</h1>
 

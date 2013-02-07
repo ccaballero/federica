@@ -1,3 +1,5 @@
+<?php $this->headTitle('Cultura libre', 'PREPEND') ?>
+
 <h1>Cultura Libre</h1>
 
 <ul class="index">

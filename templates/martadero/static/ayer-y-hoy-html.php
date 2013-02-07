@@ -1,3 +1,5 @@
+<?php $this->headTitle('mARTadero: Ayer y Hoy', 'PREPEND') ?>
+
 <h1>mARTadero: Ayer y Hoy</h1>
 
 <p>La exposición: <strong>"mARTadero: Ayer y Hoy"</strong> está expuesta de

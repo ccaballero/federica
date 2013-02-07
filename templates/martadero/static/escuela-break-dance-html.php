@@ -1,3 +1,5 @@
+<?php $this->headTitle('Escuela de Break Dance "Breaking the Floor"', 'PREPEND') ?>
+
 <h1>Escuela de Break Dance "Breaking the Floor"</h1>
 
 <p><img src="<?php echo $this->staticUrl('/logo-breaking-the-floor.jpg') ?>" /></p>

@@ -11,6 +11,6 @@ $(document).ready(function(){
         }
     });
 
-    if($('#right_bar').html()==='') { $('#right_bar').css('display', 'none'); $('#content').css('paddingRight', '10px');}
-    if($('#left_bar').html()==='') {  $('#left_bar').css('display', 'none');  $('#content').css('paddingLeft', '10px'); }
+    if($('#right_bar').html()==='') { $('#right_bar').css('display', 'none'); $('#content').css('paddingRight', '20px');}
+    if($('#left_bar').html()==='') {  $('#left_bar').css('display', 'none');  $('#content').css('paddingLeft', '20px'); }
 });

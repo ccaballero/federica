@@ -1,3 +1,5 @@
+<?php $this->headTitle('Vivo y Verde - Programa Medioambiental', 'PREPEND') ?>
+
 <h1>Vivo y Verde - Programa Medioambiental</h1>
 
 <style type="text/css">

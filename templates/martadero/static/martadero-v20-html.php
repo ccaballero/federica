@@ -1,3 +1,5 @@
+<?php $this->headTitle('Proyecciones', 'PREPEND') ?>
+
 <h1>Proyecciones: mARTadero v2.0</h1>
 
 <h2>proyecto mARTadero</h2>

@@ -1,3 +1,5 @@
+<?php $this->headTitle('Paseo de las Artes', 'PREPEND') ?>
+
 <h1>Paseo de las Artes</h1>
 
 <ul class="index">

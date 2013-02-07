@@ -1,3 +1,5 @@
+<?php $this->headTitle('Café Cultural Ítaca', 'PREPEND') ?>
+
 <h1>Café Cultural Ítaca</h1>
 
 <p><img src="<?php echo $this->staticUrl('/itaca.jpg') ?>" class="box_image" />

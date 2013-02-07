@@ -1,3 +1,5 @@
+<?php $this->headTitle('Red Cultural Mercosur - REDES CULTURALES', 'PREPEND') ?>
+
 <h1>REDES CULTURALES<br />
 Red Cultural Mercosur</h1>
 

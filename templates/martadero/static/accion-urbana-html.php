@@ -1,3 +1,5 @@
+<?php $this->headTitle('Acción Urbana', 'PREPEND') ?>
+
 <h1>Acción urbana</h1>
 
 <p>El programa, que cuenta con el apoyo de

@@ -1,3 +1,5 @@
+<?php $this->headTitle('proyectARTe - Propuesta de creación contemporánea', 'PREPEND') ?>
+
 <h1>proyectARTe - Propuesta de creación contemporánea</h1>
 
 <p><img src="<?php echo $this->staticUrl('/proyectarte.jpg') ?>" /></p>

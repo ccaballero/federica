@@ -1,3 +1,5 @@
+<?php $this->headTitle('Fondo para el desarrollo de las artes - FONDART', 'PREPEND') ?>
+
 <h1>Fondo para el Desarrollo de las Artes del mARTadero - FONDART</h1>
 
 <p>El <strong>FONDART</strong>, Fondo para el Desarrollo de las Artes, es un

@@ -1,3 +1,5 @@
+<?php $this->headTitle('Taller de libre expresión y educación medioambiental', 'PREPEND') ?>
+
 <h1>Taller de Creatividad Infantil y Educación Medioambiental</h1>
 
 <p>Sigue al <strong>Taller de Creatividad Infantil</strong> en

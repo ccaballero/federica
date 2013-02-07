@@ -1,3 +1,5 @@
+<?php $this->headTitle('Laboratorio Digital', 'PREPEND') ?>
+
 <h1>Laboratorio Digital</h1>
 
 <p>Destinado a artistas visuales que requieran el uso de equipos de diseño

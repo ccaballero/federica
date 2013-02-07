@@ -46,7 +46,7 @@ class Yachay_Bootstrap extends Zend_Application_Bootstrap_Bootstrap
         $router = $ctrl->getRouter();
 
         // remove default routes
-        $router->removeDefaultRoutes();
+//        $router->removeDefaultRoutes();
 
         // Routes select by enabled package
         $db_routes = new Db_Routes();
@@ -192,7 +192,8 @@ class Yachay_Bootstrap extends Zend_Application_Bootstrap_Bootstrap
         $view->media_url = $baseUrl . '/templates/' . $template;
 
         $view->doctype($options['resources']['view']['doctype']);
-        $view->headTitle($options['site']['title']);
+        $view->headTitle($options['site']['title'])
+             ->setSeparator(' | ');
 
         $equivs = $options['template']['http-equiv'];
         foreach ($equivs as $key => $content) {
@@ -215,6 +216,9 @@ class Yachay_Bootstrap extends Zend_Application_Bootstrap_Bootstrap
         foreach ($js_scripts as $js_script) {
             $view->headScript()->appendFile($view->media_url . $js_script, 'text/javascript');
         }
+
+        $auth = Zend_Auth::getInstance();
+        $view->auth = $auth;
 
         return $view;
     }

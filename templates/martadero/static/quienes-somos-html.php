@@ -1,3 +1,5 @@
+<?php $this->headTitle('Quiénes somos', 'PREPEND') ?>
+
 <h1>Proyecto mARTadero</h1>
 
 <ul class="index">

@@ -1,3 +1,5 @@
+<?php $this->headTitle('Viva América - REDES CULTURALES', 'PREPEND') ?>
+
 <h1>REDES CULTURALES<br />
 Viva América</h1>
 

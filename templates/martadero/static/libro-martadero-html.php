@@ -1,3 +1,5 @@
+<?php $this->headTitle('Proyecto mARTadero: Un espacio ejemplar de gestión cultural', 'PREPEND') ?>
+
 <h1>Proyecto mARTadero: Un Espacio Ejemplar de Gestión Cultural</h1>
 
 <p><a href="<?php echo $this->staticUrl('/libro-martadero.jpg') ?>" class="highslide box_image" onclick="return hs.expand(this);">

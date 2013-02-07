@@ -1,3 +1,5 @@
+<?php $this->headTitle('Apoyos', 'PREPEND') ?>
+
 <h1>Apoyos</h1>
 
 <p>Estas personas e instituciones dan vida al mARTadero:</p>

@@ -1,3 +1,5 @@
+<?php $this->headTitle('Conexiones', 'PREPEND') ?>
+
 <h1>Conexiones</h1>
 
 <ul class="index">

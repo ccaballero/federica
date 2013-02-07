@@ -1,3 +1,5 @@
+<?php $this->headTitle('4C - Circuito de Centros Culturales de Cochabamba - REDES CULTURALES', 'PREPEND') ?>
+
 <h1>REDES CULTURALES<br />
 4C - Circuito de Centros Culturales de Cochabamba</h1>
 

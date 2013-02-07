@@ -1,3 +1,4 @@
+<?php $this->headTitle('Who we are', 'PREPEND') ?>
 <?php Zend_Registry::set('static_tpl', 'quienes-somos-html') ?>
 
 <h1>mARTadero project</h1>

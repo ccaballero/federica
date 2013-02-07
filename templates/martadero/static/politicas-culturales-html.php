@@ -1,3 +1,5 @@
+<?php $this->headTitle('Políticas Culturales', 'PREPEND') ?>
+
 <h1>Políticas Culturales en Bolivia</h1>
 
 <p><strong>Desde el mARTadero</strong> queremos <strong>impulsar el avance de

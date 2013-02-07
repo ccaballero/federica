@@ -1,5 +1,6 @@
 <?php $this->placeholder('toolbar')->captureStart() ?>
 
+<?php if (!$this->auth->hasIdentity()) { ?>
 <ul>
     <li>
         <a href="<?php echo $this->url(
@@ -12,5 +13,12 @@
         <img class="image-align" src="<?php echo $this->media_url ?>/images/arrow.gif" /></a>
     </li>
 </ul>
+<?php } else { ?>
+<ul>
+    <li>Bienvenid@ <?php echo $this->auth->getIdentity()->firstname ?></li>
+    <li><a class="border-left" href="<?php echo $this->url(array('page' => 'admin.html'), 'base_static') ?>">administrador</a></li>
+    <li><a class="border-left" href="<?php echo $this->url(array(), 'users_out') ?>">desconectar</a></li>
+</ul>
+<?php } ?>
 
 <?php $this->placeholder('toolbar')->captureEnd() ?>

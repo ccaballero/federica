@@ -1,3 +1,5 @@
+<?php $this->headTitle('Visita guiada del proyecto mARTadero', 'PREPEND') ?>
+
 <h1>Visita guiada del proyecto mARTadero</h1>
 
 <p>Si quieres <strong>conocer el proyecto mARTadero, su historia, su presente y

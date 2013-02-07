@@ -1,3 +1,5 @@
+<?php $this->headTitle('Vivero de emprendimientos artístico-creativos', 'PREPEND') ?>
+
 <h1>Vivero de Emprendimientos Artístico-Creativos</h1>
 
 <p><a href="http://arteyeconomiacreativa.wordpress.com/" target="_blank">

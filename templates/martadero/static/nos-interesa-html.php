@@ -1,3 +1,5 @@
+<?php $this->headTitle('Nos interesa', 'PREPEND') ?>
+
 <h1>Nos interesa</h1>
 
 <p>Aquí les dejamos una serie de <strong>links de interés</strong> desde cada

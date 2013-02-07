@@ -1,3 +1,5 @@
+<?php $this->headTitle('Descargas: Logos y Libro del mARTadero', 'PREPEND') ?>
+
 <h1>Descargas: Logos y Libro del mARTadero</h1>
 
 <p>Para descargar, colocar el cursor sobre el enlace, pulsar botón derecho y
