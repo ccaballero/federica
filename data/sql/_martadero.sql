@@ -148,5 +148,6 @@ UPDATE route SET mapping = 'arte-cultura/:page' WHERE route = 'base_static';
 UPDATE route SET mapping = 'confirmacion' WHERE route = 'base_confirm';
 UPDATE route SET mapping = 'usuarios' WHERE route = 'users_list';
 UPDATE route SET mapping = 'usuarios/administrador' WHERE route = 'users_manager';
+UPDATE route SET mapping = 'perfil' WHERE route = 'users_settings';
 UPDATE route SET mapping = 'acceder' WHERE route = 'users_in';
 UPDATE route SET mapping = 'salir' WHERE route = 'users_out';

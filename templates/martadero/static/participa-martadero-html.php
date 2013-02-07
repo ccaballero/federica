@@ -18,7 +18,7 @@ modalidades complementarias</strong>, todas ellas articuladas por el
 <strong>eje temático anual</strong>.</p>
 
 <p>En 2012 el eje temático es
-<a href="<?php // TODO ?>http://www.martadero.org/info-cultural/eje_tematico.html">Reductos
+<a href="<?php echo $this->url(array('page' => 'eje-tematico.html'), 'base_static') ?>">Reductos
 tecno-lógicos</a>.</p>
 
 <h2>MODOS DE PROGRAMACIÓN</h2>
@@ -37,7 +37,7 @@ propongan oportunidades y beneficios mutuos.</p>
 <p>Para + info sobre esta modalidad:</p>
 
 <ul>
-    <li><a href="<?php // TODO ?>http://www.martadero.org/info-cultural/eje_tematico.html">Eje
+    <li><a href="<?php echo $this->url(array('page' => 'eje-tematico.html'), 'base_static') ?>">Eje
     temático</a>.</li>
     <li><a href="<?php echo $this->url(array('page' => 'contactos.html'), 'base_static') ?>#equipo">Equipo
     humano</a>: por si deseas realizar un contacto con algún área.</li>
@@ -75,7 +75,7 @@ cobrase entrada.</p>
 
 <p>Para + info sobre esta modalidad:</p>
 <ul>
-    <li><a href="<?php // TODO ?>http://www.martadero.org/info-cultural/eje_tematico.html">Eje
+    <li><a href="<?php echo $this->url(array('page' => 'eje-tematico.html'), 'base_static') ?>">Eje
     temático</a>.</li>
     <li><a href="<?php echo $this->url(array('page' => 'fondart.html'), 'base_static') ?>">Fondart</a>.</li>
 </ul>
@@ -90,6 +90,6 @@ forma.</p>
 <p>Para + info sobre esta modalidad:</p>
 
 <ul>
-    <li><a href="<?php // TODO ?>http://www.martadero.org/info-cultural/eje_tematico.html">Eje
+    <li><a href="<?php echo $this->url(array('page' => 'eje-tematico.html'), 'base_static') ?>">Eje
     temático</a>.</li>
 </ul>

@@ -27,7 +27,8 @@ VALUES
 INSERT INTO `route`
 (`label`, `priority`, `parent`, `route`, `mapping`, `module`, `controller`, `action`)
 VALUES
-('Lista de usuarios',         2, 'base',       'users_list',    'users',         'users', 'index', 'index'),
-('Administrador de usuarios', 3, 'users_list', 'users_manager', 'users/manager', 'users', 'index', 'manager'),
-('Iniciar sesión',            3, 'users_list', 'users_in',      'users/in',      'users', 'auth',  'in'),
-('Cerrar sesión',             3, 'users_list', 'users_out',     'users/out',     'users', 'auth',  'out');
+('Lista de usuarios',         2, 'base',       'users_list',     'users',          'users', 'index', 'index'),
+('Administrador de usuarios', 3, 'users_list', 'users_manager',  'users/manager',  'users', 'index', 'manager'),
+('Perfil de usuario',         3, 'base',       'users_settings', 'users/settings', 'users', 'user',  'settings'),
+('Iniciar sesión',            3, 'users_list', 'users_in',       'users/in',       'users', 'auth',  'in'),
+('Cerrar sesión',             3, 'users_list', 'users_out',      'users/out',      'users', 'auth',  'out');

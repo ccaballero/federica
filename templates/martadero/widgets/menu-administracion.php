@@ -14,7 +14,7 @@
         <li><a href="<?php // TODO ../accesorios_servicios/ver_accesorio_servicio.php ?>">Accesorios y servicios</a></li>
         <li><a href="<?php // TODO ../usuarios/index.php ?>">Usuarios</a></li>
         <li><a href="<?php // TODO ../noticia/index.php ?>">Noticias</a></li>
-        <li><a href="<?php // TODO ../perfil/index.php ?>">Perfil</a></li>
+        <li><a href="<?php echo $this->url(array(), 'users_settings') ?>">Perfil</a></li>
     </ul>
 </div>
 <?php } ?>
