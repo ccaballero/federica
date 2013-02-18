@@ -7,6 +7,8 @@ class Resources_Resource
     public $label;
     public $url;
     public $description1;
+    public $description2;
+    public $description3;
     public $capacity;
     public $shape;
     public $coords;

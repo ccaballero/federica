@@ -7,10 +7,10 @@
 </div>
 <div style="padding-left: 240px;">
     <img src="<?php echo $this->packageUrl('resources', $this->code . '.jpg') ?>" alt="<?php echo $this->label ?>" />
-    <h3>Uso</h3>
-    <p><?php echo $this->none($this->description1, '+ ', '') ?></p>
-    <h3>Capacidad</h3>
-    <p><?php echo $this->none($this->capacity, '+ ', '') ?></p>
+    <?php echo $this->none($this->description1, '<h3>Uso</h3><p>+ ', '</p>') ?>
+    <?php echo $this->none($this->description2, '<h3>Uso compatible</h3><p>+ ', '</p>') ?>
+    <?php echo $this->none($this->description3, '<h3>Uso actual</h3><p>+ ', '</p>') ?>
+    <?php echo $this->none($this->capacity, '<h3>Capacidad</h3><p>+ ', '</p>') ?>
 </div>
 
 
