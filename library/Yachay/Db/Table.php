@@ -13,6 +13,14 @@ abstract class Yachay_Db_Table extends Zend_Db_Table_Abstract
         return $this->_constructObject($this->findAdapterByIdent($ident));
     }
 
+    public function findByCode($code) {
+        $row = $this->fetchRow(
+               $this->getAdapter()
+                    ->quoteInto('code = ?', $code));
+
+        return $this->_constructObject($row);
+    }
+
     public function findByLabel($label) {
         $row = $this->fetchRow(
                $this->getAdapter()

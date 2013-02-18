@@ -61,7 +61,7 @@
         <li>
             <a href="">Espacio</a>
             <ul class="secondary">
-                <li><a href="<?php echo $this->url(array('page' => 'espacio.html'), 'base_static') ?>" title="Conoce las salas del mARTadero">Conoce las salas</a></li>
+                <li><a href="<?php echo $this->url(array(), 'resources_list') ?>" title="Conoce las salas del mARTadero">Conoce las salas</a></li>
                 <li><a href="http://bit.ly/aporteusomartadero" title="Costos de aporte por uso" target="_blank">Costos de aporte por uso</a></li>
                 <li><a href="<?php echo $this->url(array('page' => 'equipamiento.html'), 'base_static') ?>" title="Equipamiento y herramientas">Equipamiento y herramientas</a></li>
                 <li><a href="<?php echo $this->url(array('page' => 'artistas.html'), 'base_static') ?>" title="Actores Culturales en el mARTadero">Actores Culturales en el mARTadero</a></li>
