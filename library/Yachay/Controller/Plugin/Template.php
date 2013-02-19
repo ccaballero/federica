@@ -10,45 +10,18 @@ class Yachay_Controller_Plugin_Template extends Zend_Controller_Plugin_Abstract
         $view = Zend_Controller_Action_HelperBroker::getExistingHelper('ViewRenderer')->view;
         $view->route = $route;
 
+        $config = Zend_Registry::get('config');
+        $template = $config->resources->layout->layout;
+
         $db_templates_layouts = new Db_Templates_Layouts();
-        $layout = $db_templates_layouts->selectByRoute($route);
+        $layout = $db_templates_layouts->selectByRoute($route, $template);
 
-//        $db_templates_regions = new Db_Templates_Regions();
-//        $regions = $db_templates_regions->selectByLayout($layouts[0]->label);
-
-        // TODO
-        $rules = array(
-            'frontpage' => array(
-                'header',
-                'menubar',
-                'toolbar',
-                'sub-header',
-                'left',
-                'right',
-                'foot-bar',
-                'footer',
-            ),
-            'static' => array(
-                'header',
-                'menubar',
-                'toolbar',
-                'sub-header',
-                'left',
-                'foot-bar',
-                'footer',
-            ),
-            'user' => array(
-                'header',
-                'menubar',
-                'toolbar',
-                'left',
-                'foot-bar',
-            ),
-        );
+        $db_templates_regions = new Db_Templates_Regions();
+        $regions = $db_templates_regions->selectByLayout($layout->label, $template);
 
         $directory = '/regions/';
-        foreach ($rules[$layout->label] as $region) {
-            $view->render($directory . $region . '.php');
+        foreach ($regions as $region) {
+            $view->render($directory . $region->label . '.php');
         }
     }
 }

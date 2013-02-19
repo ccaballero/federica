@@ -1,3 +1,4 @@
+<?php if (!$this->auth->hasIdentity()) { ?>
 <div class="post">
     <h1>Eje temático 2012</h1>
     <ul>
@@ -6,3 +7,4 @@
         </li>
     </ul>
 </div>
+<?php } ?>

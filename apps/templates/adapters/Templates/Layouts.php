@@ -5,10 +5,7 @@ class Db_Templates_Layouts extends Yachay_Db_Table
     protected $_name = 'template_layout';
     protected $_modelClass = 'Templates_Layouts_Layout';
 
-    public function selectByRoute($route) {
-        $config = Zend_Registry::get('config');
-        $template = $config->resources->layout->layout;
-
+    public function selectByRoute($route, $template) {
         $result = $this->fetchAll(
             $this->select()
                  ->setIntegrityCheck(false)

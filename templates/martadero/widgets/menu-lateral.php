@@ -1,3 +1,4 @@
+<?php if (!$this->auth->hasIdentity()) { ?>
 <div class="post">
     <h1>Proyecto mARTadero</h1>
     <ul>
@@ -17,3 +18,4 @@
         <li><a href="<?php echo $this->url(array('page' => 'contactos.html'), 'base_static') ?>#mapa">Cómo llegar</a></li>
     </ul>
 </div>
+<?php } ?>

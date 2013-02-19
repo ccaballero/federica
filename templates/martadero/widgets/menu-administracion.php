@@ -2,7 +2,7 @@
 <div class="post">
     <h1>Administración</h1>
     <ul>
-        <li><a href="<?php echo $this->url(array(), 'resources_list') ?>">Salas</a></li>
+        <li><a href="<?php echo $this->url(array(), 'rooms_list') ?>">Salas</a></li>
         <li><a href="<?php // TODO ../solicitudes/index.php ?>">Solicitudes</a></li>
         <li><a href="<?php // TODO ../eventos/index.php ?>">Eventos</a></li>
         <li><a href="<?php // TODO ../calendario/index.php ?>">Calendario</a></li>

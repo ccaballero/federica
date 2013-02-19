@@ -1,14 +1,15 @@
 <?php
 
-class Resources_Resource
+class Rooms_Room
 {
     public $ident;
     public $code;
     public $label;
-    public $url;
+    public $type;
     public $description1;
     public $description2;
     public $description3;
+    public $description4;
     public $capacity;
     public $shape;
     public $coords;

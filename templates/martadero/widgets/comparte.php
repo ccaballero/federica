@@ -1,3 +1,4 @@
+<?php if ($this->route == 'base' || $this->route == 'base_static') { ?>
 <div class="post" id="sharing">
     <p><a href="<?php echo $this->url(array('page' => 'cultura-libre.html'), 'base_static') ?>"
           title="Cultura Libre"><strong>Comparte libremente</strong></a> los contenidos de esta web.</p>
@@ -38,5 +39,4 @@
                  alt="Move Commons Sin ánimo de lucro, Reproducible, Reinforcing the Town/community/society Commons, Horizontal" /></a>
     </div>
 </div>
-
-
+<?php } ?>

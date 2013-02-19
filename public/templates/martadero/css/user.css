@@ -17,6 +17,10 @@
     text-align: left;
 }
 
+#main .item-2 {
+    min-height: 75px;
+}
+
 #main table {
     width: 100%;
     border: 2px solid #E6E6E6;

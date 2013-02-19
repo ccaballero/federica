@@ -23,15 +23,29 @@ CREATE TABLE `template_layout` (
     FOREIGN KEY (`template`) REFERENCES `template`(`url`) ON UPDATE CASCADE ON DELETE RESTRICT
 ) DEFAULT CHARACTER SET UTF8;
 
--- DROP TABLE IF EXISTS `template_layout_region`;
--- CREATE TABLE `template_region` (
---     `template`          varchar(64)                                                 NOT NULL,
---     `label`             varchar(64)                                                 NOT NULL,
---     `type`              varchar(32)                                                 NOT NULL,
---     PRIMARY KEY (`template`, `label`),
---     INDEX (`template`),
---     FOREIGN KEY (`template`) REFERENCES `template`(`url`) ON UPDATE CASCADE ON DELETE RESTRICT
--- ) DEFAULT CHARACTER SET UTF8;
+DROP TABLE IF EXISTS `template_region`;
+CREATE TABLE `template_region` (
+    `template`          varchar(64)                                                 NOT NULL,
+    `label`             varchar(64)                                                 NOT NULL,
+    `type`              enum('static')                                              NOT NULL,
+    PRIMARY KEY (`template`, `label`),
+    INDEX (`template`),
+    FOREIGN KEY (`template`) REFERENCES `template`(`url`) ON UPDATE CASCADE ON DELETE RESTRICT
+) DEFAULT CHARACTER SET UTF8;
+
+DROP TABLE IF EXISTS `template_layout_region`;
+CREATE TABLE `template_layout_region` (
+    `template`          varchar(64)                                                 NOT NULL,
+    `layout`            varchar(64)                                                 NOT NULL,
+    `region`            varchar(64)                                                 NOT NULL,
+    PRIMARY KEY (`template`, `layout`, `region`),
+    INDEX (`template`),
+    FOREIGN KEY (`template`) REFERENCES `template`(`url`) ON UPDATE CASCADE ON DELETE RESTRICT,
+    INDEX (`template`, `layout`),
+    FOREIGN KEY (`template`, `layout`) REFERENCES `template_layout`(`template`, `label`) ON UPDATE CASCADE ON DELETE RESTRICT,
+    INDEX (`template`, `region`),
+    FOREIGN KEY (`template`, `region`) REFERENCES `template_region`(`template`, `label`) ON UPDATE CASCADE ON DELETE RESTRICT
+) DEFAULT CHARACTER SET UTF8;
 
 DROP TABLE IF EXISTS `template_layout_route`;
 CREATE TABLE `template_layout_route` (
