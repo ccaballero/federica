@@ -10,7 +10,7 @@ CKEDITOR.editorConfig = function(config) {
     fullPage = true;
 
     config.toolbar = [
-	{ name: 'document', items: [ 'Source', '-', 'Preview', 'Templates' ] },
+	{ name: 'document', items: [ 'Source' ] },
 	{ name: 'clipboard', items: [ 'Undo', 'Redo' ] },
 	{ name: 'editing', items: [ 'SelectAll', 'Scayt' ] },
 	{ name: 'insert', items: [ 'Image', 'Flash', 'Table', 'HorizontalRule', 'SpecialChar', 'PageBreak' ] },

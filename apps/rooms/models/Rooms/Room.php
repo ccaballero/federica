@@ -11,6 +11,8 @@ class Rooms_Room
     public $compatible_purpose;
     public $current_purpose;
     public $capacity;
+    public $shape = 'rect';
+    public $coords = '';
     public $tsregister;
 
     public function __toString() {

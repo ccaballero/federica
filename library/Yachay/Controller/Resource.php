@@ -34,6 +34,7 @@ abstract class Yachay_Controller_Resource extends Yachay_Controller_Action
                     $object->$key = $model->$key;
                 }
 
+                $object->ident = $resource->ident;
                 $object->save();
 
                 $this->_helper->flashMessenger->addMessage('El recurso ha sido actualizado correctamente');

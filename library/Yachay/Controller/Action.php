@@ -34,11 +34,14 @@ abstract class Yachay_Controller_Action extends Zend_Controller_Action
             if (substr($element, 0, 1) === ':') {
                 $url = $this->request->getParam(substr($element, 1));
                 $_adapter = 'Db_' . ucfirst($this->route->module);
-                $adapter = new $_adapter();
-                $_element = $adapter->findByUrl($url);
 
-                if (!empty($element)) {
-                    $this->objects[substr($element, 1)] = $_element;
+                if (class_exists($_adapter)) {
+                    $adapter = new $_adapter();
+                    $_element = $adapter->findByUrl($url);
+
+                    if (!empty($element)) {
+                        $this->objects[substr($element, 1)] = $_element;
+                    }
                 }
             }
         }

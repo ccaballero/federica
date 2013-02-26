@@ -16,8 +16,7 @@ class Rooms_Form_Editor extends Zend_Form
         $label->setRequired(true)
             ->setLabel('Nombre (*):')
             ->addFilter('StringTrim')
-            ->addValidator('StringLength', false, array(4, 128))
-            ->addValidator('Alnum', false, array('allowWhiteSpace' => true));
+            ->addValidator('StringLength', false, array(4, 128));
 
         $type = $this->createElement('select', 'type');
         $type->setRequired(true)

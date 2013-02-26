@@ -25,6 +25,8 @@ class Yachay_Loader implements Zend_Loader_Autoloader_Interface
         $config = Zend_Registry::get('config');
         $module = $config->resources->frontController->moduleDirectory;
 
-        Zend_Loader::loadFile($file, $module . '/' . $dir, true);
+        if (file_exists($module . '/' . $dir)) {
+            Zend_Loader::loadFile($file, $module . '/' . $dir, true);
+        }
     }
 }
