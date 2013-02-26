@@ -15,11 +15,13 @@
 <?php foreach ($this->collection as $room) { ?>
     <div class="item-2">
         <h2><a href="<?php echo $this->url(array('room' => $room->code), 'rooms_room_view') ?>"><?php echo $room ?></a></h2>
+    <?php if ($room->hasThumb()) { ?>
         <a href="<?php echo $this->packageUrl('rooms', $room->code . '.jpg') ?>"
            class="highslide right_image" onclick="return hs.expand(this);">
             <img src="<?php echo $this->packageUrl('rooms', $room->code . '-small.jpg') ?>"
                  alt="<?php echo $room ?>" />
         </a>
+    <?php } ?>
         <p><?php echo $this->none($room->general_purpose, '+ ', '') ?></p>
         <p><?php echo $this->none($room->capacity, '+ ', '') ?></p>
     </div>

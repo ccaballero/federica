@@ -1,31 +1,12 @@
 <?php
 
-class Rooms_RoomController extends Yachay_Controller_Action
+class Rooms_RoomController extends Yachay_Controller_Resource
 {
-    public function viewAction() {
-        $url = $this->request->getParam('room');
+    protected $_adapter = 'Db_Rooms';
+    protected $_type = 'room';
+    protected $_container = 'Rooms';
+    protected $_component = 'Rooms_Room';
+    protected $_editor = 'Rooms_Form_Editor';
 
-        $adapter = new Db_Rooms();
-        $element = $adapter->findByCode($url);
-
-        $this->view->collection = $adapter->selectAll();
-        $this->view->assign(get_object_vars($element));
-
-        return $this->renderScript('components/room-view.php');
-    }
-
-    public function editAction() {
-        $url = $this->request->getParam('room');
-
-        $adapter = new Db_Rooms();
-        $element = $adapter->findByCode($url);
-
-        $this->view->assign(get_object_vars($element));
-
-        $form = new Rooms_Form_Editor();
-        $form->setRoom($element);
-
-        $this->view->form = $form;
-        return $this->renderScript('containers/editor.php');
-    }
+    protected $_route_manager = 'rooms_manager';
 }

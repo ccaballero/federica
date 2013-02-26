@@ -79,4 +79,19 @@ class Rooms_Form_Editor extends Zend_Form
         $this->getElement('capacity')->setValue($room->capacity);
         $this->getElement('description')->setValue($room->description);
     }
+
+    public function getRoom() {
+        $room = new Rooms_Room();
+
+        $room->code = $this->getElement('code')->getValue();
+        $room->label = $this->getElement('label')->getValue();
+        $room->type = $this->getElement('type')->getValue();
+        $room->description = $this->getElement('description')->getValue();
+        $room->general_purpose = $this->getElement('general_purpose')->getValue();
+        $room->compatible_purpose = $this->getElement('compatible_purpose')->getValue();
+        $room->current_purpose = $this->getElement('current_purpose')->getValue();
+        $room->capacity = $this->getElement('capacity')->getValue();
+
+        return $room;
+    }
 }

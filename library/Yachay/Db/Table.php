@@ -29,12 +29,14 @@ abstract class Yachay_Db_Table extends Zend_Db_Table_Abstract
         return $this->_constructObject($row);
     }
 
-    public function findByUrl($url) {
-        $row = $this->fetchRow(
+    public function findAdapterByUrl($url) {
+        return $this->fetchRow(
                $this->getAdapter()
                     ->quoteInto($this->_url . ' = ?', $url));
+    }
 
-        return $this->_constructObject($row);
+    public function findByUrl($url) {
+        return $this->_constructObject($this->findAdapterByUrl($url));
     }
 
     // General selections
@@ -44,6 +46,10 @@ abstract class Yachay_Db_Table extends Zend_Db_Table_Abstract
 
     public function selectAll() {
         return $this->_constructList($this->selectAllAdapters());
+    }
+
+    public function saveObject() {
+
     }
 
     // Generic constructors of bean objects

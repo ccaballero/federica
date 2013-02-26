@@ -2,33 +2,25 @@
 
 abstract class Yachay_Controller_List extends Yachay_Controller_Action
 {
-    public $adapter;
-    public $container;
-
-    abstract function getAdapter();
-    abstract function getContainer();
-    abstract function getResourceType();
-    abstract function getEditor();
-
     public function getCollection() {
-        $adapter = $this->getAdapter();
+        $adapter = new $this->_adapter();
         return $adapter->selectAll();
     }
 
     public function indexAction() {
-        $this->view->container = $this->getContainer();
+        $this->view->container = new $this->_container();
+        $this->view->component = new $this->_component();
         $this->view->collection = $this->getCollection();
-        $this->view->resource_type = $this->getResourceType();
 
         try {
-            return $this->renderScript('containers/' . $this->getResourceType() . '-list.php');
+            return $this->renderScript('containers/' . $this->_type . '-list.php');
         } catch (Exception $e) {
             return $this->renderScript('containers/list.php');
         }
     }
 
     public function managerAction() {
-        $container = $this->getContainer();
+        $container = new $this->_container();
 
         if ($this->request->isPost()) {
             foreach ($container->getBatchOperations() as $operation) {
@@ -59,22 +51,41 @@ abstract class Yachay_Controller_List extends Yachay_Controller_Action
         }
 
         $this->view->container = $container;
-        $this->view->resource_type = $this->getResourceType();
+        $this->view->component = new $this->_component();
         $this->view->collection = $this->getCollection();
 
         try {
-            return $this->renderScript('containers/' . $this->getResourceType() . '-manager.php');
+            return $this->renderScript('containers/' . $this->_type . '-manager.php');
         } catch (Exception $e) {
             return $this->renderScript('containers/manager.php');
         }
     }
 
     public function newAction() {
-        $form = $this->getEditor();
+        $form = new $this->_editor();
 
         if ($this->request->isPost()) {
             if ($form->isValid($this->request->getPost())) {
-                // TODO
+                $method = 'get' . ucfirst($this->_type);
+                $model = $form->$method();
+
+                $adapter = new $this->_adapter();
+                $object = $adapter->createRow();
+
+                $reflect = new ReflectionObject($model);
+                $properties = $reflect->getProperties(ReflectionProperty::IS_PUBLIC);
+                foreach ($properties as $property) {
+                    $key = $property->getName();
+                    $object->$key = $model->$key;
+                }
+
+                $object->tsregister = time();
+                $object->save();
+
+                $this->_helper->flashMessenger->addMessage('El recurso ha sido creado correctamente');
+                $this->_redirect($this->view->url(array(), $this->_route_manager));
+            } else {
+                $this->_helper->flashMessenger->addMessage('Se encontrarón algunos errores que deben ser corregidos');
             }
         }
 
