@@ -1,5 +1,5 @@
 $(document).ready(function(){
-//    $('input[type="text"].focus').focus();
+    $('input[type="text"].focus').focus();
     
     $('.closeable').click(function(){$(this).parent().fadeOut(); return false;});
 

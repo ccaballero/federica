@@ -32,7 +32,7 @@ abstract class Yachay_Db_Table extends Zend_Db_Table_Abstract
     public function findByUrl($url) {
         $row = $this->fetchRow(
                $this->getAdapter()
-                    ->quoteInto('url = ?', $url));
+                    ->quoteInto($this->_url . ' = ?', $url));
 
         return $this->_constructObject($row);
     }

@@ -8,8 +8,8 @@ abstract class Yachay_Controller_List extends Yachay_Controller_Action
     abstract function getAdapter();
     abstract function getContainer();
     abstract function getResourceType();
+    abstract function getEditor();
 
-//    abstract function getCollection();
     public function getCollection() {
         $adapter = $this->getAdapter();
         return $adapter->selectAll();
@@ -67,5 +67,18 @@ abstract class Yachay_Controller_List extends Yachay_Controller_Action
         } catch (Exception $e) {
             return $this->renderScript('containers/manager.php');
         }
+    }
+
+    public function newAction() {
+        $form = $this->getEditor();
+
+        if ($this->request->isPost()) {
+            if ($form->isValid($this->request->getPost())) {
+                // TODO
+            }
+        }
+
+        $this->view->form = $form;
+        return $this->renderScript('containers/editor.php');
     }
 }

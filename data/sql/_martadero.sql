@@ -161,20 +161,22 @@ UPDATE route SET mapping = 'salas/:room' WHERE route = 'rooms_room_view';
 /* setting the resources of martadero                                         */
 /*============================================================================*/
 INSERT INTO `room`
-(`code`, `shape`, `coords`, `label`, `type`, `description1`, `description2`, `description3`, `description4`, `capacity`)
+(`code`, `shape`, `coords`, `label`, `type`, `general_purpose`, `compatible_purpose`, `current_purpose`, `description`, `capacity`)
 VALUES
 ('A1',   'rect', '94,113,132,259', 'Playa Grande', 'A',
  'Mega espacio central: Artes Escénicas. Música, Interacción Social, Música, Audiovisual, Artes Visuales y Fotografía.',
  'Sala de exposiciones, proyecciones, seminarios, talleres, puestas en escena (teatro y danza), ensayos, set de filmación.',
  'Sala de exposiciones, proyecciones, seminarios, talleres, puestas en escena (teatro y danza), ensayos, set de filmación.',
  '<p>Cielo raso en yeso sobre estructura de madera a 7 m. de altura. No es aconsejable colgar elementos pesados de la estructura, pero s&iacute;&shy; existen vigas met&aacute;licas resistentes a 4 m. de altura.</p>\n<p>La iluminaci&oacute;n artificial emerge del cielo falso. Toma corrientes cada 3 m. en todo el per&iacute;&shy;metro y otra linea de toma corriente a 4 m del piso en la l&iacute;nea de las vigas.</p>\n<p>Es posible fijar o colgar objetos de las paredes (Rev. yeso sobre piedra y ladrillo). Piso de cemento enlucido, condiciones regulares. Se recomienda revestimiento vin&iacute;&shy;lico o tapiz&oacute;n para un mejor desarrollo de las actividades.</p>\n<p>Cuenta con una puerta principal delantera de ingreso corrediza de metal, otra puerta trasera de metal peque&ntilde;a. Ademas de una puerta de madera que conecta a la sala de ensayos a4.</p>',
- '200 personas sentadas / 400 personas de pie.'),
+ '200 personas sentadas / 400 personas de pie.'
+),
 ('A2',   'rect', '136,133,166,239', 'Sala de chanchos', 'A',
  'Exposiciones de artes visuales, presentaciones de  libros, talleres.',
  'Sala múltiple.',
  'Exposicion, presentaciones de libros, talleres.',
  '<p>Cielo raso en yeso sobre estructura de madera. No es aconsejable colgar elementos pesados de la estructura. La iluminaci&oacute;n artificial emerge del cielo falso. Cuenta con dos rieles de iluminaci&oacute;n direccional que de acuerdo a la necesidad son modificables en altura. Toma corrientes cada 3 m. en todo el per&iacute;&shy;metro. Es posible fijar o colgar objetos de las paredes (Rev. yeso sobre piedra y ladrillo). Piso de cemento enlucido, condiciones regulares.</p>\n<p>Cuenta con dos puertas de metal (delantera y trasera) , corredizas y con ventas de luz directa con vista norte, que pueden ser cubierta o no de acuerdo a la propuesta o necesidad de la misma.</p>',
- '140 personas sentadas / 280 personas de pie.'),
+ '140 personas sentadas / 280 personas de pie.'
+),
 ('A3',   'rect', '60,188,91,239', 'Trozadero', 'T',
  'Sala de proyección.',
  'Ensayos, exposiciones, presentación de libros, tertulias literarias, talleres...',
@@ -343,6 +345,3 @@ VALUES
  '',
  'Espacio dedicado a la naturaleza, con plantas y brechas para la plantación de tomates, arbejas, etc. y así enseñar a los niños y niñas del taller como cuidar del planeta.',
  '');
-
-
-

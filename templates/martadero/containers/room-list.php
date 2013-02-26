@@ -20,7 +20,7 @@
             <img src="<?php echo $this->packageUrl('rooms', $room->code . '-small.jpg') ?>"
                  alt="<?php echo $room ?>" />
         </a>
-        <p><?php echo $this->none($room->description1, '+ ', '') ?></p>
+        <p><?php echo $this->none($room->general_purpose, '+ ', '') ?></p>
         <p><?php echo $this->none($room->capacity, '+ ', '') ?></p>
     </div>
 <?php } ?>

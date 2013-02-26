@@ -8,10 +8,10 @@ CREATE TABLE `room` (
     `code`         varchar(8)                            NOT NULL,
     `label`        varchar(128)                          NOT NULL,
     `type`         enum('A', 'T', 'N')                   NOT NULL DEFAULT 'N',
-    `description1` text                                  NOT NULL DEFAULT '', /* descripción de uso */
-    `description2` text                                  NOT NULL DEFAULT '', /* descripción acerca de uso compatible */
-    `description3` text                                  NOT NULL DEFAULT '', /* descripción acerca de uso actual */
-    `description4` text                                  NOT NULL DEFAULT '', /* descripción general */
+    `description`  text                                  NOT NULL DEFAULT '', /* descripción general */
+    `general_purpose`    text                            NOT NULL DEFAULT '', /* descripción de uso */
+    `compatible_purpose` text                            NOT NULL DEFAULT '', /* descripción acerca de uso compatible */
+    `current_purpose`    text                            NOT NULL DEFAULT '', /* descripción acerca de uso actual */
     `capacity`     text                                  NOT NULL DEFAULT '',
     `shape`        varchar(64)                           NOT NULL DEFAULT 'rect',
     `coords`       varchar(128)                          NOT NULL DEFAULT '',

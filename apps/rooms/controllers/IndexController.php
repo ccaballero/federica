@@ -13,4 +13,8 @@ class Rooms_IndexController extends Yachay_Controller_List
     public function getResourceType() {
         return 'room';
     }
+    
+    public function getEditor() {
+        return new Rooms_Form_Editor();
+    }
 }
