@@ -2,13 +2,14 @@
 /*============================================================================*/
 /* tables for resources management                                            */
 /*============================================================================*/
-DROP TABLE IF EXISTS `area`;
-CREATE TABLE `area` (
+DROP TABLE IF EXISTS `blog`;
+CREATE TABLE `blog` (
     `ident`       int unsigned NOT NULL auto_increment,
     `label`       varchar(64)  NOT NULL,
     `url`         varchar(64)  NOT NULL,
-    `email`       varchar(128) NOT NULL DEFAULT '',
+    `date`        varchar(128) NOT NULL DEFAULT '',
     `description` text         NOT NULL DEFAULT '',
+    `published`   boolean      NOT NULL DEFAULT false,
     `tsregister`  int unsigned NOT NULL,
     PRIMARY KEY (`ident`),
     UNIQUE INDEX (`label`),
@@ -21,7 +22,7 @@ CREATE TABLE `area` (
 INSERT INTO `package`
 (`label`, `url`, `type`, `tsregister`, `description`)
 VALUES
-('areas', 'areas', 'middle', UNIX_TIMESTAMP(), 'Modulo registro de las areas del sistema');
+('blog', 'blog', 'app', UNIX_TIMESTAMP(), 'Modulo registro de los blogs del sistema');
 
 /*============================================================================*/
 /* routing register                                                           */
@@ -29,9 +30,9 @@ VALUES
 INSERT INTO `route`
 (`label`, `priority`, `parent`, `route`, `mapping`, `module`, `controller`, `action`)
 VALUES
-('Areas',                  2, 'base',            'areas_list',        'areas',              'areas', 'index', 'index'),
-('Administrador de areas', 3, 'areas_list',      'areas_manager',     'areas/manager',      'areas', 'index', 'manager'),
-('Nueva area',             3, 'areas_manager',   'areas_new',         'areas/new',          'areas', 'index', 'new'),
-('Area: $area',            4, 'areas_list',      'areas_area_view',   'areas/:area',        'areas', 'area',  'view'),
-('Editar area: $area',     4, 'areas_area_view', 'areas_area_edit',   'areas/:area/edit',   'areas', 'area',  'edit'),
-('',                       4, 'areas_area_view', 'areas_area_delete', 'areas/:area/delete', 'areas', 'area',  'delete');
+('Blog',                   2, 'base',           'blog_list',        'blog',              'blog', 'index', 'index'),
+('Administrador de blogs', 3, 'blog_list',      'blog_manager',     'blog/manager',      'blog', 'index', 'manager'),
+('Nuevo post',             3, 'blog_manager',   'blog_new',         'blog/new',          'blog', 'index', 'new'),
+('Post: $post',            4, 'blog_list',      'blog_post_view',   'blog/:post',        'blog', 'post',  'view'),
+('Editar post: $post',     4, 'blog_post_view', 'blog_post_edit',   'blog/:post/edit',   'blog', 'post',  'edit'),
+('',                       4, 'blog_post_view', 'blog_post_delete', 'blog/:post/delete', 'blog', 'post',  'delete');

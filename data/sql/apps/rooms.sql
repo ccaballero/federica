@@ -27,7 +27,7 @@ CREATE TABLE `room` (
 INSERT INTO `package`
 (`label`, `url`, `type`, `tsregister`, `description`)
 VALUES
-('rooms', 'rooms', 'base', UNIX_TIMESTAMP(), 'Modulo registro de las salas del sistema');
+('rooms', 'rooms', 'middle', UNIX_TIMESTAMP(), 'Modulo registro de las salas del sistema');
 
 /*============================================================================*/
 /* routing register                                                           */
