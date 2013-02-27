@@ -1,4 +1,4 @@
-<h1>Conoce las salas</h1>
+<h1><?php echo $this->title ?></h1>
 
 <ul class="index">
 <?php foreach ($this->container->getTasks('list') as $task) { ?>

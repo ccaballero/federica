@@ -18,7 +18,7 @@ class Rooms_Room
     public function __toString() {
         return $this->label . ' [' . $this->code . ']';
     }
-    
+
     public function getUrl() {
         return $this->code;
     }

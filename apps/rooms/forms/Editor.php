@@ -48,7 +48,8 @@ class Rooms_Form_Editor extends Zend_Form
         $capacity = $this->createElement('textarea', 'capacity');
         $capacity->setRequired(false)
             ->setLabel('Capacidad:')
-            ->addFilter('StringTrim');
+            ->addFilter('StringTrim')
+            ->addFilter('StripTags');
 
         $description = $this->createElement('textarea', 'description');
         $description->setRequired(false)

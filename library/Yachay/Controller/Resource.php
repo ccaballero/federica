@@ -9,7 +9,11 @@ abstract class Yachay_Controller_Resource extends Yachay_Controller_Action
         $this->view->collection = $adapter->selectAll();
         $this->view->assign(get_object_vars($resource));
 
-        return $this->renderScript('components/' . $this->_type . '-view.php');
+        try {
+            return $this->renderScript('components/' . $this->_type . '-view.php');
+        } catch (Exception $e) {
+            return $this->renderScript('components/view.php');
+        }
     }
 
     public function editAction() {

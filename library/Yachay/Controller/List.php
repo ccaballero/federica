@@ -13,7 +13,7 @@ abstract class Yachay_Controller_List extends Yachay_Controller_Action
         $this->view->collection = $this->getCollection();
 
         try {
-            return $this->renderScript('containers/' . $this->_type . '-list.php');
+            return $this->renderScript('containers/' . strtolower($this->_container) . '-list.php');
         } catch (Exception $e) {
             return $this->renderScript('containers/list.php');
         }
@@ -55,7 +55,7 @@ abstract class Yachay_Controller_List extends Yachay_Controller_Action
         $this->view->collection = $this->getCollection();
 
         try {
-            return $this->renderScript('containers/' . $this->_type . '-manager.php');
+            return $this->renderScript('containers/' . strtolower($this->_container) . '-manager.php');
         } catch (Exception $e) {
             return $this->renderScript('containers/manager.php');
         }

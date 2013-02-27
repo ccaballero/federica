@@ -36,6 +36,9 @@ SELECT 'users' AS '';
 SELECT 'rooms' AS '';
 \. apps/rooms.sql
 
+SELECT 'areas' AS '';
+\. apps/areas.sql
+
 /*============================================================================*/
 
 SELECT 'martadero' AS '';
