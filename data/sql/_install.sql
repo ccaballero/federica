@@ -54,3 +54,4 @@ SELECT 'martadero' AS '';
 \. martadero/users.sql
 \. martadero/rooms.sql
 \. martadero/areas.sql
+\. martadero/blog.sql

@@ -1,0 +1,145 @@
+#main .item-1 {
+    float: left;
+    width: 180px;
+    height: 100px;
+    overflow: hidden;
+    margin: 3px 3px;
+    padding: 0px 5px;
+    background-color: #efefef;
+}
+
+#main .item-1 h2 {
+    margin: 3px;
+}
+
+#main .item-1 p {
+    margin: 4px 0px;
+    text-align: left;
+}
+
+#main .item-2 {
+    min-height: 75px;
+}
+
+#main .item-3 {
+    width: 540px;
+    margin: 0px 5px 30px 5px;
+    padding-bottom: 20px;
+    border-bottom: 1px dotted #000000;
+}
+
+#main .item-3 h2 {
+    margin: 0px;
+    padding: 1px 0px;
+}
+
+#main .item-3 .date {
+    float: left;
+    width: 70px;
+    padding: 4px 4px;
+    font-size: 11px;
+}
+
+#main .item-3 .content {
+    margin-left: 75px;
+}
+
+/* main content (tabbers) */
+/*#main ul {
+    list-style-type: none;
+}
+
+#main ul li {
+    display: inline-block;
+    background: #444444;
+    padding: 3px 6px 1px 6px;
+    margin: 0px 2px 0px 0px;
+}
+
+#main ul li:hover {
+    background: #ff9a00;
+}
+
+#main ul li a {
+    font-weight: bold;
+    color: #ff9a00;
+}
+#main ul li:hover a {
+    color: #000000;
+}*/
+
+/*#main .tab, #main ul li.active {
+    background: url('/templates/martadero/images/bg_contenido_inicio.jpg') repeat;
+}
+
+#main .tab {
+    margin-bottom: 5px;
+}*/
+
+/*#main h1 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff9a00;
+    padding: 5px 5px;
+}
+
+#main .tab .email,
+#right_bar .post .email {
+    float: right;
+    margin: 0px 5px 5px 0px;
+}
+
+#main .tab .email img,
+#right_bar .post .email img {
+    width: 20px;
+    height: auto;
+}
+
+#main .event {
+    border-top: 1px dotted #000000;
+    padding: 10px;
+}
+
+#main .event .event-photo {
+    float: left;
+    width: 110px;
+}
+
+#main .event .event-photo a {
+    float: left;
+}
+
+#main .event .event-detail {
+    padding-left: 110px;
+}
+
+#main .event .event-number {
+    float: right;
+}
+
+#main .event .event-date p {
+    font-size: 10px;
+}
+
+#main .event h2 a {
+    font-size: 16px;
+}
+
+#main .event p {
+    margin: 0;
+    padding: 0;
+}
+
+#main .event .event-content {}
+
+#main .event .event-explain {
+    margin: 5px 0px 15px 0px;
+}
+
+#main .event .event-time {
+    margin: 15px 0px 0px 0px;
+}
+
+#main .event .event-comments {
+    float: right;
+}*/

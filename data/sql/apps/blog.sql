@@ -5,7 +5,7 @@
 DROP TABLE IF EXISTS `blog`;
 CREATE TABLE `blog` (
     `ident`       int unsigned NOT NULL auto_increment,
-    `label`       varchar(64)  NOT NULL,
+    `label`       varchar(128) NOT NULL,
     `url`         varchar(64)  NOT NULL,
     `date`        varchar(128) NOT NULL DEFAULT '',
     `description` text         NOT NULL DEFAULT '',

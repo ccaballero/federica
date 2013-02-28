@@ -48,10 +48,6 @@ abstract class Yachay_Db_Table extends Zend_Db_Table_Abstract
         return $this->_constructList($this->selectAllAdapters());
     }
 
-    public function saveObject() {
-
-    }
-
     // Generic constructors of bean objects
     protected function _constructList(Iterator $resultset) {
         $list = array();

@@ -6,7 +6,7 @@
 <?php } ?>
 </ul>
 
-<div style="width: 537px;">
+<div class="item-3">
     <p>En estos seis años de vida, como proyecto mARTadero, hemos realizado casi 800
     actividades de carácter diverso, recibiendo en el lugar a más de 200.000
     asistentes. Hoy por hoy es el proyecto cultural más innovador y de mayor

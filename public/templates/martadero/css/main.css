@@ -83,102 +83,24 @@
     font-size: 16px;
 }
 
-/* main content (tabbers) */
-/*#main ul {
-    list-style-type: none;
-}
-
-#main ul li {
+#main div.pagination {
     display: inline-block;
-    background: #444444;
-    padding: 3px 6px 1px 6px;
-    margin: 0px 2px 0px 0px;
+    margin-bottom: 10px;
 }
 
-#main ul li:hover {
-    background: #ff9a00;
-}
-
-#main ul li a {
-    font-weight: bold;
-    color: #ff9a00;
-}
-#main ul li:hover a {
-    color: #000000;
-}*/
-
-/*#main .tab, #main ul li.active {
-    background: url('/templates/martadero/images/bg_contenido_inicio.jpg') repeat;
-}
-
-#main .tab {
-    margin-bottom: 5px;
-}*/
-
-/*#main h1 {
-    font-size: 18px;
-    font-weight: bold;
-    color: #ff9a00;
-    padding: 5px 5px;
-}
-
-#main .tab .email,
-#right_bar .post .email {
-    float: right;
-    margin: 0px 5px 5px 0px;
-}
-
-#main .tab .email img,
-#right_bar .post .email img {
-    width: 20px;
-    height: auto;
-}
-
-#main .event {
-    border-top: 1px dotted #000000;
-    padding: 10px;
-}
-
-#main .event .event-photo {
+#main .pagination a,
+#main .pagination span {
     float: left;
-    width: 110px;
+    padding: 2px 8px;
+    margin: 0px 5px;
 }
 
-#main .event .event-photo a {
-    float: left;
+#main .pagination a {
+    background-color: #E6E6E6;
+    color: #666666;
 }
 
-#main .event .event-detail {
-    padding-left: 110px;
+#main .pagination span {
+    background-color: #FF9A00;
+    color: #ffffff;
 }
-
-#main .event .event-number {
-    float: right;
-}
-
-#main .event .event-date p {
-    font-size: 10px;
-}
-
-#main .event h2 a {
-    font-size: 16px;
-}
-
-#main .event p {
-    margin: 0;
-    padding: 0;
-}
-
-#main .event .event-content {}
-
-#main .event .event-explain {
-    margin: 5px 0px 15px 0px;
-}
-
-#main .event .event-time {
-    margin: 15px 0px 0px 0px;
-}
-
-#main .event .event-comments {
-    float: right;
-}*/

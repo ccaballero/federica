@@ -1,27 +1,27 @@
 <?php
 
-class Areas
+class Blog
 {
     public function getHeaders() {
-        return array('Area', 'Correo electrónico', 'Operaciones');
+        return array('Título', 'Fecha de publicación', 'Operaciones');
     }
 
     public function getTasks($type = 'list') {
         $url = new Zend_Controller_Action_Helper_Url();
 
         $list = (object)array(
-            'url' => $url->url(array(), 'areas_list'),
-            'label' => 'Lista de areas',
+            'url' => $url->url(array(), 'blog_list'),
+            'label' => 'Lista de posts',
         );
 
         $manager = (object)array(
-            'url' => $url->url(array(), 'areas_manager'),
-            'label' => 'Administrador de areas',
+            'url' => $url->url(array(), 'blog_manager'),
+            'label' => 'Administrador de posts',
         );
 
         $new = (object)array(
-            'url' => $url->url(array(), 'areas_new'),
-            'label' => 'Nueva area',
+            'url' => $url->url(array(), 'blog_new'),
+            'label' => 'Nuevo post',
         );
 
         if ($type == 'list') {

@@ -10,7 +10,7 @@ abstract class Yachay_Controller_Resource extends Yachay_Controller_Action
         $this->view->assign(get_object_vars($resource));
 
         try {
-            return $this->renderScript('components/' . $this->_type . '-view.php');
+            return $this->renderScript('components/view-' . $this->_type . '.php');
         } catch (Exception $e) {
             return $this->renderScript('components/view.php');
         }

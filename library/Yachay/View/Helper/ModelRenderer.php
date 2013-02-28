@@ -18,7 +18,7 @@ class Yachay_View_Helper_ModelRenderer
             $_class = explode('_', $class);
             $object = strtolower(end($_class));
 
-            return $view->render($object . '-' . $type . '.php');
+            return $view->render($type . '-' . $object . '.php');
         } catch (Exception $e) {
             return $model->__toString();
         }

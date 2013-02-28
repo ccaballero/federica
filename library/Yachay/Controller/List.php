@@ -2,7 +2,7 @@
 
 abstract class Yachay_Controller_List extends Yachay_Controller_Action
 {
-    public function getCollection() {
+    protected function getCollection() {
         $adapter = new $this->_adapter();
         return $adapter->selectAll();
     }
@@ -13,9 +13,14 @@ abstract class Yachay_Controller_List extends Yachay_Controller_Action
         $this->view->collection = $this->getCollection();
 
         try {
-            return $this->renderScript('containers/' . strtolower($this->_container) . '-list.php');
+            return $this->renderScript('containers/list-' . strtolower($this->_container) . '.php');
         } catch (Exception $e) {
-            return $this->renderScript('containers/list.php');
+            if (isset($this->_paginator)) {
+                $this->view->pager = $this->_pager;
+                return $this->renderScript('containers/list-paginator.php');
+            } else {
+                return $this->renderScript('containers/list.php');
+            }
         }
     }
 
@@ -55,7 +60,7 @@ abstract class Yachay_Controller_List extends Yachay_Controller_Action
         $this->view->collection = $this->getCollection();
 
         try {
-            return $this->renderScript('containers/' . strtolower($this->_container) . '-manager.php');
+            return $this->renderScript('containers/manager-' . strtolower($this->_container) . '.php');
         } catch (Exception $e) {
             return $this->renderScript('containers/manager.php');
         }
