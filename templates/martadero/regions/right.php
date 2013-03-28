@@ -9,7 +9,13 @@
         'posts' => $blog_adapter->selectAllByCount(3)
 )) ?>
 
-<?php echo $this->partial('widgets/convocatorias.php', array('media_url' => $this->media_url)) ?>
+<?php
+    $boards_adapter = new Db_Boards();
+    echo $this->partial('widgets/convocatorias.php', array(
+        'media_url' => $this->media_url,
+        'boards' => $boards_adapter->selectAllByCount(3)
+)) ?>
+
 <?php echo $this->partial('widgets/descargas.php', array('media_url' => $this->media_url)) ?>
 
 <?php $this->placeholder('right')->captureEnd() ?>

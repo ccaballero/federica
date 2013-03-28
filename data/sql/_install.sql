@@ -44,6 +44,9 @@ SELECT 'areas' AS '';
 SELECT 'blog' AS '';
 \. apps/blog.sql
 
+SELECT 'boards' AS '';
+\. apps/boards.sql
+
 /*============================================================================*/
 /* install the martadero information                                          */
 /*============================================================================*/
@@ -55,3 +58,4 @@ SELECT 'martadero' AS '';
 \. martadero/rooms.sql
 \. martadero/areas.sql
 \. martadero/blog.sql
+\. martadero/boards.sql
