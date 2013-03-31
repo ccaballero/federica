@@ -33,21 +33,19 @@ class Blog_Form_Editor extends Zend_Form
         $this->addElement('submit', 'submit', array('ignore' => true, 'label' => 'Guardar'));
     }
 
-    public function setArea(Areas_Area $area) {
-        $this->getElement('label')->setValue($area->label);
-        $this->getElement('url')->setValue($area->url);
-        $this->getElement('email')->setValue($area->email);
-        $this->getElement('description')->setValue($area->description);
+    public function setPost(Blog_Post $post) {
+        $this->getElement('label')->setValue($post->label);
+        $this->getElement('url')->setValue($post->url);
+        $this->getElement('description')->setValue($post->description);
     }
 
-    public function getArea() {
-        $area = new Areas_Area();
+    public function getPost() {
+        $post = new Blog_Post();
 
-        $area->label = $this->getElement('label')->getValue();
-        $area->url = $this->getElement('url')->getValue();
-        $area->email = $this->getElement('email')->getValue();
-        $area->description = $this->getElement('description')->getValue();
+        $post->label = $this->getElement('label')->getValue();
+        $post->url = $this->getElement('url')->getValue();
+        $post->description = $this->getElement('description')->getValue();
 
-        return $area;
+        return $post;
     }
 }
