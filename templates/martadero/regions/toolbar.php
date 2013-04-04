@@ -16,7 +16,7 @@
 <?php } else { ?>
 <ul>
     <li><a href="<?php echo $this->url(array(), 'users_settings') ?>">Bienvenid@ <?php echo $this->auth->getIdentity()->firstname ?></a></li>
-    <li><a class="border-left" href="<?php echo $this->url(array('page' => 'admin.html'), 'base_static') ?>">administrador</a></li>
+    <li><a class="border-left" href="<?php echo $this->url(array(), 'base_admin') ?>">administrador</a></li>
     <li><a class="border-left" href="<?php echo $this->url(array(), 'users_out') ?>">desconectar</a></li>
 </ul>
 <?php } ?>

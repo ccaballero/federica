@@ -66,7 +66,8 @@ VALUES
 INSERT INTO `route`
 (`label`, `priority`, `parent`, `route`, `mapping`, `module`, `controller`, `action`)
 VALUES
-('Inicio',       1, null,   'base',         '',             'base', 'index',   'index'),
-('Error',        2, 'base', 'base_error',   'error',        'base', 'error',   'error'),
-('Confirmación', 2, 'base', 'base_confirm', 'confirm',      'base', 'confirm', 'confirm'),
-('',             4, 'base', 'base_static',  'static/:page', 'base', 'static',  'static');
+('Inicio',                   1, null,   'base',         '',             'base', 'index',   'index'),
+('Panel del administración', 1, 'base', 'base_admin',   'admin',        'base', 'index',   'admin'),
+('Error',                    2, 'base', 'base_error',   'error',        'base', 'error',   'error'),
+('Confirmación',             2, 'base', 'base_confirm', 'confirm',      'base', 'confirm', 'confirm'),
+('',                         4, 'base', 'base_static',  'static/:page', 'base', 'static',  'static');

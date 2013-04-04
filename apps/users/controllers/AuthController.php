@@ -26,7 +26,7 @@ class Users_AuthController extends Yachay_Controller_Action
                 if ($result->isValid()) {
                     $user = $authAdapter->getResultRowObject();
                     $auth->getStorage()->write($user);
-                    $this->_redirect($this->view->url(array('page' => 'admin.html'), 'base_static'));
+                    $this->_redirect($this->view->url(array(), 'base_admin'));
                 } else {
                     $form->getElement('email')->addErrorMessage('Incorrect information')->markAsError();
                 }
