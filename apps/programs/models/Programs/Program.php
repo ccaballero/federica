@@ -1,6 +1,6 @@
 <?php
 
-class Areas_Area
+class Programs_Program
 {
     public $ident;
     public $label;

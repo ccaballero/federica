@@ -2,8 +2,8 @@
 /*============================================================================*/
 /* tables for resources management                                            */
 /*============================================================================*/
-DROP TABLE IF EXISTS `area`;
-CREATE TABLE `area` (
+DROP TABLE IF EXISTS `program`;
+CREATE TABLE `program` (
     `ident`       int unsigned NOT NULL auto_increment,
     `label`       varchar(128) NOT NULL,
     `url`         varchar(128) NOT NULL,
@@ -21,7 +21,7 @@ CREATE TABLE `area` (
 INSERT INTO `package`
 (`label`, `url`, `type`, `tsregister`, `description`)
 VALUES
-('areas', 'areas', 'middle', UNIX_TIMESTAMP(), 'Modulo registro de las areas del sistema');
+('programs', 'programs', 'middle', UNIX_TIMESTAMP(), 'Modulo registro de los programas del sistema');
 
 /*============================================================================*/
 /* routing register                                                           */
@@ -29,9 +29,9 @@ VALUES
 INSERT INTO `route`
 (`label`, `priority`, `parent`, `route`, `mapping`, `module`, `controller`, `action`)
 VALUES
-('Areas',                  2, 'base',            'areas_list',        'areas',              'areas', 'index', 'index'),
-('Administrador de areas', 3, 'areas_list',      'areas_manager',     'areas/manager',      'areas', 'index', 'manager'),
-('Nueva area',             3, 'areas_manager',   'areas_new',         'areas/new',          'areas', 'index', 'new'),
-('Area: $area',            4, 'areas_list',      'areas_area_view',   'areas/:area',        'areas', 'area',  'view'),
-('Editar area: $area',     4, 'areas_area_view', 'areas_area_edit',   'areas/:area/edit',   'areas', 'area',  'edit'),
-('',                       4, 'areas_area_view', 'areas_area_delete', 'areas/:area/delete', 'areas', 'area',  'delete');
+('Programas',                  2, 'base',                  'programs_list',           'programs',                 'programs', 'index',   'index'),
+('Administrador de programas', 3, 'programs_list',         'programs_manager',        'programs/manager',         'programs', 'index',   'manager'),
+('Nuevo programa',             3, 'programs_manager',      'programs_new',            'programs/new',             'programs', 'index',   'new'),
+('Programa: $program',         4, 'programs_list',         'programs_program_view',   'programs/:program',        'programs', 'program', 'view'),
+('Editar programa: $program',  4, 'programs_program_view', 'programs_program_edit',   'programs/:program/edit',   'programs', 'program', 'edit'),
+('',                           4, 'programs_program_view', 'programs_program_delete', 'programs/:program/delete', 'programs', 'program', 'delete');

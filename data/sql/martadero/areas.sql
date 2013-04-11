@@ -70,13 +70,3 @@ la creación musical realizada por artistas nuevos, especialmente aquellos que
 experimentan en el camino de la composición y que por razones diversas no pueden
 acceder a espacios para el fortalecimiento y la expresión de su arte y talento.
 </p>');
-
-
-
-
-
--- ('Residencias Artísticas prAna', 'residencias', 'prana@martadero.org'),
--- ('formARTe', 'formarte', 'formarte@martadero.org'),
--- ('Comunicación', 'comunicacion', 'info@martadero.org'),
--- ('Acción Urbana', 'accion-urbana', 'arquitectura@martadero.org'),
--- ('Taller de Creatividad Infantil', 'creatividad-infantil', 'tallerinfantil@martadero.org');

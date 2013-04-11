@@ -2,20 +2,11 @@
 
 class Users_IndexController extends Yachay_Controller_List
 {
-    public function getAdapter() {
-        return new Db_Users();
-    }
+    protected $_adapter = 'Db_Users';
+    protected $_type = 'user';
+    protected $_container = 'Users';
+    protected $_component = 'Users_User';
+    protected $_editor = 'Users_Form_Editor';
 
-    public function getContainer() {
-        return new Users();
-    }
-
-    public function getCollection() {
-        $db_users = new Db_Users();
-        return $db_users->selectAll();
-    }
-
-    public function getResourceType() {
-        return 'users';
-    }
+    protected $_route_manager = 'users_manager';
 }

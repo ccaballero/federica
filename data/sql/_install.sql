@@ -39,6 +39,9 @@ SELECT 'rooms' AS '';
 SELECT 'areas' AS '';
 \. apps/areas.sql
 
+SELECT 'programas' AS '';
+\. apps/programs.sql
+
 /*============================================================================*/
 
 SELECT 'blog' AS '';
@@ -63,6 +66,8 @@ SELECT 'martadero' AS '';
 \. martadero/users.sql
 \. martadero/rooms.sql
 \. martadero/areas.sql
+\. martadero/programs.sql
 \. martadero/blog.sql
 \. martadero/boards.sql
-\. martadero/events.sql
+-- \. martadero/requests.sql
+-- \. martadero/events.sql

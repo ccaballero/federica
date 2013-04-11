@@ -4,6 +4,7 @@
         <li><a href="<?php echo $this->url(array(), 'requests_list') ?>">Solicitudes</a></li>
         <li><a href="<?php echo $this->url(array(), 'rooms_list') ?>">Salas</a></li>
         <li><a href="<?php echo $this->url(array(), 'areas_list') ?>">Areas</a></li>
+        <li><a href="<?php echo $this->url(array(), 'programs_list') ?>">Programas</a></li>
         <li><a href="<?php echo $this->url(array(), 'blog_list') ?>">Blog</a></li>
         <li><a href="<?php echo $this->url(array(), 'boards_list') ?>">Convocatorias</a></li>
 <!--    
