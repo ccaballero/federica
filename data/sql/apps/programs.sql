@@ -1,21 +1,5 @@
 
 /*============================================================================*/
-/* tables for resources management                                            */
-/*============================================================================*/
-DROP TABLE IF EXISTS `program`;
-CREATE TABLE `program` (
-    `ident`       int unsigned NOT NULL auto_increment,
-    `label`       varchar(128) NOT NULL,
-    `url`         varchar(128) NOT NULL,
-    `email`       varchar(128) NOT NULL DEFAULT '',
-    `description` text         NOT NULL DEFAULT '',
-    `tsregister`  int unsigned NOT NULL,
-    PRIMARY KEY (`ident`),
-    UNIQUE INDEX (`label`),
-    UNIQUE INDEX (`url`)
-) DEFAULT CHARACTER SET UTF8;
-
-/*============================================================================*/
 /* package resources                                                          */
 /*============================================================================*/
 INSERT INTO `package`

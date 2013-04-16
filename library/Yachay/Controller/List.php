@@ -84,6 +84,13 @@ abstract class Yachay_Controller_List extends Yachay_Controller_Action
                     $object->$key = $model->$key;
                 }
 
+                // Hook, for customized params
+                if (isset($this->_hook_new)) {
+                    foreach ($this->_hook_new as $hook_param => $hook_value) {
+                        $object->$hook_param = $hook_value;
+                    }
+                }
+                
                 $object->tsregister = time();
                 $object->save();
 

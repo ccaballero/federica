@@ -1,7 +1,7 @@
 <div class="post">
     <h1>Administración</h1>
     <ul>
-        <li><a href="<?php echo $this->url(array(), 'requests_list') ?>">Solicitudes</a></li>
+        <?php /*<li><a href="<?php echo $this->url(array(), 'requests_list') ?>">Solicitudes</a></li>*/ ?>
         <li><a href="<?php echo $this->url(array(), 'rooms_list') ?>">Salas</a></li>
         <li><a href="<?php echo $this->url(array(), 'areas_list') ?>">Areas</a></li>
         <li><a href="<?php echo $this->url(array(), 'programs_list') ?>">Programas</a></li>

@@ -4,12 +4,13 @@
 /*============================================================================*/
 DROP TABLE IF EXISTS `area`;
 CREATE TABLE `area` (
-    `ident`       int unsigned NOT NULL auto_increment,
-    `label`       varchar(128) NOT NULL,
-    `url`         varchar(128) NOT NULL,
-    `email`       varchar(128) NOT NULL DEFAULT '',
-    `description` text         NOT NULL DEFAULT '',
-    `tsregister`  int unsigned NOT NULL,
+    `ident`       int unsigned            NOT NULL auto_increment,
+    `type`        enum('area', 'program') NOT NULL,
+    `label`       varchar(128)            NOT NULL,
+    `url`         varchar(128)            NOT NULL,
+    `email`       varchar(128)            NOT NULL DEFAULT '',
+    `description` text                    NOT NULL DEFAULT '',
+    `tsregister`  int unsigned            NOT NULL,
     PRIMARY KEY (`ident`),
     UNIQUE INDEX (`label`),
     UNIQUE INDEX (`url`)

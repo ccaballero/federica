@@ -3,7 +3,7 @@
 class Boards
 {
     public function getHeaders() {
-        return array('Título', 'Inicio', 'Final', 'Beneficiarios', 'Operaciones');
+        return array('Título', 'Fecha Inicio', 'Fecha Final', 'Beneficiarios', 'Operaciones');
     }
 
     public function getTasks($type = 'list') {

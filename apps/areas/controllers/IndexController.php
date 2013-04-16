@@ -9,4 +9,8 @@ class Areas_IndexController extends Yachay_Controller_List
     protected $_editor = 'Areas_Form_Editor';
 
     protected $_route_manager = 'areas_manager';
+    
+    protected $_hook_new = array(
+        'type' => 'area',
+    );
 }

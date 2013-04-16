@@ -9,4 +9,8 @@ class Programs_IndexController extends Yachay_Controller_List
     protected $_editor = 'Programs_Form_Editor';
 
     protected $_route_manager = 'programs_manager';
+    
+    protected $_hook_new = array(
+        'type' => 'program',
+    );
 }

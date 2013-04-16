@@ -1,8 +1,8 @@
 
-INSERT INTO `program`
-(`label`, `url`, `email`, `description`)
+INSERT INTO `area`
+(`label`, `url`, `email`, `type`, `description`)
 VALUES
-('Taller Infantil de Libre Expresión y Educación Medioambiental', 'creatividad-infantil', 'tallerinfantil@martadero.org',
+('Taller Infantil de Libre Expresión y Educación Medioambiental', 'creatividad-infantil', 'tallerinfantil@martadero.org', 'program',
 '<p><img src="/media/static/quienes-somos-html/taller-infantil.jpg" title="Taller Infantil mARTadero" /></p>
 <p>El Taller es un espacio abierto y propositivo, cuyo objetivo es que niños y
 niñas puedan explotar con toda libertad su creatividad, a través de juegos
@@ -13,7 +13,7 @@ socialización divertida, el encuentro con el otro, el reciclaje y re-uso, y
 otras dimensiones del taller permiten en ellos vivir lo artístico como forma de
 conocimiento del mundo que les rodea.</p>'),
 
-('formARTe', 'formarte', 'formarte@martadero.org',
+('formARTe', 'formarte', 'formarte@martadero.org', 'program',
 '<p><img src="/media/static/quienes-somos-html/formarte.jpg" title="formARTe mARTadero" /></p>
 <p>Es un programa y espacio de formación artística complementaria y de calidad a
 un costo accesible y con carácter intensivo destinado principalmente a jóvenes.
@@ -23,7 +23,7 @@ través del arte. Se autosostiene con el aporte monetario de un mínimo de 8
 inscritos por taller, manteniendo siempre becas totales o parciales para jóvenes
 socioeconómicamente desaventajados.</p>'),
 
-('Acción Urbana (Plaza y Paseo de las Artes)', 'accion-urbana', 'arquitectura@martadero.org',
+('Acción Urbana (Plaza y Paseo de las Artes)', 'accion-urbana', 'arquitectura@martadero.org', 'program',
 '<p><img src="/media/static/quienes-somos/accion-urbana.jpg" title="Accion Urbana mARTadero" /></p>
 <p>El proyecto, que cuenta con el apoyo de Eje Centr4l, consiste en la
 generación de un proceso de participación ciudadana que impulse la
@@ -55,7 +55,7 @@ ideas entre los vecinos.</p>
 </ul>
 <p><a href="http://plazaartes.wordpress.com/">http://plazaartes.wordpress.com</a></p>'),
 
-('Vivo y Verde', 'vivo-y-verde', 'info@martadero.org',
+('Vivo y Verde', 'vivo-y-verde', 'info@martadero.org', 'program',
 '<p><img src="/media/static/quienes-somos-html/vivo-y-verde.jpg" title="Vivo y Verde mARTadero" /></p>
 <p>Es un programa cuya principal meta es la transmisión de conciencia ambiental
 a la gente del barrio y a quienes nos visitan. La premisa es que la mayoría de
@@ -66,7 +66,7 @@ ejemplo replicable en los hogares y casas. Además, con el tiempo vamos
 instalando baños ecológicos que a través de un proceso natural convierten los
 residuos sépticos en abono apto para huertos y jardines.</p>'),
 
-('Residencias Artísticas prAna', 'residencias', 'prana@martadero.org',
+('Residencias Artísticas prAna', 'residencias', 'prana@martadero.org', 'program',
 '<p><img src="/media/static/quienes-somos-html/prana.jpg" title="Prana mARTadero" /></p>
 <p><strong>PRANA</strong> es una palabra en sánscrito se refiere a "lo vital", a
 la <strong>fuerza de las cosas vivas y la energía generadora en el proceso
@@ -96,7 +96,7 @@ gestión de fundaciones.</p>
     los programas de residencias, existe igualmente la posibilidad.</li>
 </ul>'),
 
-('Políticas Culturales y Redes', 'politicas-culturales', 'info@martadero.org',
+('Políticas Culturales y Redes', 'politicas-culturales', 'info@martadero.org', 'program',
 '<p><img src="/media/static/quienes-somos-html/politicas-culturales.jpg" title="Políticas Culturales mARTadero" /></p>
 <p>Política cultural se entiende como "aquella área de legislación pública que
 rige las actividades relacionadas a las artes y la cultura e involucra, por lo
@@ -116,7 +116,7 @@ una relativa a los Puntos de Cultura, otra relacionada a los Espacios Culturales
 y una última ligada a los Fondos Concursables de Promoción Artística.</p>
 <p><a href="http://politicasculturalesblog.wordpress.com/">http://politicasculturalesblog.wordpress.com/</a></p>'),
 
-('Vivero de Emprendimientos Artístico-Creativos', 'vivero-de-emprendimientos', 'info@martadero.org',
+('Vivero de Emprendimientos Artístico-Creativos', 'vivero-de-emprendimientos', 'info@martadero.org', 'program',
 '<p><img src="/media/static/quienes-somos-html/vivero.jpg" title="Vivero mARTadero" /></p>
 <p>Uno de los principales problemas del sector artístico cultural es que no
 cuenta con el conocimiento necesario para desarrollarse en el mundo empresarial

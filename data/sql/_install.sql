@@ -38,8 +38,6 @@ SELECT 'rooms' AS '';
 
 SELECT 'areas' AS '';
 \. apps/areas.sql
-
-SELECT 'programas' AS '';
 \. apps/programs.sql
 
 /*============================================================================*/

@@ -22,16 +22,22 @@ class Boards_Form_Editor extends Zend_Form
 
         $start_date = $this->createElement('text', 'start_date');
         $start_date->setRequired(false)
+                   ->setAttrib('class', 'datepicker')
                    ->setLabel('Fecha de inicio:');
-        
+
         $end_date = $this->createElement('text', 'end_date');
         $end_date->setRequired(false)
+                 ->setAttrib('class', 'datepicker')
                  ->setLabel('Fecha de finalización:');
-        
+
+        $area = $this->createElement('select', 'area');
+        $area->setRequired(true)
+             ->setLabel('Area o Programa:');
+
         $audience = $this->createElement('text', 'audience');
         $audience->setRequired(false)
                  ->setLabel('Beneficiarios:');
-        
+
         $description = $this->createElement('textarea', 'description');
         $description->setRequired(false)
             ->setLabel('Descripción:')
@@ -42,10 +48,15 @@ class Boards_Form_Editor extends Zend_Form
         $this->addElement($url);
         $this->addElement($start_date);
         $this->addElement($end_date);
+        $this->addElement($area);
         $this->addElement($audience);
         $this->addElement($description);
 
         $this->addElement('submit', 'submit', array('ignore' => true, 'label' => 'Guardar'));
+
+        $db_areas = new Db_Areas();
+        $areas = $db_areas->selectFullAll();
+        $this->setAreas($areas);
     }
 
     public function setBoard(Boards_Board $board) {
@@ -68,5 +79,14 @@ class Boards_Form_Editor extends Zend_Form
         $board->description = $this->getElement('description')->getValue();
 
         return $board;
+    }
+
+    public function setAreas($areas) {
+        $element = $this->getElement('area');
+
+        $element->addMultiOption(-1, str_repeat('-', 16));
+        foreach ($areas as $area) {
+            $element->addMultiOption($area->ident, $area);
+        }
     }
 }

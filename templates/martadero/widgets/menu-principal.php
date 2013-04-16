@@ -89,7 +89,7 @@
         <li>
             <a href="">Media</a>
             <ul class="secondary">
-                <li><a href="<?php echo $this->url(array('page' => 'noticias.html'), 'base_static') ?>" title="Blog del mARTadero">Blog</a></li>
+                <li><a href="<?php echo $this->url(array(), 'blog_list') ?>" title="Blog del mARTadero">Blog</a></li>
                 <li><a href="<?php echo $this->url(array('page' => 'articulos-publicados.html'), 'base_static') ?>" title="Artículos Publicados">Artículos Publicados</a></li>
                 <li><a href="<?php echo $this->url(array('page' => 'descargas.html'), 'base_static') ?>" title="Descargas">Descargas</a></li>
             </ul>
