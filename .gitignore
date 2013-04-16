@@ -18,7 +18,6 @@ syntax: glob
 .cache/
 .settings/
 .buildpath
-.gitignore
 .project
 
 library/Zend

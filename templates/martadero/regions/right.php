@@ -1,7 +1,7 @@
 <?php $this->placeholder('right')->captureStart() ?>
 
-<?php echo $this->partial('widgets/podcast.php', array('media_url' => $this->media_url)) ?>
 <?php echo $this->partial('widgets/tedx.php', array('media_url' => $this->media_url)) ?>
+<?php echo $this->partial('widgets/podcast.php', array('media_url' => $this->media_url)) ?>
 
 <?php
     $blog_adapter = new Db_Blog();
