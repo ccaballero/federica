@@ -20,6 +20,10 @@ class Boards_Form_Editor extends Zend_Form
             ->addValidator('StringLength', false, array(4, 64))
             ->addValidator('Alnum', false, array('allowWhiteSpace' => false));
 
+        $area = $this->createElement('select', 'area');
+        $area->setRequired(true)
+             ->setLabel('Area o Programa (*):');
+        
         $start_date = $this->createElement('text', 'start_date');
         $start_date->setRequired(false)
                    ->setAttrib('class', 'datepicker')
@@ -29,10 +33,6 @@ class Boards_Form_Editor extends Zend_Form
         $end_date->setRequired(false)
                  ->setAttrib('class', 'datepicker')
                  ->setLabel('Fecha de finalización:');
-
-        $area = $this->createElement('select', 'area');
-        $area->setRequired(true)
-             ->setLabel('Area o Programa:');
 
         $audience = $this->createElement('text', 'audience');
         $audience->setRequired(false)
@@ -46,9 +46,9 @@ class Boards_Form_Editor extends Zend_Form
 
         $this->addElement($label);
         $this->addElement($url);
+        $this->addElement($area);
         $this->addElement($start_date);
         $this->addElement($end_date);
-        $this->addElement($area);
         $this->addElement($audience);
         $this->addElement($description);
 
