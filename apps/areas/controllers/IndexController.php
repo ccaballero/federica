@@ -9,8 +9,28 @@ class Areas_IndexController extends Yachay_Controller_List
     protected $_editor = 'Areas_Form_Editor';
 
     protected $_route_manager = 'areas_manager';
-    
-    protected $_hook_new = array(
-        'type' => 'area',
-    );
+
+    protected $_mode = 'area';
+
+    protected function getCollection() {
+        $adapter = new $this->_adapter();
+        return $adapter->selectByType($this->_mode);
+    }
+
+    public function areasAction() {
+        $this->view->mode = $this->_mode;
+        return $this->indexAction();
+    }
+
+    public function programsAction() {
+        $this->_mode = 'program';
+        $this->view->mode = $this->_mode;
+        return $this->indexAction();
+    }
+
+    public function supportsAction() {
+        $this->_mode = 'support';
+        $this->view->mode = $this->_mode;
+        return $this->indexAction();
+    }
 }

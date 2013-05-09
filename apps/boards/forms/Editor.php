@@ -22,7 +22,7 @@ class Boards_Form_Editor extends Zend_Form
 
         $area = $this->createElement('select', 'area');
         $area->setRequired(true)
-             ->setLabel('Area o Programa (*):');
+             ->setLabel('Area (*):');
         
         $start_date = $this->createElement('text', 'start_date');
         $start_date->setRequired(false)

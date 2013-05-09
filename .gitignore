@@ -22,3 +22,7 @@ syntax: glob
 
 library/Zend
 
+data/sql/martadero/blog.sql
+data/sql/martadero/boards.sql
+data/sql/martadero/events.sql
+
