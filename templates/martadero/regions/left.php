@@ -10,10 +10,10 @@ $params = array(
 
 echo $this->partial('widgets/logo.php', $params);
 echo $this->partial('widgets/calendario.php', $params);
-echo $this->partial('widgets/ingresar.php', $params);
 echo $this->partial('widgets/eje-tematico.php', $params);
 echo $this->partial('widgets/menu-lateral.php', $params);
 echo $this->partial('widgets/menu-administracion.php', $params);
+echo $this->partial('widgets/ingresar.php', $params);
 echo $this->partial('widgets/contactos.php', $params);
 echo $this->partial('widgets/comparte.php', $params);
 

@@ -1,4 +1,5 @@
-<!--<div class="post">
+<?php if ($this->route == 'base' || $this->route == 'base_static') { ?>
+<div class="post">
     <h1>Proyecto mARTadero</h1>
     <ul>
         <li><a href="<?php echo $this->url(array('page' => 'quienes-somos.html'), 'base_static') ?>">Quiénes somos</a></li>
@@ -16,4 +17,5 @@
         <li><a href="<?php echo $this->url(array('page' => 'contactos.html'), 'base_static') ?>">Contacto</a></li>
         <li><a href="<?php echo $this->url(array('page' => 'contactos.html'), 'base_static') ?>#mapa">Cómo llegar</a></li>
     </ul>
-</div>-->
+</div>
+<?php } ?>

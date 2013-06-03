@@ -20,6 +20,11 @@
     margin: 35px 0px 0px 0px;
 }
 
+#main pre {
+    max-width: 760px;
+    overflow: auto;
+}
+
 #main p {
     padding: 0px 2px;
     text-align: justify;

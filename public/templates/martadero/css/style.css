@@ -395,6 +395,13 @@ a img {
     color: #ff9a00;
 }
 
+#left_bar .post hr {
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    border-top: 1px dotted #000000;
+}
+
 #left_bar input[type="text"],
 #left_bar input[type="password"] {
     border: 1px solid #dddddd;

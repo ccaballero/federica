@@ -24,6 +24,10 @@ abstract class Yachay_Controller_Action extends Zend_Controller_Action
         $route = $this->getFrontController()->getRouter()
                       ->getCurrentRouteName();
 
+        if ($route == 'default') {
+            return;
+        }
+
         $db_routes = new Db_Routes();
         $this->route = $db_routes->findByRoute($route);
         $this->view->route = $this->route;
@@ -54,7 +58,7 @@ abstract class Yachay_Controller_Action extends Zend_Controller_Action
             $search[] = '$' . $url;
             $replace[] = (string)$object;
         }
-        
+
         $this->view->title = str_replace($search, $replace, $this->route->label);
     }
 

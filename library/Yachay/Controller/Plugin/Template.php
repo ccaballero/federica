@@ -6,6 +6,10 @@ class Yachay_Controller_Plugin_Template extends Zend_Controller_Plugin_Abstract
         $front_controller = Zend_Controller_Front::getInstance();
         $route = $front_controller->getRouter()->getCurrentRouteName();
 
+        if ($route == 'default') {
+            $route = 'base_error';
+        }
+
         // render the placeholders
         $view = Zend_Controller_Action_HelperBroker::getExistingHelper('ViewRenderer')->view;
         $view->route = $route;
