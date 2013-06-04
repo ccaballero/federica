@@ -4,18 +4,18 @@
 /*============================================================================*/
 DROP TABLE IF EXISTS `room`;
 CREATE TABLE `room` (
-    `ident`        int unsigned                          NOT NULL auto_increment,
-    `code`         varchar(8)                            NOT NULL,
-    `label`        varchar(128)                          NOT NULL,
-    `type`         enum('A', 'T', 'N')                   NOT NULL DEFAULT 'N',
-    `description`  text                                  NOT NULL DEFAULT '', /* descripción general */
-    `general_purpose`    text                            NOT NULL DEFAULT '', /* descripción de uso */
-    `compatible_purpose` text                            NOT NULL DEFAULT '', /* descripción acerca de uso compatible */
-    `current_purpose`    text                            NOT NULL DEFAULT '', /* descripción acerca de uso actual */
-    `capacity`     text                                  NOT NULL DEFAULT '',
-    `shape`        varchar(64)                           NOT NULL DEFAULT 'rect',
-    `coords`       varchar(128)                          NOT NULL DEFAULT '',
-    `tsregister`   int unsigned                          NOT NULL,
+    `ident`              int unsigned        NOT NULL auto_increment,
+    `code`               varchar(8)          NOT NULL,
+    `label`              varchar(128)        NOT NULL,
+    `type`               enum('A', 'T', 'N') NOT NULL DEFAULT 'N',
+    `description`        text                NOT NULL DEFAULT '', /* descripción general */
+    `general_purpose`    text                NOT NULL DEFAULT '', /* descripción de uso */
+    `compatible_purpose` text                NOT NULL DEFAULT '', /* descripción acerca de uso compatible */
+    `current_purpose`    text                NOT NULL DEFAULT '', /* descripción acerca de uso actual */
+    `capacity`           text                NOT NULL DEFAULT '',
+    `shape`              varchar(64)         NOT NULL DEFAULT 'rect',
+    `coords`             varchar(128)        NOT NULL DEFAULT '',
+    `tsregister`         int unsigned        NOT NULL,
     PRIMARY KEY (`ident`),
     UNIQUE INDEX (`code`),
     UNIQUE INDEX (`label`)

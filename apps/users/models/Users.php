@@ -3,7 +3,7 @@
 class Users
 {
     public function getHeaders() {
-        return array('Paquete', 'Estado', 'Tipo', 'Operaciones', 'Fecha de Registro');
+        return array('Correo electrónico', 'Nombres', 'Apellidos', 'Operaciones');
     }
 
     public function getTasks($type = 'list') {

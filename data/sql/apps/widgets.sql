@@ -1,9 +1,9 @@
 DROP TABLE IF EXISTS `widget`;
 CREATE TABLE `widget` (
-    `ident`             int unsigned                                                NOT NULL auto_increment,
-    `label`             varchar(64)                                                 NOT NULL,
-    `package`           varchar(32)                                                 NOT NULL,
-    `type`              varchar(32)                                                 NOT NULL,
+    `ident`   int unsigned NOT NULL auto_increment,
+    `label`   varchar(64)  NOT NULL,
+    `package` varchar(32)  NOT NULL,
+    `type`    varchar(32)  NOT NULL,
     PRIMARY KEY (`ident`),
     UNIQUE INDEX (`package`, `label`),
     INDEX (`package`),
@@ -12,9 +12,9 @@ CREATE TABLE `widget` (
 
 DROP TABLE IF EXISTS `widget_route`;
 CREATE TABLE `widget_route` (
-    `route`             varchar(64)                                                 NOT NULL,
-    `package`           varchar(32)                                                 NOT NULL,
-    `widget`            varchar(64)                                                 NOT NULL,
+    `route`   varchar(64) NOT NULL,
+    `package` varchar(32) NOT NULL,
+    `widget`  varchar(64) NOT NULL,
     PRIMARY KEY (`route`, `package`, `widget`),
     INDEX (`route`),
     FOREIGN KEY (`route`) REFERENCES `route`(`route`) ON UPDATE CASCADE ON DELETE RESTRICT,

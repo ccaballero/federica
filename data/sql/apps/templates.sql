@@ -4,11 +4,11 @@
 /*============================================================================*/
 DROP TABLE IF EXISTS `template`;
 CREATE TABLE `template` (
-    `ident`          int unsigned NOT NULL auto_increment,
-    `label`          varchar(64)  NOT NULL,
-    `url`            varchar(64)  NOT NULL,
-    `description`    text         NOT NULL DEFAULT '',
-    `tsregister`     int unsigned NOT NULL,
+    `ident`       int unsigned NOT NULL auto_increment,
+    `label`       varchar(64)  NOT NULL,
+    `url`         varchar(64)  NOT NULL,
+    `description` text         NOT NULL DEFAULT '',
+    `tsregister`  int unsigned NOT NULL,
     PRIMARY KEY (`ident`),
     UNIQUE INDEX (`label`),
     UNIQUE INDEX (`url`)
@@ -16,8 +16,8 @@ CREATE TABLE `template` (
 
 DROP TABLE IF EXISTS `template_layout`;
 CREATE TABLE `template_layout` (
-    `template`          varchar(64)                                                 NOT NULL,
-    `label`             varchar(64)                                                 NOT NULL,
+    `template` varchar(64) NOT NULL,
+    `label`    varchar(64) NOT NULL,
     PRIMARY KEY (`template`, `label`),
     INDEX (`template`),
     FOREIGN KEY (`template`) REFERENCES `template`(`url`) ON UPDATE CASCADE ON DELETE RESTRICT
@@ -25,9 +25,9 @@ CREATE TABLE `template_layout` (
 
 DROP TABLE IF EXISTS `template_region`;
 CREATE TABLE `template_region` (
-    `template`          varchar(64)                                                 NOT NULL,
-    `label`             varchar(64)                                                 NOT NULL,
-    `type`              enum('static')                                              NOT NULL,
+    `template` varchar(64)    NOT NULL,
+    `label`    varchar(64)    NOT NULL,
+    `type`     enum('static') NOT NULL,
     PRIMARY KEY (`template`, `label`),
     INDEX (`template`),
     FOREIGN KEY (`template`) REFERENCES `template`(`url`) ON UPDATE CASCADE ON DELETE RESTRICT
@@ -35,9 +35,9 @@ CREATE TABLE `template_region` (
 
 DROP TABLE IF EXISTS `template_layout_region`;
 CREATE TABLE `template_layout_region` (
-    `template`          varchar(64)                                                 NOT NULL,
-    `layout`            varchar(64)                                                 NOT NULL,
-    `region`            varchar(64)                                                 NOT NULL,
+    `template` varchar(64) NOT NULL,
+    `layout`   varchar(64) NOT NULL,
+    `region`   varchar(64) NOT NULL,
     PRIMARY KEY (`template`, `layout`, `region`),
     INDEX (`template`),
     FOREIGN KEY (`template`) REFERENCES `template`(`url`) ON UPDATE CASCADE ON DELETE RESTRICT,
@@ -49,9 +49,9 @@ CREATE TABLE `template_layout_region` (
 
 DROP TABLE IF EXISTS `template_layout_route`;
 CREATE TABLE `template_layout_route` (
-    `template`          varchar(64)                                                 NOT NULL,
-    `layout`            varchar(64)                                                 NOT NULL,
-    `route`             varchar(64)                                                 NOT NULL,
+    `template` varchar(64) NOT NULL,
+    `layout`   varchar(64) NOT NULL,
+    `route`    varchar(64) NOT NULL,
     PRIMARY KEY (`template`, `layout`, `route`),
     INDEX (`template`),
     FOREIGN KEY (`template`) REFERENCES `template`(`url`) ON UPDATE CASCADE ON DELETE RESTRICT,
