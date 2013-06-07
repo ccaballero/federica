@@ -1,7 +1,10 @@
 <?php if ($this->route == 'base_admin'
-        || substr($this->route, 0, count('areas_'))
-        || substr($this->route, 0, count('programs_'))
-        || substr($this->route, 0, count('supports_'))) { ?>
+        || substr($this->route, 0, strlen('rooms_')) == 'rooms_'
+        || substr($this->route, 0, strlen('areas_')) == 'areas_'
+        || substr($this->route, 0, strlen('programs_')) == 'programs_'
+        || substr($this->route, 0, strlen('supports_')) == 'supports_'
+        || substr($this->route, 0, strlen('users_')) == 'users_'
+        || substr($this->route, 0, strlen('roles_')) == 'roles_') { ?>
 <?php if ($this->auth->hasIdentity()) { ?>
 <div class="post">
     <h1>Administración</h1>
@@ -29,6 +32,7 @@
         <!--<li><a href="<?php // TODO ../archivos/index.php ?>">Archivos</a></li>-->
         <!--<li><a href="<?php // TODO ../accesorios_servicios/ver_accesorio_servicio.php ?>">Accesorios y servicios</a></li>-->
         <li><a href="<?php echo $this->url(array(), 'users_list') ?>">Usuarios</a></li>
+        <li><a href="<?php echo $this->url(array(), 'roles_list') ?>">Roles</a></li>
         <!--<li><a href="<?php //echo $this->url(array(), 'users_settings') ?>">Perfil</a></li>-->
     </ul>
 </div>

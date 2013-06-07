@@ -3,7 +3,7 @@
 class ConfirmController extends Yachay_Controller_Action
 {
     public function confirmAction() {
-        $session = new Zend_Session_Namespace('pueblo');
+        $session = new Zend_Session_Namespace('federica');
         $confirm = $session->confirm;
 
         if (!is_array($confirm)) {

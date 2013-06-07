@@ -16,6 +16,17 @@ CREATE TABLE `user` (
     INDEX (`email`, `password`)
 ) DEFAULT CHARACTER SET UTF8;
 
+DROP TABLE IF EXISTS `user_role`;
+CREATE TABLE `user_role` (
+    `user` int unsigned NOT NULL,
+    `role` int unsigned NOT NULL,
+    PRIMARY KEY (`user`, `role`),
+    INDEX (`user`),
+    FOREIGN KEY (`user`) REFERENCES `user`(`ident`) ON UPDATE CASCADE ON DELETE RESTRICT,
+    INDEX (`role`),
+    FOREIGN KEY (`role`) REFERENCES `role`(`ident`) ON UPDATE CASCADE ON DELETE RESTRICT
+) DEFAULT CHARACTER SET UTF8;
+
 /*============================================================================*/
 /* package register                                                           */
 /*============================================================================*/

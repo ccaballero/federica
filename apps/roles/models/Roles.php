@@ -1,33 +1,28 @@
 <?php
 
-class Areas
+class Roles
 {
     public function getHeaders() {
-        return array('Area', 'Correo electrónico', 'Tipo', 'Operaciones');
+        return array('Rol', 'Descripción', 'Operaciones');
     }
 
     public function getTasks($type = 'list') {
         $url = new Zend_Controller_Action_Helper_Url();
 
         $list = (object)array(
-            'url' => $url->url(array(), 'areas_list'),
-            'label' => 'Lista de areas',
+            'url' => $url->url(array(), 'roles_list'),
+            'label' => 'Lista de roles',
         );
 
         $manager = (object)array(
-            'url' => $url->url(array(), 'areas_manager'),
-            'label' => 'Administrador de areas',
-        );
-
-        $new = (object)array(
-            'url' => $url->url(array(), 'areas_new'),
-            'label' => 'Nueva area',
+            'url' => $url->url(array(), 'roles_manager'),
+            'label' => 'Administrador de roles',
         );
 
         if ($type == 'list') {
             return array($manager);
         } else {
-            return array($list, $new);
+            return array($list);
         }
     }
 

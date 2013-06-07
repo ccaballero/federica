@@ -66,7 +66,7 @@ abstract class Yachay_Controller_Resource extends Yachay_Controller_Action
             $this->_helper->flashMessenger->addMessage("El recuroso ha sido deshabilitado");
             $this->_redirect($this->view->url(array(), $this->_route_manager));
         } else {
-            $session = new Zend_Session_Namespace('pueblo');
+            $session = new Zend_Session_Namespace('federica');
             $session->confirm = array(
                 'message' => '¿Esta seguro que quiere eliminar ' . (string)$resource . '?',
                 'return'  => $this->view->url(array($this->_type => $resource->getUrl()), strtolower($this->_component) . '_delete'),

@@ -14,7 +14,11 @@ class Areas_IndexController extends Yachay_Controller_List
 
     protected function getCollection() {
         $adapter = new $this->_adapter();
-        return $adapter->selectByType($this->_mode);
+        if (substr($this->route, -7) == 'manager') {
+            return $adapter->selectAll();
+        } else {
+            return $adapter->selectByType($this->_mode);
+        }
     }
 
     public function areasAction() {

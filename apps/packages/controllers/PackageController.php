@@ -36,7 +36,7 @@ class Packages_PackageController extends Yachay_Controller_Action
                 $this->_redirect($this->view->currentUrl());
             }
         } else {
-            $session = new Zend_Session_Namespace('pueblo');
+            $session = new Zend_Session_Namespace('federica');
             $session->confirm = array(
                 'message' => '¿Esta seguro que quiere deshabilitar el paquete ' . $package->label . '?',
                 'return'  => $this->view->url(array('package' => $package->url), 'packages_package_view'),

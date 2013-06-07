@@ -75,7 +75,7 @@ class Yachay_Bootstrap extends Zend_Application_Bootstrap_Bootstrap
     protected function _initHistory() {
         $this->bootstrap(array('config', 'session'));
 
-        $session = new Zend_Session_Namespace('pueblo');
+        $session = new Zend_Session_Namespace('federica');
         $config = Zend_Registry::get('config');
 
         if (!isset($session->current_url)) {

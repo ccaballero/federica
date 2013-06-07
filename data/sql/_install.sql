@@ -22,12 +22,12 @@ SELECT 'templates' AS '';
 
 /*============================================================================*/
 
--- SELECT 'privileges';
--- \. apps/privileges.sql
--- 
--- SELECT 'roles';
--- \. apps/roles.sql
--- 
+SELECT 'privileges' AS '';
+\. apps/privileges.sql
+
+SELECT 'roles' AS '';
+\. apps/roles.sql
+
 SELECT 'users' AS '';
 \. apps/users.sql
 
@@ -60,6 +60,7 @@ SELECT 'events' AS '';
 SELECT 'martadero' AS '';
 \. martadero/templates.sql
 \. martadero/routes.sql
+\. martadero/roles.sql
 \. martadero/users.sql
 \. martadero/rooms.sql
 \. martadero/areas.sql

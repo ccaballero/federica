@@ -1,12 +1,9 @@
 <?php
 
-class Areas_Area
+class Roles_Role
 {
     public $ident;
-    public $type;
     public $label;
-    public $url;
-    public $email;
     public $description;
     public $tsregister;
 
@@ -15,6 +12,6 @@ class Areas_Area
     }
 
     public function getUrl() {
-        return $this->url;
+        return $this->ident;
     }
 }

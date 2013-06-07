@@ -9,7 +9,7 @@ abstract class Yachay_Controller_Action extends Zend_Controller_Action
 
     public function init() {
         $this->_flashMessenger = $this->_helper->getHelper('FlashMessenger');
-        $this->_flashMessenger->setNamespace('pueblo');
+        $this->_flashMessenger->setNamespace('federica');
 
         $this->_redirector = $this->_helper->getHelper('Redirector');
         $this->_redirector->setPrependBase(false);
