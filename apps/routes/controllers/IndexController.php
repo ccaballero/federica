@@ -2,12 +2,11 @@
 
 class Routes_IndexController extends Yachay_Controller_List
 {
-    public function getCollection() {
-        $db_routes = new Db_Routes();
-        return $db_routes->selectAll();
-    }
+    protected $_adapter = 'Db_Routes';
+    protected $_type = 'route';
+    protected $_container = 'Routes';
+    protected $_component = 'Routes_Route';
+    protected $_editor = 'Routes_Form_Editor';
 
-    public function getResourceType() {
-        return 'route';
-    }
+    protected $_route_manager = 'routes_manager';
 }

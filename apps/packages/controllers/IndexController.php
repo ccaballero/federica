@@ -2,15 +2,11 @@
 
 class Packages_IndexController extends Yachay_Controller_List
 {
-    public function getAdapter() {
-        return new Db_Packages();
-    }
-    
-    public function getContainer() {
-        return new Packages();
-    }
+    protected $_adapter = 'Db_Packages';
+    protected $_type = 'package';
+    protected $_container = 'Packages';
+    protected $_component = 'Packages_Package';
+    protected $_editor = 'Packages_Form_Editor';
 
-    public function getResourceType() {
-        return 'package';
-    }
+    protected $_route_manager = 'packages_manager';
 }

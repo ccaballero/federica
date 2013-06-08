@@ -13,4 +13,8 @@ class Packages_Package
     public function __toString() {
         return $this->label;
     }
+    
+    public function getUrl() {
+        return $this->url;
+    }
 }

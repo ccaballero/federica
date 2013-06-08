@@ -90,7 +90,7 @@ abstract class Yachay_Controller_List extends Yachay_Controller_Action
                         $object->$hook_param = $hook_value;
                     }
                 }
-                
+
                 $object->tsregister = time();
                 $object->save();
 

@@ -20,3 +20,14 @@ VALUES
 ('Paquete: $package',         4, 'packages_manager',      'packages_package_view',   'packages/:package',        'packages', 'package', 'view'),
 ('',                          5, 'packages_package_view', 'packages_package_unlock', 'packages/:package/unlock', 'packages', 'package', 'unlock'),
 ('',                          5, 'packages_package_view', 'packages_package_lock',   'packages/:package/lock',   'packages', 'package', 'lock');
+
+/*============================================================================*/
+/* privileges register                                                        */
+/*============================================================================*/
+INSERT INTO `privilege`
+(`package`, `label`, `description`)
+VALUES
+('package', 'list',   'Listar los paquetes instalados'),
+('package', 'view',   'Ver las caracteristicas de un paquete seleccionado'),
+('package', 'lock',   'Deshabilitar la funcionalidad de un paquete seleccionado'),
+('package', 'unlock', 'Habilitar la funcionalidad de un paquete seleccionado');

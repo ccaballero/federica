@@ -1,0 +1,1 @@
+<p>[<?php echo $this->package ?>]<?php echo $this->label ?></p>
