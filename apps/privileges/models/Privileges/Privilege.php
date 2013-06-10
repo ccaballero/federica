@@ -8,7 +8,7 @@ class Privileges_Privilege
     public $description;
 
     public function __toString() {
-        return $this->label . ' [' . $this->package . ']';
+        return "[{$this->package}] {$this->label}";
     }
 
     public function getUrl() {

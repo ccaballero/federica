@@ -28,30 +28,35 @@ abstract class Yachay_Controller_List extends Yachay_Controller_Action
         $container = new $this->_container();
 
         if ($this->request->isPost()) {
+            $task = '';
+            $function = '';
+
             foreach ($container->getBatchOperations() as $operation) {
                 $param = $this->request->getParam($operation->name);
                 if (!empty($param)) {
-                    $operation = $operation->name;
+                    $task = $operation->name;
+                    $function = 'valid' . ucfirst($task);
                     break;
                 }
             }
 
-            $check = $this->request->getParam("check");
-            $valid_checks = array();
-            $adapter = $this->getAdapter();
+            if (!empty($task)) {
+                $check = $this->request->getParam('check');
+                $valid_checks = array();
+                $adapter = new $this->_adapter();
 
-            foreach ($check as $value) {
-                $resource = $adapter->findByIdent($value);
-                if (!empty($resource)) {
-                    if ($resource->type <> 'base') {
+                foreach ($check as $value) {
+                    $resource = $adapter->findByIdent($value);
+                    if (!empty($resource) && $adapter->{$function}($resource)) {
                         $valid_checks[] = $resource->ident;
                     }
                 }
+
+                $count = $adapter->{$task}($valid_checks);
+                $this->_helper->flashMessenger->addMessage(
+                    "Han sido modificados $count elementos");
             }
 
-            $count = $adapter->{$operation}($valid_checks);
-
-            $this->_helper->flashMessenger->addMessage("Han sido modificados $count elementos");
             $this->_redirect($this->view->currentUrl());
         }
 

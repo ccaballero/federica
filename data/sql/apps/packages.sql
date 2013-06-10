@@ -27,7 +27,7 @@ VALUES
 INSERT INTO `privilege`
 (`package`, `label`, `description`)
 VALUES
-('package', 'list',   'Listar los paquetes instalados'),
-('package', 'view',   'Ver las caracteristicas de un paquete seleccionado'),
-('package', 'lock',   'Deshabilitar la funcionalidad de un paquete seleccionado'),
-('package', 'unlock', 'Habilitar la funcionalidad de un paquete seleccionado');
+('packages', 'list',   'Listar los paquetes instalados'),
+('packages', 'view',   'Ver las caracteristicas de un paquete seleccionado'),
+('packages', 'lock',   'Deshabilitar la funcionalidad de un paquete seleccionado'),
+('packages', 'unlock', 'Habilitar la funcionalidad de un paquete seleccionado');

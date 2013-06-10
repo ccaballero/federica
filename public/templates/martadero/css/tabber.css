@@ -1,0 +1,53 @@
+/* pestañas */
+#tabber {
+    background: #f0f0f0;
+    border: 1px solid #ffffff;
+    position: relative;
+}
+
+#tabber>ul {
+    overflow: hidden;
+    height: 35px;
+    position: absolute;
+    z-index: 100;
+    margin: 0px;
+    padding: 0px;
+}
+
+#tabber>ul>li.tab {
+    float: left;
+    list-style: none;
+}
+
+#tabber>ul>li>a {
+    background: #dddddd;
+    color: #666666;
+    border-right: 1px solid #ffffff;
+    cursor: pointer;
+    display: block;
+    line-height: 34px;
+    padding: 0px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#tabber li a:hover {
+    background: #eeeeee;
+}
+
+#tabber li a.active {
+    background: #f5f5f5;
+    line-height: 35px;
+    color: #333333;
+}
+
+/* contenedores dentro de las pestañas */
+#tabber .tab_details {
+    background: #f5f5f5;
+    border-top: 1px solid #ffffff;
+    margin-top: 34px;
+}
+
+#tabber .tab_details .tab_contents {
+    padding: 10px 20px 10px 20px;
+}

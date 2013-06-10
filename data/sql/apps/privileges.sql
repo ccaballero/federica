@@ -13,4 +13,4 @@ VALUES
 INSERT INTO `route`
 (`label`, `priority`, `parent`, `route`, `mapping`, `module`, `controller`, `action`)
 VALUES
-('Lista de paquetes', 2, 'base', 'privileges_list', 'privileges', 'privileges', 'index', 'index');
+('Lista de privilegios', 2, 'base', 'privileges_list', 'privileges', 'privileges', 'index', 'index');

@@ -72,4 +72,19 @@ abstract class Yachay_Db_Table extends Zend_Db_Table_Abstract
 
         return $object;
     }
+
+    // customized task for element
+    public function validDelete() {
+        return true;
+    }
+
+    public function delete($elements) {
+        if (count($elements) > 0) {
+            return parent::delete(
+                array('ident IN (?)' => $elements)
+            );
+        } else {
+            return 0;
+        }
+    }
 }

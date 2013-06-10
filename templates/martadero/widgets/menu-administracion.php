@@ -14,37 +14,34 @@
 <div class="post">
     <h1>Administración</h1>
     <ul>
-        <li><a href="<?php echo $this->url(array(), 'packages_list') ?>">Paquetes</a></li>
-        <li><a href="<?php echo $this->url(array(), 'routes_list') ?>">Rutas</a></li>
+        <li><?php echo $this->link('Paquetes',    array(), 'packages_list') ?></li>
+        <li><?php echo $this->link('Rutas',       array(), 'routes_list') ?></li>
+        <li><?php echo $this->link('Privilegios', array(), 'privileges_list') ?></li>
     </ul>
     <hr />
     <ul>
-        <!--<li><a href="<?php // TODO ../archivos/index.php ?>">Archivos</a></li>-->
-        <!--<li><a href="<?php // TODO ../accesorios_servicios/ver_accesorio_servicio.php ?>">Accesorios y servicios</a></li>-->
-        <li><a href="<?php echo $this->url(array(), 'users_list') ?>">Usuarios</a></li>
-        <li><a href="<?php echo $this->url(array(), 'roles_list') ?>">Roles</a></li>
-        <li><a href="<?php echo $this->url(array(), 'privileges_list') ?>">Privilegios</a></li>
-        <!--<li><a href="<?php //echo $this->url(array(), 'users_settings') ?>">Perfil</a></li>-->
+        <li><?php echo $this->link('Roles',    array(), 'roles_list') ?></li>
+        <li><?php echo $this->link('Usuarios', array(), 'users_list') ?></li>
     </ul>
     <hr />
     <ul>
-        <li><a href="<?php echo $this->url(array(), 'areas_list') ?>">Areas</a></li>
-        <li><a href="<?php echo $this->url(array(), 'programs_list') ?>">Programas</a></li>
-        <li><a href="<?php echo $this->url(array(), 'supports_list') ?>">Areas de apoyo</a></li>
+        <li><?php echo $this->link('Areas',          array(), 'areas_list') ?></li>
+        <li><?php echo $this->link('Programas',      array(), 'programs_list') ?></li>
+        <li><?php echo $this->link('Areas de apoyo', array(), 'supports_list') ?></li>
     </ul>
     <hr />
     <ul>
-        <li><a href="<?php echo $this->url(array(), 'requests_list') ?>">Solicitudes</a></li>
-        <!--<li><a href="<?php // TODO ../eventos/index.php ?>">Eventos</a></li>-->
-        <!--<li><a href="<?php // TODO ../calendario/index.php ?>">Calendario</a></li>-->
-        <!--<li><a href="<?php // TODO ../talleres/index.php ?>">Talleres</a></li>-->
+        <li><?php echo $this->link('Solicitudes', array(), 'requests_list') ?></li>
+        <li><?php echo $this->link('Eventos',     array(), 'events_list') ?></li>
+        <li><?php echo $this->link('Talleres',    array(), 'courses_list') ?></li>
+        <li><?php echo $this->link('Calendario',  array(), 'calendar_list') ?></li>
     </ul>
     <hr />
     <ul>
-        <li><a href="<?php echo $this->url(array(), 'rooms_list') ?>">Salas</a></li>
-        <!--<li><a href="<?php // TODO ../residencias/index.php ?>">Residencias</a></li>-->
-        <li><a href="<?php echo $this->url(array(), 'blog_list') ?>">Blog</a></li>
-        <li><a href="<?php echo $this->url(array(), 'boards_list') ?>">Convocatorias</a></li>
+        <li><?php echo $this->link('Salas',         array(), 'rooms_list') ?></li>
+        <li><?php echo $this->link('Residencias',   array(), 'residences_list') ?></li>
+        <li><?php echo $this->link('Blog',          array(), 'blog_list') ?></li>
+        <li><?php echo $this->link('Convocatorias', array(), 'boards_list') ?></li>
     </ul>
 </div>
 <?php } ?>
